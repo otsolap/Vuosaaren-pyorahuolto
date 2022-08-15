@@ -24,7 +24,7 @@
 		&:hover,
 		&:focus {
 		text-decoration-line: underline;
-		text-decoration-color: $aquamarine;
+		text-decoration-color: $light-blue;
 		text-underline-offset: 5px;
 		}
 	}
@@ -41,7 +41,7 @@
 
 .active {
 	text-decoration-line: underline;
-	text-decoration-color: $aquamarine;
+	text-decoration-color: $light-blue;
 	text-underline-offset: 5px;
 	text-decoration-thickness: 2px;
 }

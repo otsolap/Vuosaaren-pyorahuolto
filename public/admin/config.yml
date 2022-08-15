@@ -163,13 +163,13 @@ collections:
            - { label: "Pöytäkoneen logo", name: "desktopLogoImage", widget: "image", required: false}
            - { label: "Logon täsmennys", name: "desktopLogoAlt", widget: "string", required: false}
            - { label: "Arvolupaus", name: "valueProposition", widget: "string", required: false}
-        - label: "Sosiaalinen Media"
-          name: "SocialMedia"
+        - label: "Yhteystiedot"
+          name: "Contact"
           hint: "Somekanavat näkyvät yhteydenotto-osiossa sekä sivun alatunnisteessa"
           widget: object
           fields:
-            -   label: "Sosiaalinen Media"
-                name: "socialMediaList"
+            -   label: "Yhteystiedot"
+                name: "contactList"
                 widget: list
                 collapsed: true
                 hint: "Täällä voit lisätä somesi, Klikkaa 'Add social icons'"

@@ -2,10 +2,9 @@ import React, { useEffect } from 'react'
 import { useRouter } from "next/router";
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
-import BenefitList from '@components/landingPage/BenefitList'
 import Script from 'next/script'
 
-const Index = ({ meta, hero, blocks, benefits, }) => {
+const Index = ({ meta, hero, blocks, benefits, contact }) => {
   const router = useRouter()
 
   useEffect(() => {
@@ -30,8 +29,6 @@ const Index = ({ meta, hero, blocks, benefits, }) => {
         <Hero
           hero={hero}
         />
-        <ImageAndText blocks={blocks} />
-        <BenefitList benefits={benefits} />
       </main>
     </>
   )
@@ -41,7 +38,6 @@ export default Index
 
 export async function getStaticProps() {
   const home = await import(`../content/home.json`)
-  const site = await import(`../content/site.json`)
 
   return {
     props: {
@@ -49,26 +45,13 @@ export async function getStaticProps() {
         title: home.meta.title,
         description: home.meta.description,
         url: home.meta.url,
-        image: home.meta.image
+        image: home.meta.image,
       },
       hero: {
-        HeroTitle: home.Hero.HeroTitle,
-        HeroSubtitle: home.Hero.HeroSubtitle,
         DesktopHeroImage: home.Hero.DesktopHeroImage,
         MobileHeroImage: home.Hero.MobileHeroImage,
-        CTA: home.Hero.CTA,
-        CTALink: home.Hero.CTALink,
+        ImageAltText: home.Hero.ImageAltText,
       },
-      blocks: {
-        blocks: home.TextImageSection.blocks
-      },
-      benefits: {
-        sectionTitle: home.BenefitsSection.SectionTitle,
-        benefits: home.BenefitsSection.benefits,
-      },
-      some: {
-        socialMediaList: site.SocialMedia.socialMediaList
-      }
     },
   }
 }

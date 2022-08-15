@@ -1,15 +1,15 @@
 {
   "Hero": {
-    "DesktopHeroImage": "/images/koli_hero_august_22.jpg",
+    "DesktopHeroImage": "",
     "ImageAltText": "",
-    "MobileHeroImage": "/images/koli_hero_august_22_mobile.jpg"
+    "MobileHeroImage": ""
   },
   "TextImageSection": {
     "blocks": [
       {
         "description": "Rahoitan suomalaisten pk-yritysten kehittämis- ja investointihankkeita. Tavoitteesi voi olla uusi liiketoiminta , kasvu, tai kansainvälistymisen edistäminen ja innovointi. Lähtökohtaisesti kaikenlaiset rahoitustarpeet ovat kiinnostavia ja kaikki käsitellään tapauskohtaisesti.",
         "title": "Missä hankkeissa pankki on mukana?",
-        "image": "/images/koliyritysrahoitus_600x500.jpg"
+        "image": ""
       }
     ]
   },
@@ -19,17 +19,17 @@
       {
         "title": "Rahoitus",
         "valueProposition": "Vastuullisesti ja ammattitaitoisesti löydän ratkaisun tarpeeseesi. Jokainen tarve käsitellään yksilöllisesti, paikallisesti ja riittävän nopeasti. Saat käyttöösi asiakkaanamme suoran numeroni ja palveluni.",
-        "image": "/images/Saastopankki.png"
+        "image": ""
       },
       {
         "title": "Maksuliikenne",
         "valueProposition": "Säästöpankkiryhmän maksuliikenne on toimivaa ja helppoa. Autan maksuliikenteen osalta niin paljon, kuin pystyn, minkä lisäksi käytössäsi on asiakkaanamme Säästöpankkipalveluiden keskitetty maksuliikennetuki. He ovat puhelimen päässä, tavoitettavissa 8-18 numerosta 0100 5454. Keskimääräinen vastausaika n. 20 sekuntia!",
-        "image": "/images/Saastopankki.png"
+        "image": ""
       },
       {
         "title": "Sijoittaminen ja Varainhoito",
         "valueProposition": "Sijoittamisen ja varainhoidon osalta ohjaan sinulle pankistamme osaavimman kumppanin ja olen tarvittaessa mukana aihealueen tapaamisissa.",
-        "image": "/images/Saastopankki.png"
+        "image": ""
       }
     ]
   },
@@ -37,6 +37,6 @@
     "title": "Juho Koli",
     "description": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. ",
     "url": "juhokoli.fi",
-    "image": "/images/koli_hero_august_22.jpg"
+    "image": ""
   }
 }

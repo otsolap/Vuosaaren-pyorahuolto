@@ -1,14 +1,14 @@
 {
   "Navigation": {
     "logo": "Juho Koli",
-    "mobileImageLogo": "/images/Saastopankki.png",
+    "mobileImageLogo": "/images/Pyorahuolto_Logo.png",
     "mobileImageAlt": "Someron säästöpankki yritysrahoitus",
     "homeTitle": "Etusivu",
     "aboutMeTitle": "Juho",
     "contactTitle": "Ota Yhteyttä"
   },
   "Contact": {
-    "ContactList": [
+    "contactList": [
       {
         "icon": "Email",
         "url": "juho.koli@saastopankki.fi"
@@ -27,8 +27,8 @@
     "valueProposition": "Toimin rahoituspäällikkönä Someron Säästöpankissa, joka on osa Säästöpankkiryhmää. Jokainen rahoitustarve käsitellään ja päätetään paikallisesti, eettisesti ja vastuullisesti."
   },
   "Header": {
-    "logo": "Juho Koli",
-    "mobileImageLogo": "/images/Saastopankki.png",
+    "logo": "Vuosaaren Pyörähuolto",
+    "mobileImageLogo": "/images/Pyorahuolto_Logo.png",
     "mobileImageAlt": "",
     "homeTitle": "",
     "themesTitle": "Vaaliteemat",
