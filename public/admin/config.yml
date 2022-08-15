@@ -1,0 +1,193 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: "public/images"
+public_folder: "/images"
+site_url: https://koli22.netlify.app/
+publish_mode: editorial_workflow
+# Uncomment local_backend when you need to develop in your local 
+# local_backend: true # run npx netlify-cms-proxy-server for local testing
+collections:
+  - name: "pages"
+    description: "Etusivun sekä Minusta-sivun asetukset."
+    label: "Sivut"
+    editor:
+     preview: false
+    files:
+    - label: "Etusivu"
+      name: "home"
+      file: "content/home.json"
+      preview_path: index
+      fields:
+        - label: "Herokuva"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
+          comment: "testi"
+          name: "Hero"
+          widget: object
+          fields:
+            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string", required: false}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
+            - { label: "Toimintakehotteen teksti", name: "CTA", widget: "string", required: false}
+            - { label: "Linkki", name: "CTALink", widget: "string", required: false}
+        - label: 'Kuva- ja teksti-osio'
+          name: "TextImageSection"
+          hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 600px leveä ja 500px korkea."
+          widget: object
+          fields:
+          - label: "Kuva ja teksti"
+            name: "themes"
+            widget: list
+            max: 1
+            fields:
+              - { label: "Otsikko", name: "title", widget: "string", required: false}
+              - { label: "Kuvaus", name: "description", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false}
+        - label: "Referenssit-osio"
+          name: "ReferenceSection"
+          hint: "Suositeltu koko referenssikuville on 160 x 160 pikseliä."
+          widget: object
+          fields:
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
+          - label: "Referenssit"
+            name: "referees"
+            widget: list
+            fields:
+              - { label: "Referoija", name: "referee", widget: "string", required: false}
+              - { label: "Referoijan nimike", name: "refereeTitle", widget: "string", required: false}
+              - { label: "Referenssi", name: "reference", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false }
+        - label: "Hyödyt-osio"
+          name: "BenefitsSection"
+          widget: object
+          fields:
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
+          - label: "Hyödyt"
+            name: "benefits"
+            hint: "Kuvan suositeltu koko on 230 x 230 pikseliä."
+            widget: list
+            max: 3
+            fields:
+              - { label: "Otsikko", name: "title", widget: "string", required: false}
+              - { label: "Arvolupaus", name: "valueProposition", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false }
+        - label: "Usein kysytyt kysymykset"
+          name: "FAQSection"
+          widget: object
+          fields:
+            - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false }  
+            - label: "Kysymykset"
+              name: "faqs"
+              widget: list
+              fields:
+                - { label: "Kysymys", name: "question", widget: "string", required: false}
+                - { label: "Vastaus", name: "answer", widget: "text", required: false}
+                - { label: "Vastaus auki?", name: "open", default: false, widget: "boolean", required: false }
+        - label: "Sivuston metatiedot"
+          name: "meta"
+          hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
+          widget: object
+          fields:
+          - { label: "Sivun otsikko", name: "title", widget: "string", required: false}
+          - { label: "Sivun kuvaus", name: "description", widget: "string", required: false}
+          - { label: "Sivun linkki", name: "url", widget: "string", required: false}
+          - { label: "Sivun kuva", name: "image", widget: "image", required: false}
+    - label: "Koli"
+      name: "aboutMe"
+      file: "content/aboutMe.json"
+      preview_path: juho
+      fields:
+        - label: "Herokuva"
+          name: "Hero"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000."
+          widget: object
+          fields:
+            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
+            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string", required: false}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
+        - label: 'Kuva- ja teksti-osio'
+          name: "TextImageSection"
+          hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 600px leveä ja 500px korkea."
+          widget: object
+          fields:
+          - label: "Kuva ja teksti"
+            name: "themes"
+            widget: list
+            fields:
+              - { label: "Otsikko", name: "title", widget: "string", required: false}
+              - { label: "Kuvaus", name: "description", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false }
+        - label: "Sivuston metatiedot"
+          name: "meta"
+          hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
+          widget: object
+          fields:
+          - { label: "Sivun otsikko", name: "title", widget: "string", required: false}
+          - { label: "Sivun kuvaus", name: "description", widget: "string", required: false}
+          - { label: "Sivun linkki", name: "url", widget: "string", required: false}
+          - { label: "Sivun kuva", name: "image", widget: "image", required: false}
+  - name: "general"
+    description: "Sivun yleiset asetukset kuten Ylä- ja alatunniste, sosiaalinen media sekä lomake."
+    label: "Sivun asetukset"
+    editor:
+     preview: false
+    files:
+    - label: "Ylä- ja alatunniste, some."
+      name: "site"
+      file: "content/site.json"
+      fields:
+        - label: "Navigaatio - Ylätunniste sekä Mobiilin navigaatio"
+          name: "Navigation"
+          hint: "Täällä voit ladata Logon joka näkyy sivun ylätunnisteessa sekä nimetä sivujen otsikot."
+          widget: object
+          fields:
+           - { label: "Logo", name: "logo", widget: "string", required: false}
+           - { label: "Mobiililogo", name: "mobileImageLogo", widget: "image", required: false}
+           - { label: "Mobiililogon täsmennys", name: "mobileImageAlt", widget: "string", required: false}
+           - { label: "Etusivu linkin otsikko", name: "homeTitle", widget: "string", required: false}
+           - { label: "Minusta-sivun linkin otsikko", name: "aboutMeTitle", widget: "string", required: false}
+           - { label: "Yhteydenotto linkin otsikko", name: "contactTitle", widget: "string", required: false}
+        - label: "Yhteydenotto"
+          name: "ContactSection"
+          widget: object
+          fields: 
+            - { label: "Otsikko", name: "SectionTitle", widget: "string", required: false}
+            - { label: "Kuvaus", name: "SectionDescription", widget: "text", required: false}
+            - { label: "Kiitosviesti lomakkeen lähetyksestä", name: "SuccessMessage", widget: "string", required: false}
+        - label: "Alapalkki"
+          name: "Footer"
+          widget: object
+          fields:
+           - { label: "Pöytäkoneen logo", name: "desktopLogoImage", widget: "image", required: false}
+           - { label: "Logon täsmennys", name: "desktopLogoAlt", widget: "string", required: false}
+           - { label: "Arvolupaus", name: "valueProposition", widget: "string", required: false}
+        - label: "Sosiaalinen Media"
+          name: "SocialMedia"
+          hint: "Somekanavat näkyvät yhteydenotto-osiossa sekä sivun alatunnisteessa"
+          widget: object
+          fields:
+            -   label: "Sosiaalinen Media"
+                name: "socialMediaList"
+                widget: list
+                collapsed: true
+                hint: "Täällä voit lisätä somesi, Klikkaa 'Add social icons'"
+                fields:
+                  - label: "Icons"
+                    name: "icon"
+                    widget: "select"
+                    options:
+                      [
+                        "Twitter",
+                        "LinkedIn",
+                        "Instagram",
+                        "Email",
+                        "Phone",
+                      ]
+                    hint: "Valitse ikoni"
+                  - widget: string
+                    name: url
+                    label: url
+                    required: true
+                    hint: "Laita tähän URL:I SoMe kanavaasi"

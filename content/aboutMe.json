@@ -1,0 +1,22 @@
+{
+  "Hero": {
+    "HeroTitle": "Juho Koli",
+    "HeroSubtitle": "",
+    "DesktopHeroImage": "/images/Koli_Hero.png",
+    "MobileHeroImage": "/images/Koli_Hero.png"
+  },
+  "TextImageSection": {
+    "themes": [
+      {
+        "description": "Olen 46-vuotias pankkiammattilainen, jolla on myös vahva myyntikokemus. Olen koulutukseltani liiketoiminnan kehittämiseen erikoistunut tradenomi.\n\nHarrastan maanpuolustusta, sotilasarvoltani olen kapteeniluutnantti. Kaikki liikunta on mukavaa, mutta sydäntä lähimpänä crossfit ja hölkkä.\n\nMinulla on kaksi tytärtä ja olen onnellisesti naimisissa.",
+        "image": "/images/koli_katse_tulevaan.jpg"
+      }
+    ]
+  },
+  "meta": {
+    "title": "Juho Koli",
+    "description": "Olen 46-vuotias pankkiammattilainen, jolla on myös vahva myyntikokemus. Olen koulutukseltani liiketoiminnan kehittämiseen erikoistunut tradenomi.",
+    "url": "https://juhokoli.fi/koli",
+    "image": "/images/Vaaliteemat_Hero.png"
+  }
+}

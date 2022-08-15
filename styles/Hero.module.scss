@@ -1,0 +1,135 @@
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/breakpoints";
+
+$hero-max-width: 2000px;
+$hero-max-height-ratio: 35; // Min-width related to viewport width
+
+#hero {
+	position: relative;
+	max-width: $hero-max-width;
+	margin: auto;
+	min-height: $hero-max-height-ratio * 1vw;
+
+	@media (min-width: $hero-max-width) {
+		min-height: calc(($hero-max-width / 100) * $hero-max-height-ratio);
+	}
+}
+
+.textWrapper {
+	height: 100%;
+	width: 100%;
+	@include display-flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+
+.contentContainer,
+.contentAltContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.contentContainer {
+	position: relative;
+}
+
+.contentAltContainer {
+	position: absolute;
+    inset: 0;
+	min-height: $hero-max-height-ratio * 1vw;
+
+	@media (min-width: $hero-max-width) {
+		min-height: calc(($hero-max-width / 100) * $hero-max-height-ratio);
+	}
+}
+
+
+.content,
+.contentAlt {
+	padding: $single;
+	color: $white;
+
+	h1 {
+		font-weight: 700;
+	}
+
+	h3 {
+		font-size: $single;
+		line-height: 1.5rem;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+		font-weight: 500;
+	}
+	
+}
+
+.content {
+	background-color: $primary;
+}
+
+.contentAlt {
+	background-color: transparent;
+
+	h1 {
+		font-size: 2.5rem;
+	}
+}
+
+.heroBTN {
+	@include border(1px solid);
+	border-color: $white;
+	width: 80%;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: $container-desktop) {
+
+	.contentContainer,
+	.contentAltContainer {
+		margin: 0 auto;
+		max-width: $container-desktop;
+		padding-top: $triple;
+		padding-bottom: $triple;
+	}
+
+	.contentAltContainer {
+		position: relative;
+		inset: initial;
+	}
+
+	.content,
+	.contentAlt {
+		max-width: 28rem;
+
+		h1 {
+			padding-bottom: $double;
+			font-size: 2.25rem;
+			line-height: 2.5rem;
+		}
+	
+		h3 {
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
+	}
+
+	.content {
+		h1 {
+			font-size: 2.25rem;
+		}
+	}
+
+	.contentAlt {
+		h1 {
+			font-size: 5rem;
+		}
+	}
+
+}
+

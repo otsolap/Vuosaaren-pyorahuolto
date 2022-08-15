@@ -1,0 +1,63 @@
+{
+  "Navigation": {
+    "logo": "Juho Koli",
+    "mobileImageLogo": "/images/Saastopankki.png",
+    "mobileImageAlt": "Someron säästöpankki yritysrahoitus",
+    "homeTitle": "Etusivu",
+    "aboutMeTitle": "Juho",
+    "contactTitle": "Ota Yhteyttä"
+  },
+  "ContactSection": {
+    "SectionTitle": "Otsikko",
+    "SectionDescription": "Ole yhteydessä, niin sovitaan tapaaminen joko fyysisesti, tai verkossa. Asiakkuutesi on minulle tärkeä ja teen työtäni palvellakseni ja auttaakseni yrityksesi kasvua!",
+    "CTA": "Lähetä",
+    "SuccessMessage": "Kiitos lomakkeen lähetyksestä! Otan sinuun yhteyttä viimeistään 2 vrk sisällä."
+  },
+  "SocialMedia": {
+    "socialMediaList": [
+      {
+        "icon": "Email",
+        "url": "juho.koli@saastopankki.fi"
+      },
+      {
+        "icon": "Phone",
+        "url": "0505998943"
+      },
+      {
+        "icon": "Instagram",
+        "url": "https://www.instagram.com/jukoli/",
+        "description": "/jukoli"
+      },
+      {
+        "icon": "Twitter",
+        "url": "https://twitter.com/juho_koli",
+        "description": "/juho_koli"
+      },
+      {
+        "icon": "LinkedIn",
+        "url": "https://www.linkedin.com/in/juhokoli/",
+        "description": "/juhokoli"
+      }
+    ]
+  },
+  "Footer": {
+    "desktopLogoImage": "/images/Saastopankki.png",
+    "desktopLogoAlt": "",
+    "Owner": "Juho Koli",
+    "privacyPolicy": "Tietosuojaseloste",
+    "valueProposition": "Toimin rahoituspäällikkönä Someron Säästöpankissa, joka on osa Säästöpankkiryhmää. Jokainen rahoitustarve käsitellään ja päätetään paikallisesti, eettisesti ja vastuullisesti."
+  },
+  "Google": {
+    "GA": "",
+    "GTM": "GTM-TBFDWT8"
+  },
+  "Header": {
+    "logo": "Juho Koli",
+    "mobileImageLogo": "/images/Saastopankki.png",
+    "mobileImageAlt": "",
+    "homeTitle": "",
+    "themesTitle": "Vaaliteemat",
+    "aboutMeTitle": "",
+    "contactTitle": "Ota Yhteyttä"
+  }
+}

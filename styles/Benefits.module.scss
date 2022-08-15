@@ -1,0 +1,54 @@
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/breakpoints";
+
+#benefitsSection {
+    padding-top: $single;
+    padding-bottom: $single;
+}
+
+.benefits {
+    @include display-flex;
+    @include flex-direction(column);
+    flex-wrap: wrap;
+    padding-top: $single;
+    padding-bottom: $single;
+}
+
+.benefitItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.contentContainer {
+    text-align: center;
+    padding: $single;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: $container-desktop) {
+
+    .benefits {
+        padding-top: $double;
+        padding-bottom: $double;
+        @include flex-direction(row);
+    }
+
+    .benefitItem {
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+
+    .imageContainer {
+        width: 230px;
+        height: 230px;
+    }
+}

@@ -1,0 +1,107 @@
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/breakpoints";
+
+
+#referenceSection {
+    padding-top: $single;
+    padding-bottom: $single;
+}
+
+.imageContainer {
+    width: 10rem /* 160px */;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.referenceItem:nth-child(even) {
+    @include flex-direction(row-reverse);
+}
+
+.referenceBuble {
+    position: relative; 
+    text-align: left;
+    background-color: $white;
+    @include border-radius(.75rem);
+    @include display-flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: $single;
+    padding: $single;
+    @include flex-direction(column);
+
+    &::before {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        bottom: 100%;
+        @include border(8px solid);
+    }
+}
+
+
+.referenceBuble.even::before,
+.referenceBuble.odd::before {
+    content: "";
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: $white;
+}
+
+.referee {
+    font-weight: 700;
+    padding-top: $double;
+}
+
+.referee,
+.referenceQuote,
+.refereeWorkTitle {
+    text-align: left;
+    width: 100%;
+}
+
+.refereeWorkTitle {
+    padding-top: .25rem;
+}
+
+
+/* DESKTOP STYLES */
+@media (min-width: $container-desktop) {
+
+    .references {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .referenceItem {
+        padding-top: $double;
+        padding-bottom: $double;
+        @include display-flex;
+    }
+
+    .referenceBuble {
+        width: 50%;
+    }
+
+    .referenceBuble:before {
+        bottom: 50%;
+    }
+
+    .referenceBuble.even::before {
+        left: -1rem;
+        border-left-color: transparent;
+        border-right-color: $white;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    .referenceBuble.odd::before {
+        right: -1rem;
+        border-left-color: $white;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+    
+}

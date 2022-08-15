@@ -1,0 +1,180 @@
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/breakpoints";
+
+#Footer {
+    padding-bottom: 5rem;
+    background-color: $primary;
+    color: $white;
+}
+
+.footerSoMEContainer {
+    padding-top: $double;
+    padding-bottom: $single;
+    @include display-flex;
+    justify-content: space-evenly;
+    margin-left: $single;
+    margin-right: $single;
+}
+
+.footerPropsitionContainer {
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.someIcons {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.footerSubContainer {
+    @include display-flex;
+    justify-content: center;
+}
+
+.subDesktopContainer {
+    display: inline-flex;
+    width: fit-content;
+}
+
+
+.detailsTxt {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    
+
+    &::after {
+        content:'|';
+        margin-left: .25rem;
+    }
+}
+
+.footerKultakammen {
+    margin-left: .5rem;
+    margin-top: -0.5rem;
+}
+
+
+.MobileFooterBar {
+    background-color: $primary;
+    border-top: $white 1px solid;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 4.5rem;
+    width: 100%;
+    z-index: 50;
+    text-align: center;
+}
+
+.mobileMenuWrapper {
+    @include display-flex;
+    @include flex-direction(row);
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+        color: $white;
+        position: relative;
+        width: 5rem;
+        height: 4rem;
+        text-align: center;
+        z-index: 10;
+        cursor: pointer;
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+}
+
+.mobileIcon {
+    margin-top: 0.75rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.mobileLinkText {
+    @include display-flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    width: 100%;
+    font-size: 0.75rem;
+    line-height: 1.625;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: $container-desktop) {
+
+    #Footer {
+        padding-bottom: 0;
+    }
+
+    .footerSoMEContainer {
+        align-items: center;
+        margin-left: initial;
+        margin-right: initial;
+        justify-content: initial;
+    }
+
+    .someIcons {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        padding-left: $single;
+        padding-right: $single;
+    }
+
+    .footerPropsitionContainer {
+        @include display-flex;
+        @include flex-direction(column);
+        justify-content: center;
+        align-content: center;
+        margin-left: initial;
+        margin-right: initial;
+    }
+
+    .footerSubContainer {
+        width: 100%;
+        justify-content: flex-start;
+        border-top-width: 2px;
+        border-color: $white;
+    }
+
+
+    .subDesktopContainer {
+        @include display-flex;
+        justify-content: center;
+        max-width: $container-desktop;
+        width: 100%;
+    }
+    
+    .footerPrimaryContainer {
+        @include display-flex;
+        @include flex-direction(row);
+        flex-wrap: wrap;
+
+        div {
+            flex: 0 0 calc(100% / 3);
+            max-width: calc(100% / 3);
+        }
+    }
+    
+    .footerDesktopLogoContainer {
+        padding: $double;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .detailsTxt:first-child{
+        padding-left: 1rem;
+        margin-left: 1rem;
+    }
+
+    .detailsTxt:nth-child(2) {
+        &::after {
+            content:'';
+            margin-left: initial;
+        }
+    }
+}
