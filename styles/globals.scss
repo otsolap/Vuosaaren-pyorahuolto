@@ -13,17 +13,17 @@ body,
 #root {
 	height: auto;
 	width: 100%;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color:$black;
 	scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 a, p, input, span, button, strong, small {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -88,10 +88,6 @@ a {
     line-height: 2rem;
 }
 
-.alt-bg {
-	background-color: $grey;
-}
-
 .mobile-only {
 	display: block;
 }
@@ -100,13 +96,6 @@ a {
 	display: none;
 }
 
-
-
-.ContactContainer {
-	@include display-flex;
-    @include flex-direction(column);
-    justify-content: center;
-}
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {

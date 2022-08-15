@@ -93,10 +93,10 @@ collections:
           - { label: "Sivun kuvaus", name: "description", widget: "string", required: false}
           - { label: "Sivun linkki", name: "url", widget: "string", required: false}
           - { label: "Sivun kuva", name: "image", widget: "image", required: false}
-    - label: "Koli"
-      name: "aboutMe"
-      file: "content/aboutMe.json"
-      preview_path: juho
+    - label: "Pyörät"
+      name: "sales"
+      file: "content/sales.json"
+      preview_path: pyorat
       fields:
         - label: "Herokuva"
           name: "Hero"
@@ -134,7 +134,7 @@ collections:
     editor:
      preview: false
     files:
-    - label: "Ylä- ja alatunniste, some."
+    - label: "Ylä- ja alatunniste, yhteystiedot."
       name: "site"
       file: "content/site.json"
       fields:
