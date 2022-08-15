@@ -2,15 +2,10 @@ import React, { useEffect } from 'react'
 import { useRouter } from "next/router";
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
-import ThemeBlock from "@components/ThemeBlock"
-import ReferenceList from '@components/landingPage/ReferenceList'
 import BenefitList from '@components/landingPage/BenefitList'
-import Faq from "@components/landingPage/Faq"
-import ContactDetails from "@components/ContactDetails"
-import ContactForm from "@components/ContactForm"
 import Script from 'next/script'
 
-const Index = ({ meta, hero, themes, benefits, references, faq, contact, some }) => {
+const Index = ({ meta, hero, blocks, benefits, }) => {
   const router = useRouter()
 
   useEffect(() => {
@@ -35,14 +30,8 @@ const Index = ({ meta, hero, themes, benefits, references, faq, contact, some })
         <Hero
           hero={hero}
         />
-        <ThemeBlock themes={themes} />
+        <ImageAndText blocks={blocks} />
         <BenefitList benefits={benefits} />
-        <ReferenceList references={references} />
-        <Faq faq={faq} />
-        <div className="container ContactContainer">
-          <ContactDetails contact={contact} some={some} />
-          <ContactForm contact={contact} />
-        </div>
       </main>
     </>
   )
@@ -70,26 +59,12 @@ export async function getStaticProps() {
         CTA: home.Hero.CTA,
         CTALink: home.Hero.CTALink,
       },
-      themes: {
-        themes: home.TextImageSection.themes
+      blocks: {
+        blocks: home.TextImageSection.blocks
       },
       benefits: {
         sectionTitle: home.BenefitsSection.SectionTitle,
         benefits: home.BenefitsSection.benefits,
-      },
-      references: {
-        sectionTitle: home.ReferenceSection.SectionTitle,
-        referees: home.ReferenceSection.referees,
-      },
-      faq: {
-        sectionTitle: home.FAQSection.SectionTitle,
-        faqs: home.FAQSection.faqs
-      },
-      contact: {
-        SectionTitle: site.ContactSection.SectionTitle,
-        SectionDescription: site.ContactSection.SectionDescription,
-        CTA: site.ContactSection.CTA,
-        SuccessMessage: site.ContactSection.SuccessMessage
       },
       some: {
         socialMediaList: site.SocialMedia.socialMediaList

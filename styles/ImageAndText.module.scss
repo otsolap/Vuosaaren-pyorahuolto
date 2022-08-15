@@ -31,15 +31,10 @@
 *
 **********/
 
-.themeBlockSection {
+.ImageTextBlockSection {
     padding-top: $single;
     padding-bottom: $single;
 }
-
-.themeBlockSection.odd {
-    background-color: $grey;
-}
-
 
 .blockContent h2 {
     color: $black;

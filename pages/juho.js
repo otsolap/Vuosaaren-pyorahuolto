@@ -1,6 +1,6 @@
 import Meta from "@components/Meta"
 import Hero from "@components/Hero"
-import ThemeBlock from "@components/ThemeBlock"
+import ThemeBlock from "@components/ImageAndText"
 
 const aboutMe = ({ meta, hero, themes, contact }) => {
     return (

@@ -1,37 +1,37 @@
 import Image from 'next/image'
-import styles from '../styles/Themes.module.scss'
+import styles from '../styles/ImageAndText.module.scss'
 
-const ThemeBlock = ({ themes }) => {
+const ImageAndText = ({ blocks }) => {
     return (
         <>
-            {themes.themes.map((theme, i) => {
+            {blocks.blocks.map((block, i) => {
                 return (
                     <section
                         key={i}
-                        id={theme.title}
-                        className={`${styles.themeBlockSection} ${i % 2 === 0 ? `` : `${styles.odd}`}`}
+                        id={block.title}
+                        className={styles.ImageTextBlockSection}
                     >
                         <div className="container">
-                            <h2 className="mobile-only">{theme.title}</h2>
+                            <h2 className="mobile-only">{block.title}</h2>
                             <div className={styles.blockContent}>
-                                {theme.image && (
-                                    <div className={styles.themeBlockImageContainer}>
+                                {block.image && (
+                                    <div className={styles.blockBlockImageContainer}>
                                         <Image
-                                            src={theme.image}
-                                            alt={theme.title}
+                                            src={block.image}
+                                            alt={block.title}
                                             width={600}
                                             height={500}
                                             layout='responsive'
                                             objectFit='contain'
                                             objectPosition='center'
                                             quality={100}
-                                            className={styles.themeBlockImage}
+                                            className={styles.blockBlockImage}
                                         />
                                     </div>
                                 )}
-                                <div className={styles.themeDescriptionContainer}>
-                                    <h2 className="desktop-only">{theme.title}</h2>
-                                    <p>{theme.description}</p>
+                                <div className={styles.blockDescriptionContainer}>
+                                    <h2 className="desktop-only">{block.title}</h2>
+                                    <p>{block.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -42,4 +42,4 @@ const ThemeBlock = ({ themes }) => {
     )
 }
 
-export default ThemeBlock
+export default ImageAndText

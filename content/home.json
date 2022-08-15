@@ -1,29 +1,15 @@
 {
   "Hero": {
     "DesktopHeroImage": "/images/koli_hero_august_22.jpg",
-    "CTALink": "yhteydenotto",
-    "CTA": "Haluan ottaa yhteyttä!",
-    "HeroSubtitle": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen avulla. Työskentelen Someron Säästöpankissa, joten teen työtäni vahvoin arvoin, eettisyys ja vastuullisuus huomioiden.",
-    "HeroTitle": "",
+    "ImageAltText": "",
     "MobileHeroImage": "/images/koli_hero_august_22_mobile.jpg"
   },
   "TextImageSection": {
-    "themes": [
+    "blocks": [
       {
         "description": "Rahoitan suomalaisten pk-yritysten kehittämis- ja investointihankkeita. Tavoitteesi voi olla uusi liiketoiminta , kasvu, tai kansainvälistymisen edistäminen ja innovointi. Lähtökohtaisesti kaikenlaiset rahoitustarpeet ovat kiinnostavia ja kaikki käsitellään tapauskohtaisesti.",
         "title": "Missä hankkeissa pankki on mukana?",
         "image": "/images/koliyritysrahoitus_600x500.jpg"
-      }
-    ]
-  },
-  "ReferenceSection": {
-    "SectionTitle": "Referenssejä",
-    "referees": [
-      {
-        "referee": "Otso Lappalainen",
-        "refereeTitle": "Web-devaaja",
-        "reference": "Koli on nopea, asiallinen ja osaava",
-        "image": "/images/Otso.png"
       }
     ]
   },
@@ -44,21 +30,6 @@
         "title": "Sijoittaminen ja Varainhoito",
         "valueProposition": "Sijoittamisen ja varainhoidon osalta ohjaan sinulle pankistamme osaavimman kumppanin ja olen tarvittaessa mukana aihealueen tapaamisissa.",
         "image": "/images/Saastopankki.png"
-      }
-    ]
-  },
-  "FAQSection": {
-    "SectionTitle": "Usein kysyttyjä kysymyksiä",
-    "faqs": [
-      {
-        "open": true,
-        "question": "Paljonko pitää olla omaa pääomaa aloittaakseen?",
-        "answer": "Jokainen tapaus käsitellään tapauskohtaisesti. Ota yhteyttä, keskustellaan, tavataan ja mietitään yrityksellesi sopivin ratkaisu!"
-      },
-      {
-        "open": false,
-        "question": "Testikysymys",
-        "answer": "lorem lipsum"
       }
     ]
   },
