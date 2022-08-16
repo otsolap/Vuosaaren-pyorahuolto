@@ -1,6 +1,6 @@
 {
   "Navigation": {
-    "logo": "Juho Koli",
+    "logo": "Vuosaaren Pyörähuolto",
     "mobileImageLogo": "/images/Pyorahuolto_Logo.png",
     "mobileImageAlt": "Someron säästöpankki yritysrahoitus",
     "homeTitle": "Etusivu",
@@ -20,9 +20,9 @@
     ]
   },
   "Footer": {
-    "desktopLogoImage": "/images/Saastopankki.png",
+    "desktopLogoImage": "/images/Pyorahuolto_Logo.png",
     "desktopLogoAlt": "",
-    "Owner": "Juho Koli",
+    "Owner": "Vuosaaren Pyörähuolto",
     "privacyPolicy": "Tietosuojaseloste",
     "valueProposition": "Toimin rahoituspäällikkönä Someron Säästöpankissa, joka on osa Säästöpankkiryhmää. Jokainen rahoitustarve käsitellään ja päätetään paikallisesti, eettisesti ja vastuullisesti."
   },
