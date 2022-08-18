@@ -1,21 +1,18 @@
 {
   "Navigation": {
-    "logo": "Vuosaaren Pyörähuolto",
-    "mobileImageLogo": "/images/Pyorahuolto_Logo.png",
-    "mobileImageAlt": "Someron säästöpankki yritysrahoitus",
-    "homeTitle": "Etusivu",
-    "aboutMeTitle": "Juho",
-    "contactTitle": "Ota Yhteyttä"
+    "titleLogo": "Vuosaaren Pyörähuolto",
+    "imageLogo": "/images/Pyorahuolto_Logo.png",
+    "imageAlt": "Someron säästöpankki yritysrahoitus"
   },
   "Contact": {
     "contactList": [
       {
         "icon": "Email",
-        "url": "juho.koli@saastopankki.fi"
+        "url": "sakke@vuosaarenpyorahuolto.fi"
       },
       {
         "icon": "Phone",
-        "url": "0505998943"
+        "url": "09 - 321 5074"
       }
     ]
   },
@@ -27,12 +24,8 @@
     "valueProposition": "Toimin rahoituspäällikkönä Someron Säästöpankissa, joka on osa Säästöpankkiryhmää. Jokainen rahoitustarve käsitellään ja päätetään paikallisesti, eettisesti ja vastuullisesti."
   },
   "Header": {
-    "logo": "Vuosaaren Pyörähuolto",
-    "mobileImageLogo": "/images/Pyorahuolto_Logo.png",
-    "mobileImageAlt": "",
-    "homeTitle": "",
-    "themesTitle": "Vaaliteemat",
-    "aboutMeTitle": "",
-    "contactTitle": "Ota Yhteyttä"
+    "titleLogo": "Vuosaaren Pyörähuolto",
+    "imageLogo": "/images/Pyorahuolto_Logo.png",
+    "imageAlt": "Vuosaaren Pyörähuolto"
   }
 }

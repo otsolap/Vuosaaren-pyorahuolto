@@ -37,7 +37,7 @@ collections:
           widget: object
           fields:
           - label: "Kuva ja teksti"
-            name: "themes"
+            name: "blocks"
             widget: list
             max: 1
             fields:
@@ -113,7 +113,7 @@ collections:
           widget: object
           fields:
           - label: "Kuva ja teksti"
-            name: "themes"
+            name: "blocks"
             widget: list
             fields:
               - { label: "Otsikko", name: "title", widget: "string", required: false}

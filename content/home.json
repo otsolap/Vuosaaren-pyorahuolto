@@ -4,39 +4,10 @@
     "ImageAltText": "",
     "MobileHeroImage": ""
   },
-  "TextImageSection": {
-    "blocks": [
-      {
-        "description": "Rahoitan suomalaisten pk-yritysten kehittämis- ja investointihankkeita. Tavoitteesi voi olla uusi liiketoiminta , kasvu, tai kansainvälistymisen edistäminen ja innovointi. Lähtökohtaisesti kaikenlaiset rahoitustarpeet ovat kiinnostavia ja kaikki käsitellään tapauskohtaisesti.",
-        "title": "Missä hankkeissa pankki on mukana?",
-        "image": ""
-      }
-    ]
-  },
-  "BenefitsSection": {
-    "SectionTitle": "Miten autan sinua tavoittamaan unelmasi",
-    "benefits": [
-      {
-        "title": "Rahoitus",
-        "valueProposition": "Vastuullisesti ja ammattitaitoisesti löydän ratkaisun tarpeeseesi. Jokainen tarve käsitellään yksilöllisesti, paikallisesti ja riittävän nopeasti. Saat käyttöösi asiakkaanamme suoran numeroni ja palveluni.",
-        "image": ""
-      },
-      {
-        "title": "Maksuliikenne",
-        "valueProposition": "Säästöpankkiryhmän maksuliikenne on toimivaa ja helppoa. Autan maksuliikenteen osalta niin paljon, kuin pystyn, minkä lisäksi käytössäsi on asiakkaanamme Säästöpankkipalveluiden keskitetty maksuliikennetuki. He ovat puhelimen päässä, tavoitettavissa 8-18 numerosta 0100 5454. Keskimääräinen vastausaika n. 20 sekuntia!",
-        "image": ""
-      },
-      {
-        "title": "Sijoittaminen ja Varainhoito",
-        "valueProposition": "Sijoittamisen ja varainhoidon osalta ohjaan sinulle pankistamme osaavimman kumppanin ja olen tarvittaessa mukana aihealueen tapaamisissa.",
-        "image": ""
-      }
-    ]
-  },
   "meta": {
-    "title": "Juho Koli",
-    "description": "Haluan auttaa yrityksesi liiketoiminnan kasvua, toiminnan kehitystä ja kannattavia investointeja yritysrahoituksen keinoin. ",
-    "url": "juhokoli.fi",
+    "title": "Vuosaaren Pyörähuolto",
+    "description": "Olemme polkupyörien korjaukseen ja myyntiin erikoistunut liike Vuosaaressa jo vuodesta 1965. Meiltä saat pyörien lisäksi pyöräilyyn liittyvät tarvikkeet sekä varaosat.",
+    "url": "vuosaarenpyorahuolto.fi",
     "image": ""
   }
 }
