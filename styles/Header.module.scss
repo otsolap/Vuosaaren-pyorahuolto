@@ -2,10 +2,8 @@
 @import "partials/variables";
 @import "partials/breakpoints";
 
-
 .header {
 	background-color: $primary;
-	color: $white;
 	@include display-flex;
 	min-height: 80px;
 	align-items: center;
@@ -13,49 +11,23 @@
 	position: sticky;
 	top: 0;
 	z-index: 200; 
-	
-	a:not(.noDecoration) {
-		padding-left: 0.375rem;
-		padding-right: 0.375rem;
-		margin-left: 0.375rem;
-		margin-right: 0.375rem;
-		text-decoration-thickness: 30%;
-
-		&:hover,
-		&:focus {
-		text-decoration-line: underline;
-		text-decoration-color: $light-blue;
-		text-underline-offset: 5px;
-		}
-	}
 }
 
-.titleLogo {
-	font-size: $double;
+.logo {
+	font-size: 24px;
 	line-height: 3rem;
-}
-
-.noDecoration {
-	margin-left: $single;
-}
-
-.active {
-	color: $yellow;
-	text-decoration-line: underline;
-	text-underline-offset: 5px;
-	text-decoration-thickness: 2px;
 }
 
 .logoContainer {
 	@include display-flex;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
 }
 
 .logoImage {
 	height: 50px;
 	width: 60px;
-	margin-right: $double;
+	margin-right: $single;
 }
 
 /* DESKTOP STYLES */
@@ -65,18 +37,11 @@
 		max-height: 999px;
 		padding-top: $single;
 		padding-bottom: $single;
-		justify-content: space-evenly;
-	}
-
-	.navContainer {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
+		justify-content: center;
 	}
 
 	.logo {
-		font-size: 2.25rem;
+		font-size: $double;
         line-height: 2.5rem;
 		padding-left: 1.5rem;
 		text-align: start;
@@ -86,17 +51,11 @@
 		display: flex;
 		width: 100%;
 	}
-
-	.desktopLinks {
-		width: 100%;
-	}
 }
 
 /* Yuge Desktop Screens */
 @media (min-width: 1536px) {
-
 	.logo {
 		text-align: center;
 	}
-	
 }

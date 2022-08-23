@@ -4,7 +4,7 @@ import Meta from '@components/Meta'
 import Hero from '@components/Hero'
 import Script from 'next/script'
 
-const Index = ({ meta, hero, blocks, benefits, contact }) => {
+const Index = ({ meta, hero, markdown }) => {
   const router = useRouter()
 
   useEffect(() => {
@@ -29,6 +29,9 @@ const Index = ({ meta, hero, blocks, benefits, contact }) => {
         <Hero
           hero={hero}
         />
+        <div>
+          {markdown.body}
+        </div>
       </main>
     </>
   )
@@ -51,7 +54,11 @@ export async function getStaticProps() {
         DesktopHeroImage: home.Hero.DesktopHeroImage,
         MobileHeroImage: home.Hero.MobileHeroImage,
         ImageAltText: home.Hero.ImageAltText,
+        HeroTitle: home.Hero.HeroTitle,
       },
+      markdown: {
+        body: home.Markdown.body,
+      }
     },
   }
 }

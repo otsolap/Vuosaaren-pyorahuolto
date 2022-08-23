@@ -11,10 +11,6 @@ const Header = () => {
             <header className={styles.header}>
                 <div className={`container ${styles.navContainer}`}>
                     <div className={styles.logoContainer}>
-                        <Link href="/"><a className={styles.noDecoration}>
-                            <h1 className={styles.logo}>{Navigation.titleLogo}</h1>
-                        </a>
-                        </Link>
                         {Navigation.imageLogo && (
                             <div className={styles.logoImage}>
                                 <Image
@@ -28,6 +24,10 @@ const Header = () => {
                                 />
                             </div>
                         )}
+                        <Link href="/"><a className={styles.noDecoration}>
+                            <h1 className={styles.logo}>{Navigation.titleLogo}</h1>
+                        </a>
+                        </Link>
                     </div>
                 </div>
             </header>

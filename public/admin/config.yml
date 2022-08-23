@@ -3,13 +3,13 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: "public/images"
 public_folder: "/images"
-site_url: https://koli22.netlify.app/
-publish_mode: editorial_workflow
+# site_url: https://vuosaarenpyorahuolto.fi/
+# publish_mode: editorial_workflow
 # Uncomment local_backend when you need to develop in your local 
-# local_backend: true # run npx netlify-cms-proxy-server for local testing
+local_backend: true # run npx netlify-cms-proxy-server for local testing
 collections:
   - name: "pages"
-    description: "Etusivun sekä Minusta-sivun asetukset."
+    description: "Sivujen asetukset."
     label: "Sivut"
     editor:
      preview: false
@@ -21,69 +21,17 @@ collections:
       fields:
         - label: "Herokuva"
           hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
-          comment: "testi"
           name: "Hero"
           widget: object
           fields:
             - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
-            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string", required: false}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
-            - { label: "Toimintakehotteen teksti", name: "CTA", widget: "string", required: false}
-            - { label: "Linkki", name: "CTALink", widget: "string", required: false}
-        - label: 'Kuva- ja teksti-osio'
-          name: "TextImageSection"
-          hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 600px leveä ja 500px korkea."
+        - label: "Etusivun tekstisisältö"
+          name: "Markdown"
           widget: object
-          fields:
-          - label: "Kuva ja teksti"
-            name: "blocks"
-            widget: list
-            max: 1
-            fields:
-              - { label: "Otsikko", name: "title", widget: "string", required: false}
-              - { label: "Kuvaus", name: "description", widget: "text", required: false}
-              - { label: "Kuva", name: "image", widget: "image", required: false}
-        - label: "Referenssit-osio"
-          name: "ReferenceSection"
-          hint: "Suositeltu koko referenssikuville on 160 x 160 pikseliä."
-          widget: object
-          fields:
-          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
-          - label: "Referenssit"
-            name: "referees"
-            widget: list
-            fields:
-              - { label: "Referoija", name: "referee", widget: "string", required: false}
-              - { label: "Referoijan nimike", name: "refereeTitle", widget: "string", required: false}
-              - { label: "Referenssi", name: "reference", widget: "text", required: false}
-              - { label: "Kuva", name: "image", widget: "image", required: false }
-        - label: "Hyödyt-osio"
-          name: "BenefitsSection"
-          widget: object
-          fields:
-          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
-          - label: "Hyödyt"
-            name: "benefits"
-            hint: "Kuvan suositeltu koko on 230 x 230 pikseliä."
-            widget: list
-            max: 3
-            fields:
-              - { label: "Otsikko", name: "title", widget: "string", required: false}
-              - { label: "Arvolupaus", name: "valueProposition", widget: "text", required: false}
-              - { label: "Kuva", name: "image", widget: "image", required: false }
-        - label: "Usein kysytyt kysymykset"
-          name: "FAQSection"
-          widget: object
-          fields:
-            - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false }  
-            - label: "Kysymykset"
-              name: "faqs"
-              widget: list
-              fields:
-                - { label: "Kysymys", name: "question", widget: "string", required: false}
-                - { label: "Vastaus", name: "answer", widget: "text", required: false}
-                - { label: "Vastaus auki?", name: "open", default: false, widget: "boolean", required: false }
+          fields: 
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
@@ -118,6 +66,20 @@ collections:
             fields:
               - { label: "Otsikko", name: "title", widget: "string", required: false}
               - { label: "Kuvaus", name: "description", widget: "text", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false }
+        - label: "Hyödyt-osio"
+          name: "BenefitsSection"
+          widget: object
+          fields:
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
+          - label: "Hyödyt"
+            name: "benefits"
+            hint: "Kuvan suositeltu koko on 230 x 230 pikseliä."
+            widget: list
+            max: 3
+            fields:
+              - { label: "Otsikko", name: "title", widget: "string", required: false}
+              - { label: "Arvolupaus", name: "valueProposition", widget: "text", required: false}
               - { label: "Kuva", name: "image", widget: "image", required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
