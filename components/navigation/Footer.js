@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import FooterContent from '@content/site.json'
 import styles from '../../styles/Footer.module.scss'
+import useToggle from '@hooks/useToggleState'
 
 const Footer = () => {
-
+    const [faqs, setFaqs] = useToggle([faq.faqs])
 
     return (
         <footer id={styles.Footer}>
-            <div className={`container ${styles.footerPrimaryContainer}`}>
+            <div className={`container ${styles.footerHeader}`}>
                 {FooterContent.Footer.desktopLogoImage && (
                     <div className={`desktop-only ${styles.footerDesktopLogoContainer}`}>
                         <Image
@@ -22,9 +23,6 @@ const Footer = () => {
                         />
                     </div>
                 )}
-                <div className={styles.footerPropsitionContainer}>
-                    <p>{FooterContent.Footer.valueProposition}</p>
-                </div>
             </div>
             <div className={styles.footerSubContainer}>
                 <div className={styles.subDesktopContainer}>

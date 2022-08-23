@@ -55,6 +55,13 @@ a {
 
 }
 
+// Markdown is wrapped in Article. These elements are for that.
+article {
+	p {
+		margin-bottom: $single;
+	}
+}
+
 
 /* Section Intro */
 .sectionHeader {

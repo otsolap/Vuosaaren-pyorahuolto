@@ -8,53 +8,9 @@
     color: $white;
 }
 
-.footerSoMEContainer {
-    padding-top: $double;
-    padding-bottom: $single;
-    @include display-flex;
-    justify-content: space-evenly;
-    margin-left: $single;
-    margin-right: $single;
-}
-
-.footerPropsitionContainer {
-    padding: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
 .someIcons {
     font-size: 1.875rem;
     line-height: 2.25rem;
-}
-
-.footerSubContainer {
-    @include display-flex;
-    justify-content: center;
-}
-
-.subDesktopContainer {
-    display: inline-flex;
-    width: fit-content;
-}
-
-
-.detailsTxt {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-    
-
-    &::after {
-        content:'|';
-        margin-left: .25rem;
-    }
-}
-
-.footerKultakammen {
-    margin-left: .5rem;
-    margin-top: -0.5rem;
 }
 
 
@@ -111,53 +67,11 @@
         padding-bottom: 0;
     }
 
-    .footerSoMEContainer {
-        align-items: center;
-        margin-left: initial;
-        margin-right: initial;
-        justify-content: initial;
-    }
-
-    .someIcons {
-        font-size: 2.25rem;
-        line-height: 2.5rem;
-        padding-left: $single;
-        padding-right: $single;
-    }
-
-    .footerPropsitionContainer {
-        @include display-flex;
-        @include flex-direction(column);
-        justify-content: center;
-        align-content: center;
-        margin-left: initial;
-        margin-right: initial;
-    }
-
-    .footerSubContainer {
-        width: 100%;
-        justify-content: flex-start;
-        border-top-width: 2px;
-        border-color: $white;
-    }
-
-
-    .subDesktopContainer {
-        @include display-flex;
-        justify-content: center;
-        max-width: $container-desktop;
-        width: 100%;
-    }
     
-    .footerPrimaryContainer {
+    .footerHeader{
         @include display-flex;
         @include flex-direction(row);
         flex-wrap: wrap;
-
-        div {
-            flex: 0 0 calc(100% / 3);
-            max-width: calc(100% / 3);
-        }
     }
     
     .footerDesktopLogoContainer {

@@ -19,9 +19,7 @@
   "Footer": {
     "desktopLogoImage": "/images/Pyorahuolto_Logo.png",
     "desktopLogoAlt": "",
-    "Owner": "Vuosaaren Pyörähuolto",
-    "privacyPolicy": "Tietosuojaseloste",
-    "valueProposition": "Toimin rahoituspäällikkönä Someron Säästöpankissa, joka on osa Säästöpankkiryhmää. Jokainen rahoitustarve käsitellään ja päätetään paikallisesti, eettisesti ja vastuullisesti."
+    "Owner": "Vuosaaren Pyörähuolto"
   },
   "Header": {
     "titleLogo": "Vuosaaren Pyörähuolto",
