@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import useToggle from '@hooks/useToggleState';
 
-const FooterColumn = ({ answer, question, open }) => {
+const FooterColumn = ({ title, description, open }) => {
     const contentRef = useRef(null)
     const [active, setActive] = useToggle(open);
     useEffect(() => {
@@ -23,7 +23,7 @@ const FooterColumn = ({ answer, question, open }) => {
                 <div className={active ? `${styles.faqOpen}` : `${styles.faqClosed}`}>
                     <div className={styles.faqFlexBox}>
                         <h4 className={styles.faqQuestionHeading}>
-                            {question}
+                            {title}
                         </h4>
                         <FontAwesomeIcon
                             className={styles.faqIcon} aria-label="Alatunnisteen lisätieto" icon={active ? faAngleUp : faAngleDown}
@@ -31,7 +31,7 @@ const FooterColumn = ({ answer, question, open }) => {
                     </div>
                 </div>
                 <div ref={contentRef} className={active ? `${styles.faqAnswer} ${styles.faqAnswerDivider}` : `${styles.faqAnswer}`} >
-                    <p className={styles.faqAnswerText}>{answer}</p>
+                    <p className={styles.faqAnswerText}>{description}</p>
                 </div>
             </div>
         </button >

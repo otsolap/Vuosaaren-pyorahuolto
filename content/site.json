@@ -11,7 +11,7 @@
         "open": true,
         "title": "Ota Yhteyttä",
         "description": "Sakari Pennanen",
-        "contactList": [
+        "listValues": [
           {
             "title": "Email",
             "url": "sakke@vuosaarenpyorahuolto.fi"
@@ -26,7 +26,7 @@
       "open": true,
       "title": "Maksutavat",
       "description": "Maksuvälineinä meillä käy: Käteinen, pankkikortti, Aktiiviraha, OK, Eurocard, Mastercard, Visa-Electron ja Maestro.",
-      "paymentMethods": [
+      "listValues": [
         { 
           "title": "Aktiiviraha",
           "icon":  "Testi"
