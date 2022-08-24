@@ -8,8 +8,9 @@
     "desktopLogoImage": "/images/Pyorahuolto_Logo.png",
     "desktopLogoAlt": "",
     "FooterContact": {
+        "open": true,
         "title": "Ota Yhteyttä",
-        "owner": "Sakari Pennanen",
+        "description": "Sakari Pennanen",
         "contactList": [
           {
             "title": "Email",
@@ -22,7 +23,8 @@
       ]
     },
     "FooterPayment": {
-      "title": "Ota Yhteyttä",
+      "open": true,
+      "title": "Maksutavat",
       "description": "Maksuvälineinä meillä käy: Käteinen, pankkikortti, Aktiiviraha, OK, Eurocard, Mastercard, Visa-Electron ja Maestro.",
       "paymentMethods": [
         { 
@@ -52,6 +54,8 @@
       ]
     },
     "FooterCompany": {
+        "open": true,
+        "title": "Vuosaaren Pyörähuolto",
         "address": "Lokietie 1 A",
         "postalCode": "00980 Helsinki",
         "mapCTAtitle": "Katso karttalinkki",
