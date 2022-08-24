@@ -1,11 +1,10 @@
 import Image from 'next/image'
 import FooterContent from '@content/site.json'
 import styles from '../../styles/Footer.module.scss'
-import FooterColumn from './FooterColumn'
+import FooterColumnCompany from './FooterColumnCompany'
 
 
 const Footer = () => {
-    console.log(FooterContent)
 
     return (
         <footer id={styles.Footer}>
@@ -25,13 +24,8 @@ const Footer = () => {
                     </div>
                 )}
             </div>
-            <div className={styles.footerSubContainer}>
-                <div className={styles.subDesktopContainer}>
-                    <FooterColumn key="biz" />
-                </div>
-                <div className={styles.subDesktopContainer}>
-                    <FooterColumn key="money" />
-                </div>
+            <div className={styles.columnContainer}>
+                <FooterColumnCompany {...FooterContent.Footer.FooterCompany} />
             </div>
         </footer>
     )

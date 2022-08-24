@@ -13,6 +13,83 @@
     line-height: 2.25rem;
 }
 
+/* FOOTER COLUMNS */
+
+.columnContainer {
+    width: 100%;
+    @include border(2px solid);
+    border-color: $black;
+    @include border-radius(.375rem);
+    @include display-flex;
+    @include flex-direction(column)
+}
+
+.footerColButton {
+    background-color: $white;
+    @include border(1px solid);
+    border-color: $black; 
+}
+
+.faq {
+    text-align: left;
+    width: 100%;
+    min-height: 10px;
+}
+
+.colFlexBox {
+     @include display-flex;
+    align-items: center
+}
+
+.faqQuestionHeading {
+    font-weight: 700;
+    margin-left: $single;
+    padding-top: $single;
+    padding-bottom: $single;
+}
+
+
+.colIcon {
+    background-image: none;
+    @include border(0px solid);
+    cursor: pointer;
+    margin-right: $single;
+    margin-left: auto;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.colClosed {
+    background-color: $black;
+}
+
+.colOpen {
+    background-color: $primary;
+    color: $white;
+}
+
+.faqAnswerDivider {
+    border-color: $black;
+    border-top-width: 2px;
+}
+
+.faqAnswer {
+    transition: max-height 0.6s ease;
+    max-height: 0;
+    overflow: hidden;
+    background-color: $white;
+    color: $black;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.faqAnswerText {
+    padding: $single .5rem;
+}
+
+
+/* MOBILE FOOTER */
+
 
 .MobileFooterBar {
     background-color: $primary;
