@@ -8,21 +8,31 @@
     color: $white;
 }
 
+.footerLogoContainer {
+    height: 50px;
+    width: 50px;
+    padding-top: $single;
+    margin-left: $single;
+}
+
+
 /* FOOTER COLUMNS */
 
+.footerColumn {
+    flex: 100%;
+    max-width: 100%;
+}
+
 .columnContainer {
+    padding: $single;
     width: 100%;
-    @include border(2px solid);
-    border-color: $white;
-    @include border-radius(.375rem);
     @include display-flex;
     @include flex-direction(column)
 }
 
 .footerColButton {
     background-color: $white;
-    @include border(1px solid);
-    border-color: $white; 
+    @include border(1px transparent);
 }
 
 .footerColContent {
@@ -32,13 +42,14 @@
 }
 
 .colFlexBox {
-     @include display-flex;
+    @include display-flex;
+    border-bottom: 2px solid;
+    border-color: $white;
     align-items: center
 }
 
 .colHeading {
     font-weight: 700;
-    margin-left: $single;
     padding-top: $single;
     padding-bottom: $single;
 }
@@ -48,9 +59,9 @@
     background-image: none;
     @include border(0px solid);
     cursor: pointer;
-    margin-right: $single;
     margin-left: auto;
-    font-size: 1.875rem;
+    margin-right: $single;
+    font-size: 0.875rem;
     line-height: 2.25rem;
 }
 
@@ -74,9 +85,13 @@
     padding-right: .5rem;
 }
 
+.colText,
+.colTextNOPadding {
+    font-weight: 700;
+}
+
 .colText {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding: .5rem 0;
 }
 
 .colTextNOPadding {
@@ -140,6 +155,18 @@
         padding-bottom: 0;
     }
 
+    .footerColumn {
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+
+    .footerLogoContainer {
+        height: 125px;
+        width: 125px;
+        padding-top: initial;
+        margin-left: initial;
+    }
+    
     
     .footerHeader{
         @include display-flex;

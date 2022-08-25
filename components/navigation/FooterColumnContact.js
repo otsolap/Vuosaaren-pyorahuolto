@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import useToggle from '@hooks/useToggleState';
 
-const FooterColumnCompany = ({ title, address, postalCode, mapCTATitle, mapURL, openingHoursTitle, openingHoursWeekDays, openingHoursWeekend, open }) => {
+const FooterColumnCompany = ({ title, description, contactList, open }) => {
+    console.log(contactList)
+
     const contentRef = useRef(null)
     const [active, setActive] = useToggle(open);
     useEffect(() => {
@@ -32,12 +34,7 @@ const FooterColumnCompany = ({ title, address, postalCode, mapCTATitle, mapURL, 
                         </div>
                     </div>
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
-                        <p className={styles.colText}>{address}</p>
-                        <p className={styles.colText}>{postalCode}</p>
-                        <a href={{ mapURL }} target="_blank" rel="noopener noreferrer">{mapCTATitle}</a>
-                        <p className={styles.colText}>{openingHoursTitle}</p>
-                        <p className={styles.colTextNOPadding}>{openingHoursWeekDays}</p>
-                        <p className={styles.colTextNOPadding}>{openingHoursWeekend}</p>
+                        <p className={styles.colText}>{description}</p>
                     </div>
                 </div>
             </button>

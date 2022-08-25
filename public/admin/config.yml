@@ -122,8 +122,8 @@ collections:
           name: "Footer"
           widget: object
           fields:
-           - { label: "Pöytäkoneen logo", name: "desktopLogoImage", widget: "image", required: false}
-           - { label: "Logon täsmennys", name: "desktopLogoAlt", widget: "string", required: false}
+           - { label: "Logo", name: "logoImage", widget: "image", required: false}
+           - { label: "Logon täsmennys", name: "logoAlt", widget: "string", required: false}
            - { label: "Arvolupaus", name: "valueProposition", widget: "string", required: false}
         - label: "Yhteystiedot"
           name: "Contact"

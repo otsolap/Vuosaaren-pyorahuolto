@@ -5,13 +5,13 @@
     "imageAlt": "Vuosaaren Pyörähuolto"
   },
   "Footer": {
-    "desktopLogoImage": "/images/Pyorahuolto_Logo.png",
-    "desktopLogoAlt": "",
+    "logoImage": "/images/Pyorahuolto_Logo.png",
+    "logoAlt": "",
     "FooterContact": {
         "open": true,
         "title": "Ota Yhteyttä",
         "description": "Sakari Pennanen",
-        "listValues": [
+        "contactLis": [
           {
             "title": "Email",
             "url": "sakke@vuosaarenpyorahuolto.fi"
