@@ -5,7 +5,6 @@ import FooterColumnCompany from './FooterColumnCompany'
 
 
 const Footer = () => {
-
     return (
         <footer id={styles.Footer}>
             <div className={`container ${styles.footerHeader}`}>

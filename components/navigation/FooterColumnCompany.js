@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import useToggle from '@hooks/useToggleState';
 
-const FooterColumnCompany = ({ title, address, postalCode, mapCTAtitle, mapURL, openingHoursTitle, openingHoursWeekDays, openingHoursWeekend, open }) => {
+const FooterColumnCompany = ({ title, address, postalCode, mapCTATitle, mapURL, openingHoursTitle, openingHoursWeekDays, openingHoursWeekend, open }) => {
     const contentRef = useRef(null)
     const [active, setActive] = useToggle(open);
     useEffect(() => {
@@ -22,7 +22,7 @@ const FooterColumnCompany = ({ title, address, postalCode, mapCTAtitle, mapURL, 
             <div className={styles.footerColContent}>
                 <div className={active ? `${styles.colOpen}` : `${styles.colClosed}`}>
                     <div className={styles.colFlexBox}>
-                        <h4 className={styles.faqQuestionHeading}>
+                        <h4 className={styles.colHeading}>
                             {title}
                         </h4>
                         <FontAwesomeIcon
@@ -30,8 +30,13 @@ const FooterColumnCompany = ({ title, address, postalCode, mapCTAtitle, mapURL, 
                         />
                     </div>
                 </div>
-                <div ref={contentRef} className={active ? `${styles.faqAnswer} ${styles.faqAnswerDivider}` : `${styles.faqAnswer}`} >
-                    <p className={styles.faqAnswerText}>{address}</p>
+                <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
+                    <p className={styles.colText}>{address}</p>
+                    <p className={styles.colText}>{postalCode}</p>
+                    <a href={{ mapURL }} target="_blank" rel="noopener noreferrer">{mapCTATitle}</a>
+                    <p className={styles.colText}>{openingHoursTitle}</p>
+                    <p className={styles.colTextNOPadding}>{openingHoursWeekDays}</p>
+                    <p className={styles.colTextNOPadding}>{openingHoursWeekend}</p>
                 </div>
             </div>
         </button >

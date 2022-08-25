@@ -8,17 +8,12 @@
     color: $white;
 }
 
-.someIcons {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-}
-
 /* FOOTER COLUMNS */
 
 .columnContainer {
     width: 100%;
     @include border(2px solid);
-    border-color: $black;
+    border-color: $white;
     @include border-radius(.375rem);
     @include display-flex;
     @include flex-direction(column)
@@ -27,13 +22,13 @@
 .footerColButton {
     background-color: $white;
     @include border(1px solid);
-    border-color: $black; 
+    border-color: $white; 
 }
 
-.faq {
+.footerColContent {
     text-align: left;
     width: 100%;
-    min-height: 10px;
+    min-height: 20px;
 }
 
 .colFlexBox {
@@ -41,7 +36,7 @@
     align-items: center
 }
 
-.faqQuestionHeading {
+.colHeading {
     font-weight: 700;
     margin-left: $single;
     padding-top: $single;
@@ -59,32 +54,33 @@
     line-height: 2.25rem;
 }
 
-.colClosed {
-    background-color: $black;
-}
-
-.colOpen {
-    background-color: $primary;
-    color: $white;
-}
-
-.faqAnswerDivider {
-    border-color: $black;
+.colContentDivider {
+    border-color: $white;
     border-top-width: 2px;
 }
 
-.faqAnswer {
+.colClosed,
+.colOpen,
+.colContent {
+    background: $primary;
+    color: $white;
+}
+
+.colContent {
     transition: max-height 0.6s ease;
     max-height: 0;
     overflow: hidden;
-    background-color: $white;
-    color: $black;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
-.faqAnswerText {
-    padding: $single .5rem;
+.colText {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.colTextNOPadding {
+    padding: 0;
 }
 
 
@@ -155,17 +151,5 @@
         padding: $double;
         max-width: 50%;
         flex: 0 0 50%;
-    }
-
-    .detailsTxt:first-child{
-        padding-left: 1rem;
-        margin-left: 1rem;
-    }
-
-    .detailsTxt:nth-child(2) {
-        &::after {
-            content:'';
-            margin-left: initial;
-        }
     }
 }
