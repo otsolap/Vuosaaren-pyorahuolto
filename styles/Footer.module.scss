@@ -141,6 +141,10 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    .active {
+        color: $yellow;
+    }
+
     a {
         color: $white;
         position: relative;
@@ -150,9 +154,14 @@
         z-index: 10;
         cursor: pointer;
         flex: 0 0 calc(100% / 4);
-        max-width: calc(100% / 4);
+        max-width: calc(100% / 4);    
     }
+
 }
+
+
+
+
 
 .mobileIcon {
     margin-top: 0.75rem;

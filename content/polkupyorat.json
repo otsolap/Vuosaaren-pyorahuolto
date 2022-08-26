@@ -49,6 +49,14 @@
       }
     ]
   },
+  "textSection": {
+      "body": ""
+  },
+  "highlightSection": {
+    "quote": "“Asiakkaiden palaute on se, joka antaa hyvän mielen ja auttaa jaksamaan. Ja se, että näkee oman työnsä jäljen.”",
+    "quotee": "Sakari Pennanen, omistaja.",
+    "image": "/images/Sakari.png"
+  },
   "meta": {
     "title": "Vuosaaren Pyörähuolto",
     "description": "Edustamme korkealaatuisia ja pohjoismaisia pyörämerkkejä, jonka kunniaksi mallistomme koostuu  Helkaman, Marvilin, Crescentin sekä Madisonin pyöristä.",
