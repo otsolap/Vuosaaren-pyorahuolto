@@ -2,7 +2,12 @@
   "Navigation": {
     "titleLogo": "Vuosaaren Pyörähuolto",
     "imageLogo": "/images/Pyorahuolto_Logo.png",
-    "imageAlt": "Vuosaaren Pyörähuolto"
+    "imageAlt": "Vuosaaren Pyörähuolto",
+    "indexPage": "Etusivu",
+    "pyorahuoltoPage": "Polkupyörät",
+    "polkupyoratPage": "Pyörähuolto",
+    "openModal": "Lisää",
+    "closeModal": "Vähemmän"
   },
   "Footer": {
     "logoImage": "/images/Pyorahuolto_Logo.png",

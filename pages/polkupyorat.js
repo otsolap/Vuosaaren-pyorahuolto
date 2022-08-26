@@ -2,7 +2,7 @@ import Meta from "@components/Meta"
 import Hero from "@components/Hero"
 import ThemeBlock from "@components/salesPage/ImageAndText"
 
-const salesPage = ({ meta, }) => {
+const Polkupyorat = ({ meta, }) => {
     return (
         <>
             <Meta meta={meta} />
@@ -12,7 +12,7 @@ const salesPage = ({ meta, }) => {
     )
 }
 
-export default salesPage
+export default Polkupyorat
 
 export async function getStaticProps() {
     const sales = await import(`../content/sales.json`)
