@@ -1,0 +1,58 @@
+{
+  "Hero": {
+    "HeroTitle": "Vuosaaren Pyorahuolto",
+    "HeroSubtitle": "",
+    "DesktopHeroImage": "",
+    "MobileHeroImage": ""
+  },
+  "TextImageSection": {
+    "blocks": [
+      {
+        "title": "Polkupyörät",
+        "description": "Edustamme korkealaatuisia ja pohjoismaisia pyörämerkkejä, jonka kunniaksi mallistomme koostuu  Helkaman, Marvilin, Crescentin sekä Madisonin pyöristä.",
+        "image": "/images/Helkama_Pyorailija_Luonnossa.jpeg"
+      },
+      {
+        "title": "Helkama",
+        "description": "Yli 100-vuoden suomalainen perheyrityksen kokemuksella ja ammattiylpeydellä tehdyt pyörät kaikkiin olosuhteisiin ja tarpeisiin. Kaupungin maastoon, hiekasta asfaltiille ja Hangosta Ivaloon.",
+        "image": "/images/Helkama_Pyorailijoita.jpg"
+      },
+      {
+        "title": "Crescent",
+        "description": "Ruotsalainen, juurensa rapakon takaa kantava brändi kuuluu osaa Cycleeurope-konsernia. Crescentin pyörät ovat palvelleet vuosikymmenet niin tavellisia pyöräilijöitä kuin parhaimpia kilpapyöräilyjöitä.",
+        "image": "/images/Ammattilainen.jpg"
+      },
+      {
+        "title": "Madison",
+        "description": "Suomalainen koko perheen pyörämerkki erinomaisella hintalaatusuhteella. Suunniteltu pohjolan vaativiin olosuhteisiin. Erittäin suosittu lasten ja nuorten keskuudessa.",
+        "image": "/images/Nuori_Metsassa.jpg"
+      }
+    ]
+  },
+  "BenefitsSection": {
+    "SectionTitle": "Miksi valita Vuosaaren Pyörähuolto",
+    "benefits": [
+      {
+        "title": "Ammattiosaaminen",
+        "valueProposition": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
+        "image": "/images/screwdriver-wrench.svg"
+      },
+      {
+        "title": "Pikainen palvelu",
+        "valueProposition": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
+        "image": "/images/cyclist.svg"
+      },
+      {
+        "title": "Kustannustehokas",
+        "valueProposition": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
+        "image": "/images/piggy.svg"
+      }
+    ]
+  },
+  "meta": {
+    "title": "Vuosaaren Pyörähuolto",
+    "description": "Edustamme korkealaatuisia ja pohjoismaisia pyörämerkkejä, jonka kunniaksi mallistomme koostuu  Helkaman, Marvilin, Crescentin sekä Madisonin pyöristä.",
+    "url": "https://www.vuosaarenpyorahuolto.fi/polkupyorat",
+    "image": ""
+  }
+}
