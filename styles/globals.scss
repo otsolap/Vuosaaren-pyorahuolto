@@ -55,8 +55,11 @@ a {
 
 }
 
-// Markdown is wrapped in Article. These elements are for that.
+// Markdown is wrapped in Article. 
+// These styles are for Markdown content.
 article {
+	padding: $single;
+
 	p {
 		margin-bottom: $single;
 	}

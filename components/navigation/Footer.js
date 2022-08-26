@@ -3,6 +3,7 @@ import FooterContent from '@content/site.json'
 import styles from '../../styles/Footer.module.scss'
 import FooterColumnCompany from './FooterColumnCompany'
 import FooterColumnContact from './FooterColumnContact'
+import FooterColumnPayment from './FooterColumnPayment'
 
 
 const Footer = () => {
@@ -26,6 +27,7 @@ const Footer = () => {
             </div>
             <div className={styles.columnContainer}>
                 <FooterColumnContact {...FooterContent.Footer.FooterContact} />
+                <FooterColumnPayment {...FooterContent.Footer.FooterPayment} />
                 <FooterColumnCompany {...FooterContent.Footer.FooterCompany} />
             </div>
         </footer>

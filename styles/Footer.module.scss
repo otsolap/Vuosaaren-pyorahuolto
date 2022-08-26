@@ -30,7 +30,28 @@
     @include flex-direction(column)
 }
 
+.contactText {
+    margin-bottom: $single;
+}
+
+.paymentWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.paymentIMGContainer {
+    height: $triple;
+    gap: 1rem;
+}
+
+.paymentIMG {
+    height: 100%;
+}
+
 .footerColButton {
+    width: 100%;
     background-color: $white;
     @include border(1px transparent);
 }

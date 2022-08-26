@@ -17,7 +17,7 @@
             "url": "sakke@vuosaarenpyorahuolto.fi"
           },
           {
-            "title": "Phone",
+            "title": "Puhelin",
             "url": "09 - 321 5074"
           }
       ]
@@ -25,31 +25,31 @@
     "FooterPayment": {
       "open": true,
       "title": "Maksutavat",
-      "description": "Maksuvälineinä meillä käy: Käteinen, pankkikortti, Aktiiviraha, OK, Eurocard, Mastercard, Visa-Electron ja Maestro.",
-      "listValues": [
+      "description": "Maksuvälineinä meillä käy: Käteinen, pankkikortti, Ecster, Eurocard, Mastercard, Visa-Electron ja Maestro.",
+      "paymentList": [
         { 
-          "title": "Aktiiviraha",
-          "icon":  "Testi"
-        },
-        { 
-          "title": "OK",
-          "icon":  "Testi"
+          "title": "Ecster",
+          "icon":  "/images/Ecster.png"
         },
         { 
           "title": "Eurocard",
-          "icon":  "Testi"
-        },
-        { 
-          "title": "Mastercard",
-          "icon":  "Testi"
-        },
-        { 
-          "title": "Visa-Electron",
-          "icon":  "Testi"
+          "icon":  "/images/Eurocard.svg"
         },
         { 
           "title": "Maestro",
-          "icon":  "Testi"
+          "icon":  "/images/Maestro.svg"
+        },
+        { 
+          "title": "Mastercard",
+          "icon":  "/images/MasterCard_Logo.svg"
+        },
+        { 
+          "title": "Visa",
+          "icon":  "/images/Visa.svg"
+        },
+        { 
+          "title": "Visa-Electron",
+          "icon":  "/images/Visa_Electron.svg"
         }
       ]
     },

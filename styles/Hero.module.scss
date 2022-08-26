@@ -8,7 +8,7 @@ $hero-max-height-ratio: 35; // Min-width related to viewport width
 #hero {
 	position: relative;
 	max-width: $hero-max-width;
-	margin: auto;
+	margin: $single auto;
 	min-height: $hero-max-height-ratio * 1vw;
 
 	@media (min-width: $hero-max-width) {

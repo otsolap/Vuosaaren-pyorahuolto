@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import useToggle from '@hooks/useToggleState';
 
-const FooterColumnCompany = ({ title, description, contactList, open }) => {
+const FooterColumnCompany = ({ title, description, paymentList, open }) => {
     const contentRef = useRef(null)
     const [active, setActive] = useToggle(open);
     useEffect(() => {
@@ -17,24 +17,40 @@ const FooterColumnCompany = ({ title, description, contactList, open }) => {
         setActive(!active);
     };
 
-    const contactInfo = contactList.map((contacts, i) => {
+    const paymentInfo = paymentList.map((payments, i) => {
         return (
-            <p className={styles.contactText} key={i}>
-                {contacts.title === 'Email' ? (
-                    <a className={styles.contactLink} href={`mailto:${contacts.url}`} target="_blank" rel="noopener noreferrer">
-                        {contacts.title}
-                    </a>
+            <div className={styles.paymentIMGContainer} key={i}>
+                {payments.title === 'Ecster' ? (
+                    <img src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
                 ) : (
                     ""
                 )}
-                {contacts.title === 'Puhelin' ? (
-                    <a className={styles.contactLink} href={`tel:${contacts.url}`} target="_blank" rel="noopener noreferrer">
-                        {contacts.title}
-                    </a>
+                {payments.title === 'Eurocard' ? (
+                    <img src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
                 ) : (
                     ""
                 )}
-            </p>
+                {payments.title === 'Maestro' ? (
+                    <img src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                ) : (
+                    ""
+                )}
+                {payments.title === 'Mastercard' ? (
+                    <img src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                ) : (
+                    ""
+                )}
+                {payments.title === 'Visa' ? (
+                    <img src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                ) : (
+                    ""
+                )}
+                {payments.title === 'Visa-Electron' ? (
+                    <img src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                ) : (
+                    ""
+                )}
+            </div>
         )
     })
 
@@ -54,7 +70,9 @@ const FooterColumnCompany = ({ title, description, contactList, open }) => {
                     </div>
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
                         <p className={styles.colText}>{description}</p>
-                        {contactInfo}
+                        <div className={styles.paymentWrapper}>
+                            {paymentInfo}
+                        </div>
                     </div>
                 </div>
             </button>
