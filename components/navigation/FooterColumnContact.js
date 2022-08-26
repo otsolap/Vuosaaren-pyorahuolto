@@ -1,12 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import styles from '../../styles/Footer.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleUp, faAngleDown, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import useToggle from '@hooks/useToggleState';
 
 const FooterColumnCompany = ({ title, description, contactList, open }) => {
-    console.log(contactList)
-
     const contentRef = useRef(null)
     const [active, setActive] = useToggle(open);
     useEffect(() => {
@@ -18,6 +16,27 @@ const FooterColumnCompany = ({ title, description, contactList, open }) => {
     const toggleAccordion = () => {
         setActive(!active);
     };
+
+    const contactInfo = contactList.map((contacts, i) => {
+        return (
+            <span className={styles.contactText} key={i}>
+                {contacts.title === 'Email' ? (
+                    <a href={`mailto:${icons.url}`} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon aria-label="Sähköposti" icon={faEnvelope} />
+                    </a>
+                ) : (
+                    ""
+                )}
+                {contacts.title === 'Phone' ? (
+                    <a href={`tel:${icons.url}`} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon aria-label="Puhelin" icon={faPhone} />
+                    </a>
+                ) : (
+                    ""
+                )}
+            </span>
+        )
+    })
 
     return (
         <div className={styles.footerColumn}>
@@ -35,6 +54,7 @@ const FooterColumnCompany = ({ title, description, contactList, open }) => {
                     </div>
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
                         <p className={styles.colText}>{description}</p>
+                        {contactInfo}
                     </div>
                 </div>
             </button>

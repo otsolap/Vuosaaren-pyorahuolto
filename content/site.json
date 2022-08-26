@@ -11,7 +11,7 @@
         "open": true,
         "title": "Ota Yhteyttä",
         "description": "Sakari Pennanen",
-        "contactLis": [
+        "contactList": [
           {
             "title": "Email",
             "url": "sakke@vuosaarenpyorahuolto.fi"

@@ -3,9 +3,6 @@ import styles from '../styles/Hero.module.scss'
 import Image from 'next/image'
 
 const Hero = ({ hero }) => {
-    const router = useRouter()
-    console.log(router.pathname)
-
     return (
         <section id={styles.hero}>
             <div className={styles.contentContainer}>
@@ -17,7 +14,7 @@ const Hero = ({ hero }) => {
             </div>
             <div className="desktop-only">
                 {hero.DesktopHeroImage && (
-                    <div style={{ position: 'absolute', width: '100%', overflow: 'hidden', inset: '0', }}>
+                    <div style={{ position: 'relative', width: '100%', overflow: 'hidden', inset: '0', }}>
                         <Image
                             src={hero.DesktopHeroImage}
                             alt={hero.heroTitle}

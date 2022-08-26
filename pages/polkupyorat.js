@@ -2,41 +2,31 @@ import Meta from "@components/Meta"
 import Hero from "@components/Hero"
 import ThemeBlock from "@components/salesPage/ImageAndText"
 
-const aboutMe = ({ meta, hero, blocks }) => {
+const salesPage = ({ meta, }) => {
     return (
         <>
             <Meta meta={meta} />
-            <main id="Juho">
-                <Hero hero={hero} />
-                <ThemeBlock
-                    themes={themes}
-                />
+            <main id="polkupyorat">
             </main>
         </>
     )
 }
 
-export default aboutMe
+export default salesPage
 
 export async function getStaticProps() {
-    const aboutMe = await import(`../content/aboutMe.json`)
+    const sales = await import(`../content/sales.json`)
 
     return {
         props: {
             meta: {
-                title: aboutMe.meta.title,
-                description: aboutMe.meta.description,
-                url: aboutMe.meta.url,
-                image: aboutMe.meta.image
-            },
-            hero: {
-                HeroTitle: aboutMe.Hero.HeroTitle,
-                HeroSubtitle: aboutMe.Hero.HeroSubtitle,
-                DesktopHeroImage: aboutMe.Hero.DesktopHeroImage,
-                MobileHeroImage: aboutMe.Hero.MobileHeroImage,
+                title: sales.meta.title,
+                description: sales.meta.description,
+                url: sales.meta.url,
+                image: sales.meta.image
             },
             blocks: {
-                blocks: aboutMe.TextImageSection.blocks
+                blocks: sales.TextImageSection.blocks
             },
         }
     }
