@@ -46,18 +46,9 @@ collections:
       file: "content/sales.json"
       preview_path: pyorat
       fields:
-        - label: "Herokuva"
-          name: "Hero"
-          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000."
-          widget: object
-          fields:
-            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
-            - { label: "Alaotsikko", name: "HeroSubtitle", widget: "string", required: false}
-            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
-            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
         - label: 'Kuva- ja teksti-osio'
           name: "TextImageSection"
-          hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 600px leveä ja 500px korkea."
+          hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 720px leveä ja 500px korkea."
           widget: object
           fields:
           - label: "Kuva ja teksti"
@@ -81,6 +72,18 @@ collections:
               - { label: "Otsikko", name: "title", widget: "string", required: false}
               - { label: "Arvolupaus", name: "valueProposition", widget: "text", required: false}
               - { label: "Kuva", name: "image", widget: "image", required: false }
+        - label: "Vapaa tekstikenttä"
+          name: "textSection"
+          widget: object
+          fields: 
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
+        - label: "Nosto-osio"
+          name: "highlightSection"
+          widget: object
+          fields:
+            - { label: "Lainaus", name: "quote", widget: "text", required: false}
+            - { label: "Siteeraja", name: "quotee", widget: "string", required: false}
+            - { label: "Kuva", name: "image", widget: "image", required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"

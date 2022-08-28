@@ -33,7 +33,7 @@ export async function getStaticProps() {
                 benefits: sales.BenefitsSection.benefits
             },
             markdown: {
-                body: home.Markdown.body,
+                body: home.textSection.body,
             },
             highlight: {
                 quotee: sales.highlightSection.quotee,
