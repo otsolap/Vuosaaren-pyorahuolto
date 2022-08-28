@@ -4,7 +4,7 @@ import styles from '../../styles/ImageAndText.module.scss'
 const ImageAndText = ({ blocks }) => {
 
     return (
-        <section class={styles.imageTextBlockSection}>
+        <section className={`container ${styles.imageTextBlockSection}`}>
             <>
                 {blocks.blocks.map((block, i) => {
                     return (
@@ -13,27 +13,22 @@ const ImageAndText = ({ blocks }) => {
                             id={block.title}
                             className={`${styles.imageTextBlock} ${i % 2 === 0 ? `` : `${styles.odd}`}`}
                         >
-                            <div className="container">
-                                <div className={styles.imageTextBlockContent}>
-                                    {block.image && (
-                                        <div className={styles.imageTextBlockImageContainer}>
-                                            <Image
-                                                src={block.image}
-                                                alt={block.title}
-                                                width={600}
-                                                height={500}
-                                                layout='responsive'
-                                                objectFit='contain'
-                                                objectPosition='center'
-                                                quality={100}
-                                                className={styles.imageTextBlockImage}
-                                            />
-                                        </div>
-                                    )}
-                                    <div className={styles.imageTextBlockDescriptionContainer}>
-                                        <h2>{block.title}</h2>
-                                        <p>{block.description}</p>
+                            <div className={styles.imageTextBlockContent}>
+                                {block.image && (
+                                    <div className={styles.imageTextBlockImageContainer}>
+                                        <Image
+                                            src={block.image}
+                                            alt={block.title}
+                                            layout='fill'
+                                            objectFit='contain'
+                                            objectPosition='center'
+                                            quality={100}
+                                        />
                                     </div>
+                                )}
+                                <div className={styles.imageTextBlockDescriptionContainer}>
+                                    <h2>{block.title}</h2>
+                                    <p>{block.description}</p>
                                 </div>
                             </div>
                         </div>

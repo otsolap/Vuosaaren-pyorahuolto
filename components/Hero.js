@@ -13,7 +13,7 @@ const Hero = ({ hero }) => {
             </div>
             <div className="desktop-only">
                 {hero.DesktopHeroImage && (
-                    <div style={{ position: 'relative', width: '100%', overflow: 'hidden', inset: '0', }}>
+                    <div style={{ position: 'relative', width: '100%', overflow: 'hidden', }}>
                         <Image
                             src={hero.DesktopHeroImage}
                             alt={hero.heroTitle}

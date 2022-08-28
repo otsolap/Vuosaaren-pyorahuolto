@@ -15,7 +15,7 @@ const BenefitItem = ({ benefits }) => {
                                 width={230}
                                 height={230}
                                 layout="responsive"
-                                objectFit='cover'
+                                objectFit='contain'
                                 objectPosition='center'
                             />
                         </div>

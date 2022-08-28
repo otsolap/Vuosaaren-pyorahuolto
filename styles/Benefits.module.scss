@@ -5,6 +5,7 @@
 #benefitsSection {
     padding-top: $single;
     padding-bottom: $single;
+    background-color: $white;
 }
 
 .benefits {
@@ -25,7 +26,6 @@
 .imageContainer {
     width: 160px;
     height: 160px;
-    overflow: hidden;
 }
 
 .contentContainer {
