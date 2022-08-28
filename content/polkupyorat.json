@@ -1,11 +1,5 @@
 {
-  "Hero": {
-    "HeroTitle": "Vuosaaren Pyorahuolto",
-    "HeroSubtitle": "",
-    "DesktopHeroImage": "",
-    "MobileHeroImage": ""
-  },
-  "TextImageSection": {
+"TextImageSection": {
     "blocks": [
       {
         "title": "Polkupyörät",

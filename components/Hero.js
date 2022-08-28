@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import styles from '../styles/Hero.module.scss'
 import Image from 'next/image'
 

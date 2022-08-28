@@ -2,99 +2,53 @@
 @import "partials/variables";
 @import "partials/breakpoints";
 
-/********
-*
-* Index Page
-*
-**********/
-
-
-/* Theme List && Item */
-.themesSection {
-    padding-top: $triple;
-    padding-bottom: $triple;
-}
-
-/* Theme Item */
-
-.content {
-    margin: $single;
-}
-
-.content h2 {
-    color: $primary;
-}
-
-/********
-*
-* Business Landing | aboutMe Page
-*
-**********/
-
-.ImageTextBlockSection {
+.imageTextBlockSection {
     padding-top: $single;
     padding-bottom: $single;
 }
 
-.blockContent h2 {
-    color: $black;
-}
-
-.themeBlockImageContainer {
+.imageTextBlockImageContainer {
     padding-bottom: $double;
     width: 100%;
-    height: 220px;
+    height: 265px;
     overflow: hidden;
     @include border (1px transparent);
-    @include border-radius(0.375rem);
 }
 
+.imageTextBlockContent {
+    background-color: $white;
+    @include display-flex;
+    @include flex-direction(column);
+}
 
-.themeDescriptionContainer p {
+.blockDescriptionContainer p {
     padding: $single;
 }
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
 
-    .themesContainer {
-        @include display-flex;
+    .imageTextBlockContent {
         flex-wrap: wrap;
-        @include flex-direction(row);
-    }
-
-    .themeItem {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding: $double;
-    }
-
-    .themeBlockSection {
-        @include display-flex;
-        background-color: $white;
-    }
-
-
-    .blockContent {
-        @include display-flex;
         @include flex-direction(row-reverse);
     }
 
-    .themeBlockSection.odd {
-        .blockContent {
+    .imageTextBlock.odd {
+        .imageTextBlockContent {
             @include flex-direction(row);
         }
     }
 
-    .themeBlockImageContainer,
-    .themeDescriptionContainer {
+    .imageTextBlockImageContainer,
+    .imageTextBlockDescriptionContainer {
         margin-left: auto;
         margin-right: auto;
         max-width: 50%;
         flex: 0 0 50%;
     }
 
-    .themeDescriptionContainer {
+    .imageTextBlockDescriptionContainer {
+        padding: $double;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -105,9 +59,10 @@
 
     }
 
-    .themeBlockImageContainer {
+    .imageTextBlockImageContainer {
         padding-bottom: initial;
         width: 600px;
         height: 500px;
+        @include border-radius(0.375rem);
     }
 }

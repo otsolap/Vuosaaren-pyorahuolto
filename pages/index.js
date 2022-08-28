@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import Markdown from 'markdown-to-jsx'
 import { useRouter } from "next/router"
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
+import TextBlock from '@components/TextBlock'
 import Script from 'next/script'
 
 const Index = ({ meta, hero, markdown }) => {
@@ -31,9 +31,7 @@ const Index = ({ meta, hero, markdown }) => {
           hero={hero}
         />
         <div className="container index-page">
-          <Markdown options={{ forceBlock: true, wrapper: 'article' }}>
-            {markdown.body}
-          </Markdown>
+          <TextBlock markdown={markdown} />
         </div>
       </main>
     </>
