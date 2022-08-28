@@ -1,6 +1,7 @@
 import Meta from "@components/Meta"
 import ImageAndText from "@components/salesPage/ImageAndText"
 import BenefitList from "@components/salesPage/BenefitList"
+import TextBlock from "@components/TextBlock"
 import Highlight from "@components/salesPage/Highlight"
 
 const Polkupyorat = ({ meta, blocks, benefits, highlight }) => {
@@ -10,6 +11,7 @@ const Polkupyorat = ({ meta, blocks, benefits, highlight }) => {
             <main id="polkupyorat">
                 <ImageAndText blocks={blocks} />
                 <BenefitList benefits={benefits} />
+                <TextBlock markdown={markdown} />
                 <Highlight highlight={highlight} />
             </main>
         </>
@@ -29,6 +31,9 @@ export async function getStaticProps() {
             benefits: {
                 sectionTitle: sales.BenefitsSection.SectionTitle,
                 benefits: sales.BenefitsSection.benefits
+            },
+            markdown: {
+                body: home.Markdown.body,
             },
             highlight: {
                 quotee: sales.highlightSection.quotee,

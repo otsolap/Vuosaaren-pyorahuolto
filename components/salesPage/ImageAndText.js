@@ -19,8 +19,10 @@ const ImageAndText = ({ blocks }) => {
                                         <Image
                                             src={block.image}
                                             alt={block.title}
-                                            layout='fill'
-                                            objectFit='contain'
+                                            width={720}
+                                            height={500}
+                                            layout="responsive"
+                                            objectFit='cover'
                                             objectPosition='center'
                                             quality={100}
                                         />

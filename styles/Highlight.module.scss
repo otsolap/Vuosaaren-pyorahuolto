@@ -2,6 +2,36 @@
 @import "partials/variables";
 @import "partials/breakpoints";
 
+.highlightSection {
+    background-color: $white;
+}
+
 .highlightImageContainer {
+    position: relative;
+    overflow: hidden;
     height: 265px;
+}
+
+.highlightQuotation {
+    padding: $single;
+    @include display-flex;
+    @include flex-direction(column);
+
+    h2, h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    h3 {
+        font-weight: 600;
+    }
+}
+
+/* DESKTOP STYLES */
+@media (min-width: $container-desktop) {
+
+    .highlightImageContainer {
+        height: 500px;
+    }
+
 }

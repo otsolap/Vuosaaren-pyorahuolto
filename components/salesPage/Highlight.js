@@ -4,23 +4,25 @@ import Image from 'next/image'
 
 const Highlight = ({ highlight }) => {
     return (
-        <section className={styles.Highlight}>
+        <section className={`container ${styles.highlightSection}`}>
             <div className={styles.highlightContent}>
-                <div className={styles.highlightImageContainer}>
-                    <Image
-                        src={highlight.image}
-                        alt={highlight.quotee}
-                        width={600}
-                        height={265}
-                        layout='responsive'
-                        objectFit='contain'
-                        objectPosition='center'
-                        quality={100}
-                    />
-                </div>
+                {highlight.image && (
+                    <div className={styles.highlightImageContainer}>
+                        <Image
+                            src={highlight.image}
+                            alt={highlight.quotee}
+                            width={1440}
+                            height={500}
+                            layout='responsive'
+                            objectFit='cover'
+                            objectPosition='top'
+                            quality={100}
+                        />
+                    </div>
+                )}
                 <div className={styles.highlightQuotation}>
-                    <p>{highlight.quotee}</p>
-                    <h2>{highlight.quotee}</h2>
+                    <h2>{highlight.quote}</h2>
+                    <h3>{highlight.quotee}</h3>
                 </div>
             </div>
         </section>
