@@ -43,7 +43,7 @@ collections:
           - { label: "Sivun kuva", name: "image", widget: "image", required: false}
     - label: "Pyörät"
       name: "sales"
-      file: "content/sales.json"
+      file: "content/polkupyorat.json"
       preview_path: pyorat
       fields:
         - label: 'Kuva- ja teksti-osio'

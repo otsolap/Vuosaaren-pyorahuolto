@@ -30,9 +30,7 @@ const Index = ({ meta, hero, markdown }) => {
         <Hero
           hero={hero}
         />
-        <div className="container index-page">
-          <TextBlock markdown={markdown} />
-        </div>
+        <TextBlock markdown={markdown} />
       </main>
     </>
   )

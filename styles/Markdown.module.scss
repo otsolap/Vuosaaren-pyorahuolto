@@ -11,7 +11,12 @@
         p {
             margin-bottom: $single;
         }
+
+        ul {
+            padding-left: $single;
+        }
     
+        ul li,
         a {
             color: $blue;
         }

@@ -22,32 +22,32 @@ const FooterColumnCompany = ({ title, description, paymentList, open }) => {
         return (
             <div className={styles.paymentIMGContainer} key={i}>
                 {payments.title === 'Ecster' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Eurocard' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Maestro' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Mastercard' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Visa' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                    <Image rc={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Visa-Electron' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
                 ) : (
                     ""
                 )}
@@ -64,15 +64,13 @@ const FooterColumnCompany = ({ title, description, paymentList, open }) => {
                             <h4 className={styles.colHeading}>
                                 {title}
                             </h4>
-                            <FontAwesomeIcon
-                                className={styles.colIcon} aria-label="Alatunnisteen lisätieto" icon={active ? faAngleUp : faAngleDown}
-                            />
+                            <FontAwesomeIcon className={styles.colIcon} aria-label="Alatunnisteen lisätieto" icon={active ? faAngleUp : faAngleDown} />
                         </div>
                     </div>
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
                         <p className={styles.colText}>{description}</p>
                         <div className={styles.paymentWrapper}>
-                            {paymentInfo}
+
                         </div>
                     </div>
                 </div>

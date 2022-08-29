@@ -1,5 +1,5 @@
 {
-"TextImageSection": {
+  "TextImageSection": {
     "blocks": [
       {
         "title": "Polkupyörät",
@@ -44,7 +44,7 @@
     ]
   },
   "textSection": {
-      "body": ""
+    "body": "Malleihin voit tutustua syvemmin valmistajien sivuilla:\n\n* [Helkama](https://www.helkamavelox.fi/)\n* [Crescent](https://www.crescent.fi/)\n* [Madison](https://madison.fi/)\n\nOtamme vanhan pyöräsi vaihdossa uuteen! Saat meiltä myös varaosat ja tarvikkeet.\n\nMyymme Kendan ja Nokian renkaita."
   },
   "highlightSection": {
     "quote": "“Asiakkaiden palaute on se, joka antaa hyvän mielen ja auttaa jaksamaan. Ja se, että näkee oman työnsä jäljen.”",

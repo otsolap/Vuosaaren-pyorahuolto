@@ -4,7 +4,7 @@ import Markdown from 'markdown-to-jsx'
 
 const TextBlock = ({ markdown }) => {
     return (
-        <section className={styles.markdownBody}>
+        <section className={`container ${styles.markdownBody}`}>
             <Markdown options={{ forceBlock: true, wrapper: 'article' }}>
                 {markdown.body}
             </Markdown>
