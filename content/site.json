@@ -13,7 +13,7 @@
     "logoImage": "/images/Pyorahuolto_Logo.png",
     "logoAlt": "",
     "FooterContact": {
-        "open": true,
+        "open": false,
         "title": "Ota Yhteyttä",
         "description": "Sakari Pennanen",
         "contactList": [
@@ -59,7 +59,7 @@
       ]
     },
     "FooterCompany": {
-        "open": true,
+        "open": false,
         "title": "Vuosaaren Pyörähuolto",
         "address": "Lokietie 1 A",
         "postalCode": "00980 Helsinki",

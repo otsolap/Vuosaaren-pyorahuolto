@@ -22,32 +22,32 @@ const FooterColumnCompany = ({ title, description, paymentList, open }) => {
         return (
             <div className={styles.paymentIMGContainer} key={i}>
                 {payments.title === 'Ecster' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Eurocard' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Maestro' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Mastercard' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Visa' ? (
-                    <Image rc={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
                 ) : (
                     ""
                 )}
                 {payments.title === 'Visa-Electron' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} layout="fill" />
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
                 ) : (
                     ""
                 )}
@@ -70,7 +70,7 @@ const FooterColumnCompany = ({ title, description, paymentList, open }) => {
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
                         <p className={styles.colText}>{description}</p>
                         <div className={styles.paymentWrapper}>
-
+                            {paymentInfo}
                         </div>
                     </div>
                 </div>

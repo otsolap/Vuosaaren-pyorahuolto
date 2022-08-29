@@ -6,19 +6,22 @@
     background-color: $white;
 }
 
+.highlightContent {
+    @include display-flex;
+    @include flex-direction(column);
+    justify-content: center;
+}
+
 .highlightImageContainer {
     position: relative;
     overflow: hidden;
-    height: 265px;
 }
 
 .highlightQuotation {
-    padding: $single;
     @include display-flex;
     @include flex-direction(column);
 
     h2, h3 {
-        width: 100%;
         text-align: center;
     }
 
@@ -29,6 +32,10 @@
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
+
+    .highlightContent {
+        @include flex-direction(row);
+    }
 
     .highlightImageContainer {
         height: 500px;

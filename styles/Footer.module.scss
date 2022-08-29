@@ -35,6 +35,7 @@
 }
 
 .paymentWrapper {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,9 +43,9 @@
 }
 
 .paymentIMGContainer {
-    position: relative;
     height: $triple;
-    gap: 1rem;
+    width: $triple;
+    overflow: hidden;
 }
 
 .paymentIMG {
