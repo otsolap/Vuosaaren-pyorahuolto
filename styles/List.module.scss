@@ -4,7 +4,7 @@
 
 .sectionList {
     margin: $single;
-    padding: $double;
+    padding: $single;
     @include border(2px solid);
     border-color: $black;
     @include border-radius(.375rem);
