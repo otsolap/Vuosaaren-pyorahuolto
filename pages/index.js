@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useRouter } from "next/router"
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
-import TextBlock from '@components/TextBlock'
+import MarkdownBlock from '@components/MarkdownBlock'
 import Script from 'next/script'
 
 const Index = ({ meta, hero, markdown }) => {
@@ -22,15 +22,11 @@ const Index = ({ meta, hero, markdown }) => {
 
   return (
     <>
-      <Meta
-        meta={meta}
-      />
+      <Meta meta={meta} />
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
       <main id="home">
-        <Hero
-          hero={hero}
-        />
-        <TextBlock markdown={markdown} />
+        <Hero hero={hero} />
+        <MarkdownBlock markdown={markdown} />
       </main>
     </>
   )

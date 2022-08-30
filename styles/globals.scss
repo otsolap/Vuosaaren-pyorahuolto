@@ -56,22 +56,25 @@ a {
 
 }
 
-
-
-
 /* Section Intro */
 .sectionHeader {
 	padding-left: $single;
     padding-right: $single;
-	padding-bottom: $single;
+	padding-top: $single;
 }
 
-.container > .sectionHeader h2,
-.content h2 {
-	margin: $single;
+.container > .sectionHeader h2 {
 	font-weight: 700;
 	font-size: 1.5rem;
     line-height: 2rem;
+}
+
+.sectionContent {
+	padding: $single;
+
+	strong {
+		margin: $single auto;
+	}
 }
 
 .mobile-only {
@@ -97,7 +100,6 @@ a {
 	}
 
 	.container > .sectionHeader h2 {
-		padding-left: $single;
 		font-size: 2.25rem;
         line-height: 2.5rem;
 		padding-top: $double;

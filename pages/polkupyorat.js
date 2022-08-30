@@ -1,7 +1,7 @@
 import Meta from "@components/Meta"
 import ImageAndText from "@components/salesPage/ImageAndText"
 import BenefitList from "@components/salesPage/BenefitList"
-import TextBlock from "@components/TextBlock"
+import MarkdownBlock from "@components/MarkdownBlock"
 import Highlight from "@components/salesPage/Highlight"
 
 const Polkupyorat = ({ meta, blocks, benefits, markdown, highlight }) => {
@@ -11,7 +11,7 @@ const Polkupyorat = ({ meta, blocks, benefits, markdown, highlight }) => {
             <main id="polkupyorat">
                 <ImageAndText blocks={blocks} />
                 <BenefitList benefits={benefits} />
-                <TextBlock markdown={markdown} />
+                <MarkdownBlock markdown={markdown} />
                 <Highlight highlight={highlight} />
             </main>
         </>

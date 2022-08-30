@@ -3,10 +3,31 @@
       "DesktopHeroImage": "/images/pyorahuolto.jpg",
       "ImageAltText": "Vuosaaren Pyörähuollon liike",
       "MobileHeroImage": "/images/pyorahuolto.jpg",
-      "HeroTitle": "Tervetuloa Vuosaaren Pyörähuollon kotisivuille!"
+      "HeroTitle": ""
     },
-    "Markdown": {
-      "body": "Olemme polkupyörien korjaukseen ja myyntiin erikoistunut liike Vuosaaressa jo vuodesta 1965. Meiltä saat pyörien lisäksi pyöräilyyn liittyvät tarvikkeet sekä varaosat.\n\nHintatasomme on kilpailukykyinen ja palvelumme nopeaa ja luotettavaa. Tervetuloa viihtyisään Vuosaaren myymäläämme Lokitien ja Kallvikintien risteykseen!\n\n**Olemme avoinna**\n\n**Ma - Pe klo 10.00 - 18.00**\n**La klo 9.00 - 14.00**\n\nMaksuvälineinä meillä käy: *Käteinen, pankkikortti, Aktiiviraha, OK, Eurocard, Mastercard, Visa-Electron ja Maestro.*"
+    "Services": {
+        "body": "Testing works",
+        "lists": [
+          {
+            "title": "Yksivaihteisen pyörän perushuolto",
+            "price": "60"
+          },
+          {
+            "title": "Vaihdepyörän perushuolto",
+            "price": "75"
+          },
+          {
+            "title": "Polkupyörän perushuolto ja talvisäilytys",
+            "price": "98"
+          },
+          {
+            "title": "Polkupyörän nouto myymälöidemme lähialueilta",
+            "price": "10"
+          }
+        ]
+    },  
+    "nonPricedServices": {
+      "body": "Bye World"
     },
     "meta": {
       "title": "Vuosaaren Pyörähuolto",

@@ -2,7 +2,8 @@ import React from 'react'
 import styles from '../styles/Markdown.module.scss'
 import Markdown from 'markdown-to-jsx'
 
-const TextBlock = ({ markdown }) => {
+const MarkdownBlock = ({ markdown }) => {
+    console.log(markdown)
     return (
         <section className={`container ${styles.markdownBody}`}>
             <Markdown options={{ forceBlock: true, wrapper: 'article' }}>
@@ -12,4 +13,4 @@ const TextBlock = ({ markdown }) => {
     )
 }
 
-export default TextBlock;
+export default MarkdownBlock;
