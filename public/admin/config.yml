@@ -42,7 +42,7 @@ collections:
           - { label: "Sivun linkki", name: "url", widget: "string", required: false}
           - { label: "Sivun kuva", name: "image", widget: "image", required: false}
     - label: "Pyörät"
-      name: "sales"
+      name: "polkupyorat"
       file: "content/polkupyorat.json"
       preview_path: pyorat
       fields:
@@ -84,6 +84,44 @@ collections:
             - { label: "Lainaus", name: "quote", widget: "text", required: false}
             - { label: "Siteeraja", name: "quotee", widget: "string", required: false}
             - { label: "Kuva", name: "image", widget: "image", required: false }
+        - label: "Sivuston metatiedot"
+          name: "meta"
+          hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
+          widget: object
+          fields:
+          - { label: "Sivun otsikko", name: "title", widget: "string", required: false}
+          - { label: "Sivun kuvaus", name: "description", widget: "string", required: false}
+          - { label: "Sivun linkki", name: "url", widget: "string", required: false}
+          - { label: "Sivun kuva", name: "image", widget: "image", required: false}
+    - label: "Pyörähuolto"
+      name: "pyorahuolto"
+      file: "content/pyorahuolto.json"
+      preview_path: pyorahuolto
+      fields:
+        - label: "Herokuva"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1440 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
+          name: "Hero"
+          widget: object
+          fields:
+            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
+        - label: "Pyörähuollon esite"
+          name: "Services"
+          widget: object
+          fields: 
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
+            - label: "Palvelut, joissa kiinteä hinta."
+              name: "lists"
+              widget: list
+              fields:
+                - { label: "Otsikko", name: "title", widget: "text", required: false}
+                - { label: "hinta", name: "price", widget: "string", required: false}
+        - label: "Palvelut, joilla ei kiinteää hintaa."
+          name: "nonPricedServices"
+          widget: object
+          fields: 
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
