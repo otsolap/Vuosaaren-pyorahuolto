@@ -1,7 +1,7 @@
 import NewsItem from "./NewsItem";
 import styles from '../../styles/News.module.scss'
 
-const newsList = ({ news }) => {
+const NewsList = ({ news }) => {
     return (
         <section id={styles.newsSection}>
             <div className="container">
@@ -21,4 +21,4 @@ const newsList = ({ news }) => {
 
 }
 
-export default newsList;
+export default NewsList;

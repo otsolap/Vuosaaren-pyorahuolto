@@ -21,7 +21,7 @@ const Polkupyorat = ({ meta, blocks, benefits, markdown, highlight }) => {
 export default Polkupyorat
 
 export async function getStaticProps() {
-    const sales = await import(`../content/polkupyorat.json`)
+    const sales = await import(`../content/sales.json`)
 
     return {
         props: {

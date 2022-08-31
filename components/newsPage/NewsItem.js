@@ -1,11 +1,12 @@
 import Image from 'next/image'
-import styles from '../../styles/Benefits.module.scss'
+import styles from '../../styles/News.module.scss'
+import Markdown from 'markdown-to-jsx'
 
-const BenefitItem = ({ news }) => {
+const NewsItem = ({ news }) => {
     return (
         <div className={styles.newsWrapper}>
             {news.map((newsItem, i) => (
-                <div className={styles.benefitItem} id={`newsItem-${i}`} key={i}>
+                <div className={styles.NewsItem} id={`newsItem-${i}`} key={i}>
                     {newsItem.image && (
                         <div className={styles.imageContainer}>
                             <Image
@@ -22,10 +23,12 @@ const BenefitItem = ({ news }) => {
                     )}
                     <div className={styles.contentContainer}>
                         <h4 className={styles.title}>{newsItem.title}</h4>
-                        <p className={styles.news}>{newsItem.news}</p>
+                        <Markdown options={{ forceBlock: true, wrapper: 'article' }}>
+                            {newsItem.body}
+                        </Markdown>
                         {newsItem.file && (
                             <div className="buttonWrapper">
-                                <a href="">Miten saada otsikko tähän?</a>
+                                <a href={newsItem.file} target="_blank" rel="noopener noreferrer">{newsItem.fileTitle}</a>
                             </div>
                         )}
                     </div>
@@ -35,4 +38,4 @@ const BenefitItem = ({ news }) => {
     )
 }
 
-export default BenefitItem
+export default NewsItem

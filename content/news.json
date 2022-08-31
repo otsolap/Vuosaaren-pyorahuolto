@@ -1,27 +1,27 @@
 {
-    "newsSection": {
-      "sectionTitle": "Uutiset",
-      "news": [
-        {
-          "title": "Polkupyörät",
-          "description": "Edustamme korkealaatuisia ja pohjoismaisia pyörämerkkejä, jonka kunniaksi mallistomme koostuu  Helkaman, Marvilin, Crescentin sekä Madisonin pyöristä.",
-          "image": "/images/Helkama_Pyorailija_Luonnossa.jpeg"
-        },
-        {
-          "title": "Helkama",
-          "description": "Yli 100-vuoden suomalainen perheyrityksen kokemuksella ja ammattiylpeydellä tehdyt pyörät kaikkiin olosuhteisiin ja tarpeisiin. Kaupungin maastoon, hiekasta asfaltiille ja Hangosta Ivaloon.",
-          "image": "/images/Helkama_Pyorailijoita.jpg"
-        },
-        {
-          "title": "Crescent",
-          "description": "Ruotsalainen, juurensa rapakon takaa kantava brändi kuuluu osaa Cycleeurope-konsernia. Crescentin pyörät ovat palvelleet vuosikymmenet niin tavellisia pyöräilijöitä kuin parhaimpia kilpapyöräilyjöitä.",
-          "image": "/images/Ammattilainen.jpg"
-        },
-        {
-          "title": "Madison",
-          "description": "Suomalainen koko perheen pyörämerkki erinomaisella hintalaatusuhteella. Suunniteltu pohjolan vaativiin olosuhteisiin. Erittäin suosittu lasten ja nuorten keskuudessa.",
-          "image": "/images/Nuori_Metsassa.jpg"
-        }
-      ]
-    }
+  "newsSection": {
+    "SectionTitle": "Uutiset",
+    "news": [
+      {
+        "title": "Uudet nettisivut",
+        "body": "Upouudet nettisivut ovat julkaistu! Uudet sivut toimivat tehokkaammin kaikissa laitteissa. Jos olet nostalginen johonkin vanhempaan. Tule liikkeeseemme kokemaan vanhanajan Fillariliikkeen fiilis!"
+      },
+      {
+        "title": "Muista huoltaa pyöräsi kesää varten!",
+        "body": "Pyörähuolto kannattaa teettää nyt heti keväällä. Näin varmistat että pyöräsi on käyttökunnossa kesälle.\n"
+      },
+      {
+        "title": "Liikkeestämme juttu Ilta-Sanomissa",
+        "body": "Ilta-Sanomat (11.4.2009) teki jutun Vuosaaren Pyörähuollosta ja pyöräilykauden alkamisesta.",
+        "fileTitle": "Lataa ja lue artikkeli",
+        "file": "/images/iltisjuttu.pdf"
+      }
+    ]
+  },
+  "meta": {
+    "title": "Vuosaaren Pyörähuolto",
+    "description": "Olemme polkupyörien korjaukseen ja myyntiin erikoistunut liike Vuosaaressa jo vuodesta 1965. Meiltä saat pyörien lisäksi pyöräilyyn liittyvät tarvikkeet sekä varaosat.",
+    "url": "vuosaarenpyorahuolto.fi",
+    "image": "/images/Vuosaaren_liike.jpeg"
+  }
 }

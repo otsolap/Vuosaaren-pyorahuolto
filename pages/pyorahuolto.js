@@ -21,7 +21,7 @@ const Pyorahuolto = ({ meta, hero, services, nonPricedServices }) => {
 export default Pyorahuolto
 
 export async function getStaticProps() {
-    const repair = await import(`../content/pyorahuolto.json`)
+    const repair = await import(`../content/repair.json`)
 
     return {
         props: {

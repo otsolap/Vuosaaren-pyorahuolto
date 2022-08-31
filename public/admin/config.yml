@@ -43,8 +43,8 @@ collections:
           - { label: "Sivun kuva", name: "image", widget: "image", required: false}
     - label: "Pyörät"
       name: "polkupyorat"
-      file: "content/polkupyorat.json"
-      preview_path: pyorat
+      file: "content/sales.json"
+      preview_path: polkupyorat
       fields:
         - label: 'Kuva- ja teksti-osio'
           name: "TextImageSection"
@@ -95,7 +95,7 @@ collections:
           - { label: "Sivun kuva", name: "image", widget: "image", required: false}
     - label: "Pyörähuolto"
       name: "pyorahuolto"
-      file: "content/pyorahuolto.json"
+      file: "content/repair.json"
       preview_path: pyorahuolto
       fields:
         - label: "Herokuva"
@@ -131,6 +131,26 @@ collections:
           - { label: "Sivun kuvaus", name: "description", widget: "string", required: false}
           - { label: "Sivun linkki", name: "url", widget: "string", required: false}
           - { label: "Sivun kuva", name: "image", widget: "image", required: false}
+    - label: "Uutiset"
+      name: "news"
+      file: "content/news.json"
+      preview_path: uutiset
+      fields:        
+        - label: 'Uutiset'
+          name: "newsSection"
+          hint: ""
+          widget: object
+          fields:
+          - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
+          - label: "Uutinen"
+            name: "news"
+            widget: list
+            fields:
+              - { label: "Otsikko", name: "title", widget: "string", required: false}
+              - { label: "Kuvaus", name: "body", widget: "markdown", required: false}
+              - { label: "Kuva", name: "image", widget: "image", required: false }
+              - { label: "Tiedosto", name: "file", widget: "file", allow_multiple: false, required: false }
+              - { label: "Tiedoston otsikko", name: "fileTitle", widget: "string", required: false }
   - name: "general"
     description: "Sivun yleiset asetukset kuten Ylä- ja alatunniste, sosiaalinen media sekä lomake."
     label: "Sivun asetukset"
