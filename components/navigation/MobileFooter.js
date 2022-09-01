@@ -7,33 +7,25 @@ import styles from '../../styles/Footer.module.scss'
 
 const MobileFooter = () => {
     const router = useRouter()
-    const { Navigation } = Links
+    const length = 3
+
+    const MobileNav = Links.Navigation.pages.slice(0, length).map((link, i) => {
+        return (
+            <Link href={link.path} key={i}>
+                <a className={router.pathname == link.path ? styles.active : ''}>
+                    <span className={styles.mobileLinkText}>{link.title}</span>
+                </a>
+            </Link>
+        )
+    })
 
     return (
         <footer className={`mobile-only ${styles.NavigationBar}`}>
             <div className={styles.mobileMenuWrapper}>
-                <Link href="/">
-                    <a className={router.pathname == '/' ? styles.active : ''}>
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.indexPage} icon={faHouse} />
-                        <span className={styles.mobileLinkText}>{Navigation.indexPage}</span>
-                    </a>
-                </Link>
-                <Link href="/pyorahuolto">
-                    <a className={router.pathname == '/pyorahuolto' ? styles.active : ''}>
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.pyorahuoltoPage} icon={faWarehouse} />
-                        <span className={styles.mobileLinkText}>{Navigation.pyorahuoltoPage}</span>
-                    </a>
-                </Link>
-                <Link href="/polkupyorat">
-                    <a className={router.pathname == '/polkupyorat' ? styles.active : ''}>
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.polkupyoratPage} icon={faBicycle} />
-                        <span className={styles.mobileLinkText}>{Navigation.polkupyoratPage}</span>
-                    </a>
-                </Link>
-                <Link href="/#yhteydenotto">
-                    <a className={router.pathname == '/#yhteydenotto' ? styles.active : ''}>
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={Navigation.openModal} icon={faBars} />
-                        <span className={styles.mobileLinkText}>{Navigation.openModal}</span>
+                {MobileNav}
+                <Link href="#">
+                    <a>
+                        <span className={styles.mobileLinkText}>{Links.Navigation.openModal}</span>
                     </a>
                 </Link>
             </div>

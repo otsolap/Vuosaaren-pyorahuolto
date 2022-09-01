@@ -3,15 +3,31 @@
 @import "partials/breakpoints";
 
 #sidebar {
-	max-width: 25%;
-	width: 100%;
-	height: 100vh;
-	background-color: $primary;
+	display: none;
 }
 
-.active {
-	color: $yellow;
-	text-decoration-line: underline;
-	text-underline-offset: 5px;
-	text-decoration-thickness: 2px;
+/* DESKTOP STYLES */
+@media (min-width: $container-desktop) {
+	
+	#sidebar {
+		display: flex;
+		max-width: 25%;
+		width: 100%;
+		height: 100vh;
+		background-color: $primary;
+	}
+
+	.link {
+		color: $white;
+		text-decoration-line: underline;
+		text-underline-offset: 5px;
+		text-decoration-thickness: 2px;
+		text-decoration-color: $white;
+	}
+	
+	.active {
+		color: $yellow;
+		text-decoration-color: $yellow;
+	}
+	
 }
