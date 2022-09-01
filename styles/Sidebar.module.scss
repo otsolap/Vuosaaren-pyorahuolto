@@ -2,6 +2,12 @@
 @import "partials/variables";
 @import "partials/breakpoints";
 
+#sidebar {
+	max-width: 25%;
+	width: 100%;
+	height: 100vh;
+	background-color: $primary;
+}
 
 .active {
 	color: $yellow;

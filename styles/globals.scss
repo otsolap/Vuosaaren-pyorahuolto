@@ -16,6 +16,8 @@ body,
 	font-family: 'Open Sans', sans-serif;
 	color:$black;
 	scroll-behavior: smooth;
+	line-height: 1.5;
+	background-image: url('/images/Tausta.jpg');
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +32,7 @@ main {
 	background-color: $light-blue;
 	margin-left: auto;
 	margin-right: auto;
+	width: 100%;
 	max-width: 100%;
 	overflow: hidden;
 	position: relative;
@@ -88,6 +91,19 @@ a {
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
+
+	.layout {
+		display: flex;
+		justify-content: center;
+		max-width: $container-desktop-xl;
+		flex-direction: row;
+		margin: auto;
+	}
+
+	main {
+		max-width: 75%;
+	}
+
 	.mobile-only {
 		display: none;
 	}

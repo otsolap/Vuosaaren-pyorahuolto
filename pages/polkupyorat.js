@@ -8,12 +8,12 @@ const Polkupyorat = ({ meta, blocks, benefits, markdown, highlight }) => {
     return (
         <>
             <Meta meta={meta} />
-            <main id="polkupyorat">
+            <section id="polkupyorat">
                 <ImageAndText blocks={blocks} />
                 <BenefitList benefits={benefits} />
                 <MarkdownBlock markdown={markdown} />
                 <Highlight highlight={highlight} />
-            </main>
+            </section>
         </>
     )
 }

@@ -8,12 +8,12 @@ const Pyorahuolto = ({ meta, hero, services, nonPricedServices }) => {
     return (
         <>
             <Meta meta={meta} />
-            <main id="pyorahuolto">
+            <section id="pyorahuolto">
                 <Hero hero={hero} />
                 <MarkdownBlock markdown={services} />
                 <List lists={services} />
                 <MarkdownBlock markdown={nonPricedServices} />
-            </main>
+            </section>
         </>
     )
 }

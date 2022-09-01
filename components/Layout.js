@@ -1,9 +1,12 @@
+import Sidebar from '@components/navigation/Sidebar'
+
 export default function Layout({ children, ...props }) {
     return (
         <div className="layout">
-            <div className="content">
+            <main className="content">
                 {children}
-            </div>
+            </main>
+            <Sidebar />
         </div>
     )
 }

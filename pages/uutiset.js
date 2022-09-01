@@ -6,10 +6,10 @@ const Uutiset = ({ meta, hero, news }) => {
     return (
         <>
             <Meta meta={meta} />
-            <main id="uutiset">
+            <section id="uutiset">
                 <Hero hero={hero} />
                 <NewsList news={news} />
-            </main>
+            </section>
         </>
     )
 }

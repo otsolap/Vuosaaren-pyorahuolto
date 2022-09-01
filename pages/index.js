@@ -24,10 +24,10 @@ const Index = ({ meta, hero, markdown }) => {
     <>
       <Meta meta={meta} />
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
-      <main id="home">
+      <section id="home">
         <Hero hero={hero} />
         <MarkdownBlock markdown={markdown} />
-      </main>
+      </section>
     </>
   )
 }
