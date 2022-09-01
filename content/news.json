@@ -1,20 +1,32 @@
 {
+  "Hero": {
+    "DesktopHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "ImageAltText": "Vuosaaren Pyörähuollon liike",
+    "MobileHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "HeroTitle": "Uutiset"
+  },
   "newsSection": {
-    "SectionTitle": "Uutiset",
+    "SectionTitle": "Ajankohtaista",
     "news": [
       {
+        "date": "01.11.2022",
         "title": "Uudet nettisivut",
         "body": "Upouudet nettisivut ovat julkaistu! Uudet sivut toimivat tehokkaammin kaikissa laitteissa. Jos olet nostalginen johonkin vanhempaan. Tule liikkeeseemme kokemaan vanhanajan Fillariliikkeen fiilis!"
       },
       {
+        "date": "15.03.2018",
         "title": "Muista huoltaa pyöräsi kesää varten!",
         "body": "Pyörähuolto kannattaa teettää nyt heti keväällä. Näin varmistat että pyöräsi on käyttökunnossa kesälle.\n"
       },
       {
+        "date": "15.04.2019",
         "title": "Liikkeestämme juttu Ilta-Sanomissa",
         "body": "Ilta-Sanomat (11.4.2009) teki jutun Vuosaaren Pyörähuollosta ja pyöräilykauden alkamisesta.",
-        "fileTitle": "Lataa ja lue artikkeli",
-        "file": "/images/iltisjuttu.pdf"
+        "files": [{
+            "fileTitle": "Lataa ja lue artikkeli",
+            "file": "/images/iltisjuttu.pdf"
+          }
+        ]
       }
     ]
   },

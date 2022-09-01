@@ -2,7 +2,7 @@
 @import "partials/variables";
 @import "partials/breakpoints";
 
-$hero-max-width: 2000px;
+$hero-max-width: 1440px;
 $hero-max-height-ratio: 35; // Min-width related to viewport width
 
 #hero {
@@ -17,7 +17,6 @@ $hero-max-height-ratio: 35; // Min-width related to viewport width
 }
 
 .imageContainer {
-	position: relative;
 	width: 100%;
 	height: 270px;
 	overflow: hidden;
@@ -46,7 +45,7 @@ $hero-max-height-ratio: 35; // Min-width related to viewport width
 @media (min-width: $container-desktop) {
 
 	.imageContainer {
-		height: 100%;
+		height: 500;
 	}
 
 

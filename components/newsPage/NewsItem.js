@@ -22,14 +22,17 @@ const NewsItem = ({ news }) => {
                         </div>
                     )}
                     <div className={styles.contentContainer}>
+                        <p className={styles.date}>{newsItem.date}</p>
                         <h4 className={styles.title}>{newsItem.title}</h4>
                         <Markdown options={{ forceBlock: true, wrapper: 'article' }}>
                             {newsItem.body}
                         </Markdown>
-                        {newsItem.file && (
-                            <div className="buttonWrapper">
-                                <a href={newsItem.file} target="_blank" rel="noopener noreferrer">{newsItem.fileTitle}</a>
-                            </div>
+                        {newsItem.files && (
+                            newsItem.files.map((filesItem, i) => (
+                                <div className="buttonWrapper" key={i}>
+                                    <a href={filesItem.file} target="_blank" rel="noopener noreferrer">{filesItem.fileTitle}</a>
+                                </div>
+                            ))
                         )}
                     </div>
                 </div>

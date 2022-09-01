@@ -5,17 +5,17 @@ import styles from '../../styles/Header.module.scss'
 
 
 const Header = () => {
-    const { Navigation } = Links
+    const { Header } = Links
     return (
         <>
             <header className={styles.header}>
                 <div className={`container ${styles.navContainer}`}>
                     <div className={styles.logoContainer}>
-                        {Navigation.imageLogo && (
+                        {Header.imageLogo && (
                             <div className={styles.logoImage}>
                                 <Image
-                                    src={Navigation.imageLogo}
-                                    alt={Navigation.imageAlt}
+                                    src={Header.imageLogo}
+                                    alt={Header.imageAlt}
                                     height={50}
                                     width={50}
                                     quality={100}
@@ -25,7 +25,7 @@ const Header = () => {
                             </div>
                         )}
                         <Link href="/"><a className={styles.noDecoration}>
-                            <h1 className={styles.logo}>{Navigation.titleLogo}</h1>
+                            <h1 className={styles.logo}>{Header.titleLogo}</h1>
                         </a>
                         </Link>
                     </div>

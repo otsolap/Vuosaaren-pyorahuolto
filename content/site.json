@@ -1,13 +1,46 @@
 {
-  "Navigation": {
+  "Header": {
     "titleLogo": "Vuosaaren Pyörähuolto",
     "imageLogo": "/images/Pyorahuolto_Logo.png",
-    "imageAlt": "Vuosaaren Pyörähuolto",
-    "indexPage": "Etusivu",
-    "pyorahuoltoPage": "Pyörähuolto",
-    "polkupyoratPage": "Polkupyörät",
-    "openModal": "Lisää",
-    "closeModal": "Vähemmän"
+    "imageAlt": "Vuosaaren Pyörähuolto"
+  },
+  "Navigation": {
+    "pages": [
+      {
+        "title": "Etusivu",
+        "path": "/"
+      },
+      {
+        "title": "Pyörähuolto",
+        "path": "/pyorahuolto"
+      },
+      {
+        "title": "Polkupyörät",
+        "path": "/polkupyorat"
+      },
+      {
+        "title": "Avoimet työpaikat",
+        "path": "/tyopaikat"
+      },
+      {
+        "title": "Talvisäilytys",
+        "path": "/talvisailytys"
+      },
+      {
+        "title": "Suksihuolto",
+        "path": "/suksihuolto"
+      },
+      {
+        "title": "Uutiset",
+        "path": "/uutiset"
+      },
+      {
+        "title": "Yhteydenotto",
+        "path": "/yhteydenotto"
+      } 
+  ],
+  "openModal": "Lisää",
+  "closeModal": "Vähemmän"
   },
   "Footer": {
     "logoImage": "/images/Pyorahuolto_Logo.png",
@@ -69,10 +102,5 @@
         "openingHoursWeekDays": "Ma - Pe klo 10.00 - 18.00",
         "openingHoursWeekend": "La klo 9.00 - 14.00"
     }
-  },
-  "Header": {
-    "titleLogo": "Vuosaaren Pyörähuolto",
-    "imageLogo": "/images/Pyorahuolto_Logo.png",
-    "imageAlt": "Vuosaaren Pyörähuolto"
   }
 }

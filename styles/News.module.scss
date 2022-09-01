@@ -1,0 +1,56 @@
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/breakpoints";
+
+#newsSection {
+    padding-top: $single;
+    padding-bottom: $single;
+}
+
+.news {
+    @include display-flex;
+    @include flex-direction(column);
+    flex-wrap: wrap;
+    padding-top: $single;
+    padding-bottom: $single;
+}
+
+.contentContainer {
+    text-align: left;
+    padding: $single;
+}
+
+.newsItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 160px;
+    height: 160px;
+}
+
+.date {
+    color: $dark-blue-grey;
+}
+
+.date,
+.title {
+    padding-bottom: $single;
+}
+
+/* DESKTOP STYLES */
+@media (min-width: $container-desktop) {
+
+    .news {
+        padding-top: $double;
+        padding-bottom: $double;
+    }
+
+    .imageContainer {
+        width: 230px;
+        height: 230px;
+    }
+}

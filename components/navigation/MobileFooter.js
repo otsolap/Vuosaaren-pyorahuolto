@@ -10,7 +10,7 @@ const MobileFooter = () => {
     const { Navigation } = Links
 
     return (
-        <footer className={`mobile-only ${styles.MobileFooterBar}`}>
+        <footer className={`mobile-only ${styles.NavigationBar}`}>
             <div className={styles.mobileMenuWrapper}>
                 <Link href="/">
                     <a className={router.pathname == '/' ? styles.active : ''}>
