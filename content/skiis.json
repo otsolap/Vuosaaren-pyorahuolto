@@ -1,8 +1,8 @@
 {
   "Hero": {
-    "DesktopHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "DesktopHeroImage": "/images/Sukset.jpg",
     "ImageAltText": "Vuosaaren Pyörähuollon liike",
-    "MobileHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "MobileHeroImage": "/images/Sukset.jpg",
     "HeroTitle": "Suksihuolto"
   },
   "Markdown": {
@@ -12,6 +12,6 @@
     "title": "Vuosaaren Pyörähuolto | Suksihuolto",
     "description": "Talvikeleistä nauttii aivan eri lailla, kun alla on ammattitaidolla huolletut sukset.",
     "url": "vuosaarenpyorahuolto.fi/suksihuolto",
-    "image": "/images/Vuosaaren_liike.jpeg"
+    "image": "/images/Sukset.jpg"
   }
 }

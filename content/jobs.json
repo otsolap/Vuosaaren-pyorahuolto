@@ -1,8 +1,8 @@
 {
   "Hero": {
-    "DesktopHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "DesktopHeroImage": "/images/Tyopaikka.jpeg",
     "ImageAltText": "Vuosaaren Pyörähuollon liike",
-    "MobileHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "MobileHeroImage": "/images/Tyopaikka.jpeg",
     "HeroTitle": "Avoimet työpaikat"
   },
   "Markdown": {
@@ -12,6 +12,6 @@
     "title": "Vuosaaren Pyörähuolto | Avoimet työpaikat",
     "description": "E﻿tsimme aika ajoin kausityövoimaa ja tietenkin kesälle tarvitsemme lomien ajaksi kesätyöläisiä.",
     "url": "vuosaarenpyorahuolto.fi/tyopaikat",
-    "image": "/images/Vuosaaren_liike.jpeg"
+    "image": "/images/Tyopaikka.jpeg"
   }
 }

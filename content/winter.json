@@ -1,8 +1,8 @@
 {
   "Hero": {
-    "DesktopHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "DesktopHeroImage": "/images/Varasto.jpg",
     "ImageAltText": "Vuosaaren Pyörähuollon liike",
-    "MobileHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "MobileHeroImage": "/images/Varasto.jpg",
     "HeroTitle": "Polkupyörän Talvisäilytys"
   },
   "Markdown": {
@@ -12,6 +12,6 @@
     "title": "Vuosaaren Pyörähuolto | Polkupyörien talvisäilytys",
     "description": "Mikäli sinulla ei ole talven varalle sopivaa tai luotettavaa tilaa säilyttää polkupyörää, tarjoamme oheispalveluna talvisäilytystä kuivassa ja lämpimässä tilassa.",
     "url": "vuosaarenpyorahuolto.fi",
-    "image": "/images/Vuosaaren_liike.jpeg"
+    "image": "/images/Varasto.jpg"
   }
 }

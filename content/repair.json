@@ -1,8 +1,8 @@
 {
   "Hero": {
-    "DesktopHeroImage": "/images/pyorahuolto.jpg",
+    "DesktopHeroImage": "/images/pyorahuolto.jpeg",
     "ImageAltText": "Vuosaaren Pyörähuollon liike",
-    "MobileHeroImage": "/images/pyorahuolto.jpg",
+    "MobileHeroImage": "/images/pyorahuolto_sakke.jpg",
     "HeroTitle": ""
   },
   "Services": {
@@ -33,6 +33,6 @@
     "title": "Vuosaaren Pyörähuolto",
     "description": "Teemme kaikki pyörään liittyvät korjaukset vankalla ammattitaidolla. Polkupyörän pikahuoltomme käsittää pyörän renkaiden vaihto pyörän jarrupalojen vaihto polkupyörän muut pienet korjaukset",
     "url": "vuosaarenpyorahuolto.fi/pyorahuolto",
-    "image": "/images/pyorahuolto.jpg"
+    "image": "/images/pyorahuolto.jpeg"
   }
 }

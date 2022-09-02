@@ -1,8 +1,8 @@
 {
   "Hero": {
-    "DesktopHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "DesktopHeroImage": "/images/Helkama_Liikkeessa.jpeg",
     "ImageAltText": "Vuosaaren Pyörähuollon liike",
-    "MobileHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "MobileHeroImage": "/images/Helkama_Liikkeessa.jpeg",
     "HeroTitle": "Uutiset"
   },
   "newsSection": {
@@ -34,6 +34,6 @@
     "title": "Vuosaaren Pyörähuolto",
     "description": "Olemme polkupyörien korjaukseen ja myyntiin erikoistunut liike Vuosaaressa jo vuodesta 1965. Meiltä saat pyörien lisäksi pyöräilyyn liittyvät tarvikkeet sekä varaosat.",
     "url": "vuosaarenpyorahuolto.fi",
-    "image": "/images/Vuosaaren_liike.jpeg"
+    "image": "/images/Helkama_Liikkeessa.jpeg"
   }
 }
