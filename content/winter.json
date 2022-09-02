@@ -1,17 +1,17 @@
 {
-    "Hero": {
-      "DesktopHeroImage": "/images/Vuosaaren_liike.jpeg",
-      "ImageAltText": "Vuosaaren Pyörähuollon liike",
-      "MobileHeroImage": "/images/Vuosaaren_liike.jpeg",
-      "HeroTitle": "Tervetuloa Vuosaaren Pyörähuollon kotisivuille!"
-    },
-    "Markdown": {
-      "body": "Olemme polkupyörien korjaukseen ja myyntiin erikoistunut liike Vuosaaressa jo vuodesta 1965. Meiltä saat pyörien lisäksi pyöräilyyn liittyvät tarvikkeet sekä varaosat.\n\nHintatasomme on kilpailukykyinen ja palvelumme nopeaa ja luotettavaa. Tervetuloa viihtyisään Vuosaaren myymäläämme Lokitien ja Kallvikintien risteykseen!\n\n**Olemme avoinna**\n\n**Ma - Pe klo 10.00 - 18.00**\n**La klo 9.00 - 14.00**\n\nMaksuvälineinä meillä käy: *Käteinen, pankkikortti, Aktiiviraha, OK, Eurocard, Mastercard, Visa-Electron ja Maestro.*"
-    },
-    "meta": {
-      "title": "Vuosaaren Pyörähuolto",
-      "description": "Olemme polkupyörien korjaukseen ja myyntiin erikoistunut liike Vuosaaressa jo vuodesta 1965. Meiltä saat pyörien lisäksi pyöräilyyn liittyvät tarvikkeet sekä varaosat.",
-      "url": "vuosaarenpyorahuolto.fi",
-      "image": "/images/Vuosaaren_liike.jpeg"
-    }
+  "Hero": {
+    "DesktopHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "ImageAltText": "Vuosaaren Pyörähuollon liike",
+    "MobileHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "HeroTitle": "Polkupyörän Talvisäilytys"
+  },
+  "Markdown": {
+    "body": "Mikäli sinulla ei ole talven varalle sopivaa tai luotettavaa tilaa säilyttää polkupyörää, tarjoamme oheispalveluna talvisäilytystä kuivassa ja lämpimässä tilassa. \n\nPolkupyörän talvisäilytys ja perushuolto 98 €. Nouto myymälöidemme lähialueilta 10 €."
+  },
+  "meta": {
+    "title": "Vuosaaren Pyörähuolto | Polkupyörien talvisäilytys",
+    "description": "Mikäli sinulla ei ole talven varalle sopivaa tai luotettavaa tilaa säilyttää polkupyörää, tarjoamme oheispalveluna talvisäilytystä kuivassa ja lämpimässä tilassa.",
+    "url": "vuosaarenpyorahuolto.fi",
+    "image": "/images/Vuosaaren_liike.jpeg"
   }
+}

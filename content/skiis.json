@@ -1,17 +1,17 @@
 {
-    "Hero": {
-      "DesktopHeroImage": "/images/Vuosaaren_liike.jpeg",
-      "ImageAltText": "Vuosaaren Pyörähuollon liike",
-      "MobileHeroImage": "/images/Vuosaaren_liike.jpeg",
-      "HeroTitle": "Tervetuloa Vuosaaren Pyörähuollon kotisivuille!"
-    },
-    "Markdown": {
-      "body": "Olemme polkupyörien korjaukseen ja myyntiin erikoistunut liike Vuosaaressa jo vuodesta 1965. Meiltä saat pyörien lisäksi pyöräilyyn liittyvät tarvikkeet sekä varaosat.\n\nHintatasomme on kilpailukykyinen ja palvelumme nopeaa ja luotettavaa. Tervetuloa viihtyisään Vuosaaren myymäläämme Lokitien ja Kallvikintien risteykseen!\n\n**Olemme avoinna**\n\n**Ma - Pe klo 10.00 - 18.00**\n**La klo 9.00 - 14.00**\n\nMaksuvälineinä meillä käy: *Käteinen, pankkikortti, Aktiiviraha, OK, Eurocard, Mastercard, Visa-Electron ja Maestro.*"
-    },
-    "meta": {
-      "title": "Vuosaaren Pyörähuolto",
-      "description": "Olemme polkupyörien korjaukseen ja myyntiin erikoistunut liike Vuosaaressa jo vuodesta 1965. Meiltä saat pyörien lisäksi pyöräilyyn liittyvät tarvikkeet sekä varaosat.",
-      "url": "vuosaarenpyorahuolto.fi",
-      "image": "/images/Vuosaaren_liike.jpeg"
-    }
+  "Hero": {
+    "DesktopHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "ImageAltText": "Vuosaaren Pyörähuollon liike",
+    "MobileHeroImage": "/images/Vuosaaren_liike.jpeg",
+    "HeroTitle": "Suksihuolto"
+  },
+  "Markdown": {
+    "body": "Hyvin huolletut sukset auttavat voitelun kanssa pitämään hien pinnassa ja turhautumisen loitolla. Talvikeleistä nauttii aivan eri lailla, kun alla on ammattitaidolla huolletut sukset. Meiltä saat myös pitoteipit ja muut hiihtotarvikkeet. **Huom! Emme huolla laskettelusuksia.**\n\nMurtomaasuksien huolto 25€, pitoteippi 5€. Luistimien teroitus vain 5€"
+  },
+  "meta": {
+    "title": "Vuosaaren Pyörähuolto | Suksihuolto",
+    "description": "Talvikeleistä nauttii aivan eri lailla, kun alla on ammattitaidolla huolletut sukset.",
+    "url": "vuosaarenpyorahuolto.fi/suksihuolto",
+    "image": "/images/Vuosaaren_liike.jpeg"
   }
+}
