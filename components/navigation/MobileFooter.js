@@ -7,9 +7,9 @@ import styles from '../../styles/Footer.module.scss'
 
 const MobileFooter = () => {
     const router = useRouter()
-    const length = 3
+    const PRIMARY_PAGES = 3
 
-    const MobileNav = Links.Navigation.pages.slice(0, length).map((link, i) => {
+    const MobileNav = Links.Navigation.pages.slice(0, PRIMARY_PAGES).map((link, i) => {
         return (
             <Link href={link.path} key={i}>
                 <a className={router.pathname == link.path ? styles.active : ''}>
