@@ -17,9 +17,9 @@ const MobileModal = ({ show }) => {
 
     const MobileModalLinks = Links.Navigation.pages.slice(AFTER_PRIMARY_PAGES).map((link, i) => {
         return (
-            <li key={i}>
+            <li className={`${styles.linkWrapper} ${router.asPath === link.path ? styles.active : ''}`} key={i}>
                 <Link href={link.path} >
-                    <a className={router.pathname == link.path ? styles.active : ''}>
+                    <a className={styles.link}>
                         <span className={styles.mobileLinkText}>{link.title}</span>
                     </a>
                 </Link>
@@ -28,8 +28,8 @@ const MobileModal = ({ show }) => {
     })
 
     const modalComponent = show ? (
-        <div tabIndex="-1" aria-hidden="true" aria-labelledby="Modal" className={`mobile-only ${styles.modal}`}>
-            <div className={styles.ModalContent}>
+        <div tabIndex="-1" aria-hidden="true" aria-labelledby="Modal" id={styles.modal} className="mobile-only">
+            <div className={styles.modalContent}>
                 {MobileModalLinks}
             </div>
         </div>

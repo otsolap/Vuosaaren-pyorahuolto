@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <>
             <header className={styles.header}>
-                <div className={`container ${styles.navContainer}`}>
+                <div className="container">
                     <div className={styles.logoContainer}>
                         {Header.imageLogo && (
                             <div className={styles.logoImage}>

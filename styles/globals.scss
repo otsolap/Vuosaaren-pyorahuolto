@@ -17,7 +17,6 @@ body,
 	color:$black;
 	scroll-behavior: smooth;
 	line-height: 1.5;
-	background-image: url('/images/Tausta.jpg');
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,7 +33,6 @@ main {
 	margin-right: auto;
 	width: 100%;
 	max-width: 100%;
-	overflow: hidden;
 	position: relative;
 }
 
@@ -100,8 +98,15 @@ a {
 		margin: auto;
 	}
 
+	html,
+	body,
+	#root {
+		background-image: url('/images/Tausta.jpg');
+	}
+
 	main {
 		max-width: 80%;
+		overflow: hidden;
 	}
 
 	.mobile-only {

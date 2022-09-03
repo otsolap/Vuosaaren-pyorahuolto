@@ -15,8 +15,8 @@
     @include flex-direction(column);
 }
 
-.imageTextBlockDescriptionContainer p {
-    padding: .5rem $single $single $single;
+.imageTextBlockDescriptionContainer  {
+    padding: $single;
 }
 
 .imageTextBlock.odd {
