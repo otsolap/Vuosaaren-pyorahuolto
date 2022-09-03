@@ -198,6 +198,11 @@
         gap: $double;
     }
     
+
+    .colFlexBox {
+        pointer-events: none;
+    }
+
     .footerColumn {
         flex: 0 0 calc(100% / 3);
         max-width: calc(100% / 3);
@@ -205,10 +210,6 @@
 
     .footerColButton {
         width: initial;
-    }
-
-    .colOpen {
-        pointer-events: none;
     }
 
     .colIcon {
@@ -219,6 +220,10 @@
         @include display-flex;
         @include flex-direction(row);
         flex-wrap: wrap;
+    }
+
+    .colContent {
+        pointer-events: all;
     }
     
     .footerDesktopLogoContainer {
