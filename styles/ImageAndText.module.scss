@@ -54,8 +54,8 @@
 
     .imageTextBlockDescriptionContainer {
         padding: $double;
-        display: flex;
-        flex-direction: column;
+        @include display-flex;
+		@include flex-direction(column);
         justify-content: center;
 
         h2 {

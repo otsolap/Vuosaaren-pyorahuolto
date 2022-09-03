@@ -26,8 +26,8 @@ $hero-max-height-ratio: 35; // Min-width related to viewport width
 
 .contentContainer {
 	width: 100%;
-	display: flex;
-	flex-direction: row;
+	@include display-flex;
+	@include flex-direction(row);
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: flex-start;

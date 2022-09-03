@@ -28,7 +28,7 @@ const MobileModal = ({ show }) => {
     })
 
     const modalComponent = show ? (
-        <div tabIndex="-1" aria-hidden="true" aria-labelledby="Modal" className={`mobile-only ${styles.Modal}`}>
+        <div tabIndex="-1" aria-hidden="true" aria-labelledby="Modal" className={`mobile-only ${styles.modal}`}>
             <div className={styles.ModalContent}>
                 {MobileModalLinks}
             </div>

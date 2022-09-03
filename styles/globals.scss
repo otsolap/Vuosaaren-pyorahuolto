@@ -93,10 +93,10 @@ a {
 @media (min-width: $container-desktop) {
 
 	.layout {
-		display: flex;
+		@include display-flex;
+		@include flex-direction(row);
 		justify-content: center;
 		max-width: $container-desktop-xl;
-		flex-direction: row;
 		margin: auto;
 	}
 

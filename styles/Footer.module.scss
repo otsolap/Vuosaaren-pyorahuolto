@@ -41,8 +41,8 @@
 
 .paymentWrapper {
     position: relative;
-    display: flex;
-    flex-direction: row;
+    @include display-flex;
+    @include flex-direction(row);
     flex-wrap: wrap;
     justify-content: space-around;
 }

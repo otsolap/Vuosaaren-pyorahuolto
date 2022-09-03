@@ -10,7 +10,7 @@
 @media (min-width: $container-desktop) {
 	
 	#sidebar {
-		display: flex;
+		@include display-flex;
 		max-width: 20%;
 		width: 100%;
 		background-color: $primary;
