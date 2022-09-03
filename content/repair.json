@@ -23,11 +23,15 @@
       {
         "title": "Polkupyörän nouto myymälöidemme lähialueilta",
         "price": "10"
+      },
+      {
+        "title": "Talvisäilytys +Huolto",
+        "price": "110"
       }
     ]
   },
   "nonPricedServices": {
-    "body": "Teemme kaikki pyörään liittyvät korjaukset vankalla ammattitaidolla.\n\nRenkaiden vaihdot\n\nVaijereiden vaihdot\n\nVaihteiden säädöt\n\nJarrujen säädöt\n\nNapojen huollot\n\nYm."
+    "body": "Teemme kaikki pyörään liittyvät korjaukset vankalla ammattitaidolla.\n\nRenkaiden vaihdot\n\nVaijereiden vaihdot\n\nVaihteiden säädöt\n\nJarrujen säädöt\n\nNapojen huollot\n\nYm.\n\nTuo pyöräsi kauden huoltoon\n\nNiin vältyt kevään ruuhkilta!"
   },
   "meta": {
     "title": "Vuosaaren Pyörähuolto",

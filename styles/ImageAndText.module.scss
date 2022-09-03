@@ -28,7 +28,7 @@
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
 
-    .imageTextBlockSection {
+    .imageTextBlockSection:not(:first-of-type) {
         padding-top: $single;
         padding-bottom: $single;
     }

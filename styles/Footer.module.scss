@@ -124,7 +124,6 @@
 
 /* MOBILE FOOTER */
 
-
 .MobileFooterBar {
     background-color: $primary;
     border-top: $white 2px solid;
@@ -161,10 +160,6 @@
 
 }
 
-
-
-
-
 .mobileIcon {
     margin-top: 0.75rem;
     font-size: 1.875rem;
@@ -187,18 +182,19 @@
         padding-bottom: 0;
     }
 
+    .columnContainer {
+        @include flex-direction(row);
+        gap: $double;
+    }
+    
     .footerColumn {
         flex: 0 0 calc(100% / 3);
         max-width: calc(100% / 3);
     }
 
-    .footerLogoContainer {
-        height: 125px;
-        width: 125px;
-        padding-top: initial;
-        margin-left: initial;
+    .footerColButton {
+        width: initial;
     }
-    
     
     .footerHeader{
         @include display-flex;

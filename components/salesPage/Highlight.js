@@ -15,7 +15,7 @@ const Highlight = ({ highlight }) => {
                             height={500}
                             layout='responsive'
                             objectFit='cover'
-                            objectPosition='top'
+                            objectPosition='center'
                             quality={100}
                         />
                     </div>
