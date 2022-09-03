@@ -205,6 +205,11 @@
 
     .footerColButton {
         width: initial;
+        pointer-events: none;
+    }
+
+    .colIcon {
+        display: none !important;
     }
     
     .footerHeader{
@@ -218,4 +223,5 @@
         max-width: 50%;
         flex: 0 0 50%;
     }
+
 }

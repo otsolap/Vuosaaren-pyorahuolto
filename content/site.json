@@ -49,7 +49,7 @@
     "logoImage": "/images/Pyorahuolto_Logo.png",
     "logoAlt": "",
     "FooterContact": {
-        "open": false,
+        "open": true,
         "title": "Ota Yhteyttä",
         "description": "Sakari Pennanen",
         "contactList": [

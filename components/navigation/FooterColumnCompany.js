@@ -26,9 +26,7 @@ const FooterColumnCompany = ({ title, address, postalCode, mapCTATitle, mapURL, 
                             <h4 className={styles.colHeading}>
                                 {title}
                             </h4>
-                            <FontAwesomeIcon
-                                className={styles.colIcon} aria-label="Alatunnisteen lisätieto" icon={active ? faAngleUp : faAngleDown}
-                            />
+                            <FontAwesomeIcon className={styles.colIcon} aria-label="Alatunnisteen lisätieto" icon={active ? faAngleUp : faAngleDown} />
                         </div>
                     </div>
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >

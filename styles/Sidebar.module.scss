@@ -18,6 +18,14 @@
 		align-items: flex-start;
 	}
 
+	.fixedNav {
+		position: fixed;
+	}
+
+	.stickyUl {
+		position: sticky;
+	}
+
 	.linkWrapper {
 		padding-top: $single;
 		padding-bottom: $single;

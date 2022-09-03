@@ -21,8 +21,8 @@ const Sidebar = () => {
 
     return (
         <aside id={styles.sidebar}>
-            <nav>
-                <ul className={styles.linkContainer}>
+            <nav className={styles.fixedNav}>
+                <ul className={styles.stickyUl}>
                     {Navigation}
                 </ul>
             </nav>
