@@ -32,7 +32,7 @@ const FooterColumnCompany = ({ title, address, postalCode, mapCTATitle, mapURL, 
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
                         <p className={styles.colText}>{address}</p>
                         <p className={styles.colText}>{postalCode}</p>
-                        <a href={{ mapURL }} target="_blank" rel="noopener noreferrer">{mapCTATitle}</a>
+                        <a href={mapURL} target="_blank" rel="noopener noreferrer">{mapCTATitle}</a>
                         <p className={styles.colText}>{openingHoursTitle}</p>
                         <p className={styles.colTextNOPadding}>{openingHoursWeekDays}</p>
                         <p className={styles.colTextNOPadding}>{openingHoursWeekend}</p>

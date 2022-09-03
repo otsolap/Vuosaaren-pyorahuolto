@@ -9,9 +9,9 @@ const Sidebar = () => {
 
     const Navigation = Links.Navigation.pages.map((page, i) => {
         return (
-            <li className={styles.linkWrapper} key={i}>
+            <li className={`${styles.linkWrapper}  ${router.asPath === page.path ? styles.active : ''}`} key={i}>
                 <Link href={page.path}>
-                    <a className={`${styles.link}  ${router.asPath === page.path ? styles.active : ''}`}>
+                    <a className={styles.link}>
                         {page.title}
                     </a>
                 </Link>
