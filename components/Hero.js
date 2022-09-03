@@ -13,6 +13,7 @@ const Hero = ({ hero }) => {
                         objectFit='cover'
                         objectPosition='center'
                         quality={100}
+                        priority
                     />
                 </div>
             )}
@@ -25,16 +26,17 @@ const Hero = ({ hero }) => {
                         objectFit='cover'
                         objectPosition='center center'
                         quality={100}
+                        priority
                     />
                 </div>
             )}
-            {hero.HeroTitle && (
+            {hero.HeroTitle ? (
                 <div className={styles.contentContainer}>
                     <div className={styles.content}>
                         <h1>{hero.HeroTitle}</h1>
                     </div>
                 </div>
-            )}
+            ) : null}
         </section >
     )
 }

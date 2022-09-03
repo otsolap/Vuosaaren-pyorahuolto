@@ -21,6 +21,11 @@
 .footerColumn {
     flex: 100%;
     max-width: 100%;
+
+    a {
+        color: $yellow;
+    }
+
 }
 
 .columnContainer {
