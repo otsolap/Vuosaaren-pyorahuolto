@@ -11,8 +11,8 @@ const Highlight = ({ highlight }) => {
                         <Image
                             src={highlight.image}
                             alt={highlight.quotee}
-                            width={1440}
-                            height={500}
+                            width={1280}
+                            height={600}
                             layout='responsive'
                             objectFit='cover'
                             objectPosition='center'

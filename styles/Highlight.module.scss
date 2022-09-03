@@ -20,6 +20,8 @@
 .highlightQuotation {
     @include display-flex;
     @include flex-direction(column);
+    padding: $single;
+
 
     h2, h3 {
         text-align: center;
@@ -32,10 +34,6 @@
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
-
-    .highlightContent {
-        @include flex-direction(row);
-    }
 
     .highlightImageContainer {
         height: 500px;
