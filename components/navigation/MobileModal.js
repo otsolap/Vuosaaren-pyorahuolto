@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import styles from '../../styles/MobileModal.module.scss'
 import useToggle from '@hooks/useToggleState'
 
-const MobileModal = ({ show }) => {
+const MobileModal = ({ show, closeModal }) => {
     const [isBrowser, setIsBrowswer] = useToggle(false);
     const router = useRouter()
     const AFTER_PRIMARY_PAGES = 3
@@ -15,9 +15,18 @@ const MobileModal = ({ show }) => {
         setIsBrowswer(true);
     }, [])
 
+    const handleClick = (e) => {
+        e.preventDefault()
+        closeModal()
+    }
+
     const MobileModalLinks = Links.Navigation.pages.slice(AFTER_PRIMARY_PAGES).map((link, i) => {
         return (
-            <li className={`${styles.linkWrapper} ${router.asPath === link.path ? styles.active : ''}`} key={i}>
+            <li
+                onClick={handleClick}
+                className={`${styles.linkWrapper} ${router.asPath === link.path ? styles.active : ''}`}
+                key={i}
+            >
                 <Link href={link.path} >
                     <a className={styles.link}>
                         <span className={styles.mobileLinkText}>{link.title}</span>

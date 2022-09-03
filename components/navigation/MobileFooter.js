@@ -48,7 +48,7 @@ const MobileFooter = () => {
                 </button>
                 <MobileModal
                     show={showModal}
-                    onClose={() => setShowModal(false)}
+                    closeModal={() => setShowModal(false)}
                 />
             </div>
         </footer>
