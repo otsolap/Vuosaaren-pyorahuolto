@@ -5,8 +5,6 @@ import MarkdownBlock from "@components/MarkdownBlock"
 import Highlight from "@components/salesPage/Highlight"
 
 const Polkupyorat = ({ meta, blocks, benefits, markdown, highlight }) => {
-    console.log(highlight)
-
     return (
         <>
             <Meta meta={meta} />

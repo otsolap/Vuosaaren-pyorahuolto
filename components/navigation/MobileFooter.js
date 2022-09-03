@@ -33,7 +33,7 @@ const MobileFooter = () => {
     })
 
     return (
-        <footer className={`mobile-only ${styles.NavigationBar}`}>
+        <footer className={`mobile-only ${styles.MobileFooterBar}`}>
             <div className={styles.mobileMenuWrapper}>
                 {MobileNav}
                 <button onClick={() => setShowModal(true)}>

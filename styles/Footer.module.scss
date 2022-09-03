@@ -130,8 +130,8 @@
 /* MOBILE FOOTER */
 
 .MobileFooterBar {
-    background-color: $primary;
     border-top: $white 2px solid;
+    background-color: $dark-blue-grey;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -140,6 +140,7 @@
     z-index: 50;
     text-align: center;
 }
+
 
 .mobileMenuWrapper {
     @include display-flex;
@@ -151,7 +152,7 @@
         color: $yellow;
     }
 
-    a {
+    a, button {
         color: $white;
         position: relative;
         width: 5rem;
@@ -161,6 +162,12 @@
         cursor: pointer;
         flex: 0 0 calc(100% / 4);
         max-width: calc(100% / 4);    
+    }
+
+    button {
+        border: none;
+        outline: none;
+        background: none;
     }
 
 }
@@ -174,7 +181,6 @@
 .mobileLinkText {
     @include display-flex;
     justify-content: center;
-    padding-top: 0.5rem;
     width: 100%;
     font-size: 0.75rem;
     line-height: 1.625;
