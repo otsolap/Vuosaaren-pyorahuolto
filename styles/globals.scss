@@ -101,7 +101,7 @@ a {
 	}
 
 	main {
-		max-width: 75%;
+		max-width: 80%;
 	}
 
 	.mobile-only {
@@ -113,12 +113,6 @@ a {
 
 	.container {
 		max-width: $container-desktop;
-	}
-
-	.container > .sectionHeader h2 {
-		font-size: 2.25rem;
-        line-height: 2.5rem;
-		padding-top: $double;
 	}
 
 	.ContactContainer {

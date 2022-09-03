@@ -92,7 +92,7 @@
       ]
     },
     "FooterCompany": {
-        "open": false,
+        "open": true,
         "title": "Vuosaaren Pyörähuolto",
         "address": "Lokietie 1 A",
         "postalCode": "00980 Helsinki",

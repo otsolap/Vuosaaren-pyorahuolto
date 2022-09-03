@@ -11,10 +11,12 @@
 	
 	#sidebar {
 		display: flex;
-		max-width: 25%;
+		max-width: 20%;
 		width: 100%;
 		height: 100vh;
 		background-color: $primary;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.link {

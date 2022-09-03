@@ -2,11 +2,6 @@
 @import "partials/variables";
 @import "partials/breakpoints";
 
-#newsSection {
-    padding-top: $single;
-    padding-bottom: $single;
-}
-
 .news {
     @include display-flex;
     @include flex-direction(column);
