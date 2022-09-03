@@ -1,11 +1,19 @@
+import React, { useEffect, useRef, useState } from 'react'
+import ReactDOM from 'react-dom'
 import Link from 'next/link'
 import Links from '@content/site.json'
 import { useRouter } from 'next/router'
 import styles from '../../styles/MobileModal.module.scss'
+import useToggle from '@hooks/useToggleState'
 
-const MobileModal = () => {
+const MobileModal = ({ show }) => {
+    const [isBrowser, setIsBrowswer] = useToggle(false);
     const router = useRouter()
     const AFTER_PRIMARY_PAGES = 3
+
+    useEffect(() => {
+        setIsBrowswer(true);
+    }, [])
 
     const MobileModalLinks = Links.Navigation.pages.slice(AFTER_PRIMARY_PAGES).map((link, i) => {
         return (
@@ -19,20 +27,22 @@ const MobileModal = () => {
         )
     })
 
-    console.log(MobileModalLinks)
-
-    return (
-        <div className={`mobile-only ${styles.NavigationBar}`}>
-            <div className={styles.mobileMenuWrapper}>
+    const modalComponent = show ? (
+        <div tabIndex="-1" aria-hidden="true" aria-labelledby="Modal" className={`mobile-only ${styles.Modal}`}>
+            <div className={styles.ModalContent}>
                 {MobileModalLinks}
-                <Link href="#">
-                    <a>
-                        <span className={styles.mobileLinkText}>{Links.Navigation.openModal}</span>
-                    </a>
-                </Link>
             </div>
         </div>
-    )
+    ) : null
+
+    if (isBrowser) {
+        return ReactDOM.createPortal(
+            modalComponent,
+            document.getElementById('modal-root')
+        )
+    } else {
+        return null
+    }
 }
 
 export default MobileModal;

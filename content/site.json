@@ -8,15 +8,18 @@
     "pages": [
       {
         "title": "Etusivu",
-        "path": "/"
+        "path": "/",
+        "icon": "house"
       },
       {
         "title": "Pyörähuolto",
-        "path": "/pyorahuolto"
+        "path": "/pyorahuolto",
+        "icon": "warehouse"
       },
       {
         "title": "Polkupyörät",
-        "path": "/polkupyorat"
+        "path": "/polkupyorat",
+        "icon": "bicycle"
       },
       {
         "title": "Avoimet työpaikat",
