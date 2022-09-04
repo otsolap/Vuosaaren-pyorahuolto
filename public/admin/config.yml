@@ -294,6 +294,12 @@ collections:
           name: "Contact"
           widget: object
           fields:
-           - { label: "Logo", name: "logoImage", widget: "image", required: false}
-           - { label: "Logon täsmennys", name: "logoAlt", widget: "string", required: false}
-           - { label: "Arvolupaus", name: "valueProposition", widget: "string", required: false}
+           - { label: "Otsikko", name: "title", widget: "string", required: false}
+           - { label: "Kuvaus", name: "description", widget: "string", required: false}
+           - { label: "Auki", name: "open", widget: "boolean", required: false}
+           - label: "Yhteystiedot"
+           - name: "contactList"
+           - widget: list
+           - fields:
+              - { label: "Otsikko", name: "title", widget: "string", required: false}
+              - { label: "Yhtyestieto", name: "url", widget: "string", required: false}
