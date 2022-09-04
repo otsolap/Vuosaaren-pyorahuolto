@@ -5,8 +5,10 @@ import Hero from '@components/Hero'
 import MarkdownBlock from '@components/MarkdownBlock'
 import Script from 'next/script'
 
-const Index = ({ meta, hero, markdown }) => {
+const Index = ({ meta, hero, markdown, information }) => {
   const router = useRouter()
+  const payment = information.payment
+  const company = information.company
 
   useEffect(() => {
     if (window.netlifyIdentity) {
@@ -27,6 +29,14 @@ const Index = ({ meta, hero, markdown }) => {
       <section id="home">
         <Hero hero={hero} />
         <MarkdownBlock markdown={markdown} />
+        <div className="contact-info-wrapper">
+          <p><strong>{company.openingHoursTitle}</strong></p>
+          <p>
+            <strong>{company.openingHoursWeekDays}</strong>
+            <strong className="ml-half">{company.openingHoursWeekend}</strong>
+          </p>
+          <p>{payment.description}</p>
+        </div>
       </section>
     </>
   )
@@ -36,6 +46,7 @@ export default Index
 
 export async function getStaticProps() {
   const home = await import(`../content/home.json`)
+  const site = await import(`../content/site.json`)
 
   return {
     props: {
@@ -53,6 +64,10 @@ export async function getStaticProps() {
       },
       markdown: {
         body: home.Markdown.body,
+      },
+      information: {
+        payment: site.Information.Payment,
+        company: site.Information.Company
       }
     },
   }
