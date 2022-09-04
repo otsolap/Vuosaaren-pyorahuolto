@@ -10,11 +10,11 @@ const Footer = () => {
     return (
         <footer id={styles.Footer}>
             <div className={`container ${styles.footerHeader}`}>
-                {FooterContent.Footer.logoImage && (
+                {FooterContent.Information.logoImage && (
                     <div className={styles.footerLogoContainer}>
                         <Image
-                            src={FooterContent.Footer.logoImage}
-                            alt={FooterContent.Footer.logoAlt}
+                            src={FooterContent.Information.logoImage}
+                            alt={FooterContent.Information.logoAlt}
                             width={100}
                             height={100}
                             quality={100}
@@ -26,9 +26,9 @@ const Footer = () => {
                 )}
             </div>
             <div className={styles.columnContainer}>
-                <FooterColumnContact {...FooterContent.Footer.FooterContact} />
-                <FooterColumnPayment {...FooterContent.Footer.FooterPayment} />
-                <FooterColumnCompany {...FooterContent.Footer.FooterCompany} />
+                <FooterColumnContact {...FooterContent.Information.Contact} />
+                <FooterColumnPayment {...FooterContent.Information.Payment} />
+                <FooterColumnCompany {...FooterContent.Information.Company} />
             </div>
         </footer>
     )

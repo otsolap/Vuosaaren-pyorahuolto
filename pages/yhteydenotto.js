@@ -1,15 +1,45 @@
 import React from 'react'
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
-import MarkdownBlock from '@components/MarkdownBlock'
 
-const Contact = ({ meta, hero, markdown }) => {
+const Contact = ({ meta, hero, information }) => {
+    const contact = information.contact
+    const company = information.company
+
+    const contactInfo = contact.contactList.map((contacts, i) => {
+        return (
+            <p key={i}>
+                {contacts.title === 'Email' ? (
+                    <a href={`mailto:${contacts.url}`} target="_blank" rel="noopener noreferrer">
+                        {contacts.title}: {contacts.url}
+                    </a>
+                ) : (
+                    ""
+                )}
+                {contacts.title === 'Puhelin' ? (
+                    <a href={`tel:${contacts.url}`} target="_blank" rel="noopener noreferrer">
+                        {contacts.title}: {contacts.url}
+                    </a>
+                ) : (
+                    ""
+                )}
+            </p>
+        )
+    })
+
     return (
         <>
             <Meta meta={meta} />
             <section id="contact">
                 <Hero hero={hero} />
-                <MarkdownBlock markdown={markdown} />
+                <div className="contact-info-wrapper">
+                    <h2>{contact.title}</h2>
+                    <p>{company.address}</p>
+                    <p>{company.postalCode}</p>
+                    <a href={company.mapURL} target="_blank" rel="noopener noreferrer">{company.mapCTATitle}</a>
+                    <p>{contact.description}</p>
+                    {contactInfo}
+                </div>
             </section>
         </>
     )
@@ -18,18 +48,20 @@ const Contact = ({ meta, hero, markdown }) => {
 export default Contact
 
 export async function getStaticProps() {
+    const home = await import(`../content/home.json`)
+    const site = await import(`../content/site.json`)
     const contact = await import(`../content/contact.json`)
 
     return {
         props: {
             hero: {
-                DesktopHeroImage: contact.Hero.DesktopHeroImage,
-                MobileHeroImage: contact.Hero.MobileHeroImage,
-                ImageAltText: contact.Hero.ImageAltText,
-                HeroTitle: contact.Hero.HeroTitle,
+                DesktopHeroImage: home.Hero.DesktopHeroImage,
+                MobileHeroImage: home.Hero.MobileHeroImage,
+                ImageAltText: home.Hero.ImageAltText,
             },
-            markdown: {
-                body: contact.Markdown.body,
+            information: {
+                contact: site.Information.Contact,
+                company: site.Information.Company
             },
             meta: {
                 title: contact.meta.title,

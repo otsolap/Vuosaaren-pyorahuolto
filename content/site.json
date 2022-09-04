@@ -50,10 +50,10 @@
   "openModal": "Lisää",
   "closeModal": "Vähemmän"
   },
-  "Footer": {
+  "Information": {
     "logoImage": "/images/Pyorahuolto_Logo.png",
     "logoAlt": "",
-    "FooterContact": {
+    "Contact": {
         "open": true,
         "title": "Ota Yhteyttä",
         "description": "Sakari Pennanen",
@@ -68,7 +68,7 @@
           }
       ]
     },
-    "FooterPayment": {
+    "Payment": {
       "open": true,
       "title": "Maksutavat",
       "description": "Maksuvälineinä meillä käy: Käteinen, pankkikortti, Ecster, Eurocard, Mastercard, Visa-Electron ja Maestro.",
@@ -99,7 +99,7 @@
         }
       ]
     },
-    "FooterCompany": {
+    "Company": {
         "open": true,
         "title": "Vuosaaren Pyörähuolto",
         "address": "Lokietie 1 A",
