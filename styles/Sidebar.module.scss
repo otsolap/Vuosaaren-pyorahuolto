@@ -10,6 +10,7 @@
 @media (min-width: $container-desktop) {
 
 	$desktop-screen-padding-top: 5rem;
+	$overflow-aside: 5.1rem;
 
 	#sidebar {
 		@include display-flex;
@@ -24,6 +25,13 @@
 
 	.fixedNav {
 		position: fixed;
+	}
+
+	.styledBlock {
+		width: inherit;
+		background-color: #7798CC;
+		height: $overflow-aside;
+		border-top-right-radius: 1.25rem;
 	}
 
 	.stickyUl {

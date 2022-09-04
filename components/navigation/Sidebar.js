@@ -48,6 +48,7 @@ const Sidebar = () => {
 
     return (
         <aside id={styles.sidebar}>
+            <div className={styles.styledBlock}></div>
             <nav className={styles.fixedNav}>
                 <ul className={styles.stickyUl}>
                     {Navigation}
