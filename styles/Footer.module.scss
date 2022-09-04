@@ -225,6 +225,10 @@
     .colIcon {
         display: none !important;
     }
+
+    .paymentWrapper {
+        gap: $single;
+    }
     
     .footerHeader{
         @include display-flex;
