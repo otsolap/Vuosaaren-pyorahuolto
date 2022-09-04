@@ -14,7 +14,6 @@
         padding-bottom: .5rem;
         list-style-type: none;
         font-weight: 700;
-/*         display: inline-flex; */
     }
 
     .price {
@@ -30,5 +29,10 @@
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
-// To be seen.
+
+    .sectionList {
+        max-width: 50%;
+        width: 100%;
+    }
+
 }

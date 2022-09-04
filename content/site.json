@@ -23,23 +23,28 @@
       },
       {
         "title": "Avoimet työpaikat",
-        "path": "/tyopaikat"
+        "path": "/tyopaikat",
+        "icon": "fixer"
       },
       {
         "title": "Talvisäilytys",
-        "path": "/talvisailytys"
+        "path": "/talvisailytys",
+        "icon": "winter"
       },
       {
         "title": "Suksihuolto",
-        "path": "/suksihuolto"
+        "path": "/suksihuolto",
+        "icon": "skiis"
       },
       {
         "title": "Uutiset",
-        "path": "/uutiset"
+        "path": "/uutiset",
+        "icon": "newspaper"
       },
       {
         "title": "Yhteydenotto",
-        "path": "/yhteydenotto"
+        "path": "/yhteydenotto",
+        "icon": "contact"
       } 
   ],
   "openModal": "Lisää",

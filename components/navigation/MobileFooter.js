@@ -13,20 +13,20 @@ const MobileFooter = () => {
     const MobileNavigation = Links.Navigation
     const PRIMARY_PAGES = 3
 
-    const MobileNav = MobileNavigation.pages.slice(0, PRIMARY_PAGES).map((link, i) => {
+    const MobileNav = MobileNavigation.pages.slice(0, PRIMARY_PAGES).map((page, i) => {
         return (
-            <Link href={link.path} key={i}>
-                <a className={router.pathname == link.path ? styles.active : ''}>
-                    {link.icon === 'house' ? (
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={link.title} icon={faHouse} />
+            <Link href={page.path} key={i}>
+                <a className={router.pathname == page.path ? styles.active : ''}>
+                    {page.icon === 'house' ? (
+                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={page.title} icon={faHouse} />
                     ) : null}
-                    {link.icon === 'warehouse' ? (
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={link.title} icon={faWarehouse} />
+                    {page.icon === 'warehouse' ? (
+                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={page.title} icon={faWarehouse} />
                     ) : null}
-                    {link.icon === 'bicycle' ? (
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={link.title} icon={faBicycle} />
+                    {page.icon === 'bicycle' ? (
+                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={page.title} icon={faBicycle} />
                     ) : null}
-                    <span className={styles.mobileLinkText}>{link.title}</span>
+                    <span className={styles.mobileLinkText}>{page.title}</span>
                 </a>
             </Link>
         )

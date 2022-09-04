@@ -8,7 +8,9 @@
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
-	
+
+	$desktop-screen-padding-top: 5rem;
+
 	#sidebar {
 		@include display-flex;
 		max-width: 20%;
@@ -24,6 +26,7 @@
 
 	.stickyUl {
 		position: sticky;
+		padding-top: $desktop-screen-padding-top;
 	}
 
 	.linkWrapper {
@@ -31,6 +34,10 @@
 		padding-bottom: $single;
 		list-style: none;
 		border-bottom: 2px solid $white;
+	}
+
+	.sidebarIcon {
+		margin-right: $single;
 	}
 	
 	.link {
