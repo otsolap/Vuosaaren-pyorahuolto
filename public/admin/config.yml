@@ -275,7 +275,7 @@ collections:
           - { label: "Sivun linkki", name: "url", widget: "string", required: false}
           - { label: "Sivun kuva", name: "image", widget: "image", required: false}
   - name: "general"
-    description: "Sivun yleiset asetukset kuten Ylä- ja alatunniste, sosiaalinen media sekä lomake."
+    description: "Sivun yleiset asetukset kuten Ylä- ja alatunniste, yhteystiedot, maksutavat"
     label: "Sivun asetukset"
     editor:
      preview: false
@@ -295,28 +295,16 @@ collections:
           name: "Contact"
           widget: object
           fields:
-           - { label: "Otsikko", name: "title", widget: "string", required: false}
-           - { label: "Kuvaus", name: "description", widget: "string", required: false}
-           - { label: "Auki", name: "open", widget: "boolean", required: false}
-           - label: "Yhteystiedot"
-           - name: "contactList"
-           - widget: list
-           - fields:
-              - { label: "Otsikko", name: "title", widget: "string", required: false}
-              - { label: "Yhtyestieto", name: "url", widget: "string", required: false}
+            - { label: "Otsikko", name: "title", widget: "string", required: false}
+            - { label: "Kuvaus", name: "description", widget: "string", required: false}
+            - { label: "Auki", name: "open", widget: "boolean", required: false}
         - label: "Maksutavat"
           name: "Payment"
           widget: object
           fields:
-           - { label: "Otsikko", name: "title", widget: "string", required: false}
-           - { label: "Kuvaus", name: "description", widget: "string", required: false}
-           - { label: "Auki", name: "open", widget: "boolean", required: false}
-           - label: "Yhteystiedot"
-           - name: "paymentList"
-           - widget: list
-           - fields:
-              - { label: "Otsikko", name: "title", widget: "string", required: false}
-              - { label: "Kuva", name: "icon", widget: "image", required: false}
+            - { label: "Otsikko", name: "title", widget: "string", required: false}
+            - { label: "Kuvaus", name: "description", widget: "string", required: false}
+            - { label: "Auki", name: "open", widget: "boolean", required: false}
         - label: "Liikkeentiedot"
           name: "Company"
           widget: object
@@ -325,8 +313,8 @@ collections:
             - { label: "Otsikko", name: "title", widget: "string", required: false}
             - { label: "Osoite", name: "address", widget: "string", required: false}
             - { label: "Postinumero", name: "postalCode", widget: "string", required: false}
-            - { label: "Kartta-linkki", name: "mapCTAtitle", widget: "string", required: false}
-            - { label: "Kartta-otsikko", name: "mapURL", widget: "string", required: false}
-            - { label: "", name: "address", widget: "openingHoursTitle", required: false}
-            - { label: "", name: "address", widget: "openingHoursWeekDays", required: false}
-            - { label: "", name: "address", widget: "openingHoursWeekend", required: false}
+            - { label: "Kartta-linkki", name: "mapURL", widget: "string", required: false}
+            - { label: "Kartta-otsikko", name: "mapCTATitle", widget: "string", required: false}
+            - { label: "Aukiolo otsikko", name: "openingHoursTitle", widget: "string", required: false}
+            - { label: "Auki arkena", name: "openingHoursWeekDays", widget: "string", required: false}
+            - { label: "Auki viikonloppuna", name: "openingHoursWeekend", widget: "string", required: false}
