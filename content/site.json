@@ -51,7 +51,7 @@
   "closeModal": "Vähemmän"
   },
   "Contact": {
-        "open": true,
+        "open": false,
         "title": "Ota Yhteyttä",
         "description": "Sakari Pennanen",
         "contactList": [
@@ -66,7 +66,7 @@
       ]
     },
   "Payment": {
-      "open": true,
+      "open": false,
       "title": "Maksutavat",
       "description": "Maksuvälineinä meillä käy: Käteinen, pankkikortti, Ecster, Eurocard, Mastercard, Visa-Electron ja Maestro.",
       "paymentList": [
@@ -97,7 +97,7 @@
       ]
     },
   "Company": {
-    "open": true,
+    "open": false,
     "title": "Vuosaaren Pyörähuolto",
     "address": "Lokietie 1 A",
     "postalCode": "00980 Helsinki",

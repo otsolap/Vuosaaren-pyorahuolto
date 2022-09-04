@@ -5,7 +5,6 @@ import FooterColumnCompany from './FooterColumnCompany'
 import FooterColumnContact from './FooterColumnContact'
 import FooterColumnPayment from './FooterColumnPayment'
 
-
 const Footer = () => {
     return (
         <footer id={styles.Footer}>

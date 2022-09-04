@@ -7,6 +7,7 @@ import useToggle from '@hooks/useToggleState';
 const FooterColumnCompany = ({ title, address, postalCode, mapCTATitle, mapURL, openingHoursTitle, openingHoursWeekDays, openingHoursWeekend, open }) => {
     const contentRef = useRef(null)
     const [active, setActive] = useToggle(open);
+
     useEffect(() => {
         contentRef.current.style.maxHeight = active
             ? `${contentRef.current.scrollHeight}px`
