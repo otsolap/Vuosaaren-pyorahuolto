@@ -178,6 +178,7 @@
     line-height: 2.25rem;
 }
 
+
 .mobileLinkText {
     @include display-flex;
     justify-content: center;
@@ -220,6 +221,7 @@
 
     .colContent {
         pointer-events: all;
+        padding-left: initial;
     }
     
     .footerDesktopLogoContainer {

@@ -27,6 +27,7 @@ $mobile-screen-padding-top: 6rem;
 .linkWrapper {
     padding-top: $single;
     padding-bottom: $single;
+    padding-left: $triple;
     list-style: none;
     border-bottom: 2px solid $white;
 }
@@ -35,6 +36,10 @@ $mobile-screen-padding-top: 6rem;
     color: $white;
     font-size: 22px;
     font-weight: 700;
+}
+
+.sidebarIcon {
+    margin-right: $single;
 }
 
 .active {
