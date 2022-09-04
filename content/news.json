@@ -22,7 +22,8 @@
         "date": "15.04.2019",
         "title": "Liikkeestämme juttu Ilta-Sanomissa",
         "body": "Ilta-Sanomat (11.4.2009) teki jutun Vuosaaren Pyörähuollosta ja pyöräilykauden alkamisesta.",
-        "files": [{
+        "files": [
+          {
             "fileTitle": "Lataa ja lue artikkeli",
             "file": "/images/iltisjuttu.pdf"
           }

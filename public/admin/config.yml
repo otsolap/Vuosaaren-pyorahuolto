@@ -152,16 +152,27 @@ collections:
           - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
           - label: "Uutinen"
             name: "news"
+            add_to_top: true
             widget: list
             fields:
               - { label: "Otsikko", name: "title", widget: "string", required: false}
               - { label: "Kuvaus", name: "body", widget: "markdown", required: false}
               - { label: "Kuva", name: "image", widget: "image", required: false }
-              - { label: "Tiedosto", name: "file", widget: "file", allow_multiple: false, required: false }
-              - { label: "Tiedoston otsikko", name: "fileTitle", widget: "string", required: false }
+              - label: "Tiedosto"
+                name: "files"
+                collapsed: false
+                summary: "Lisää tiedosto ja anna sille toimintaa kehoittava otsikko"
+                widget: list
+                max: 1
+                allow_add: false
+                fields:
+                  - { label: "Tiedosto", name: file, widget: "file", allow_multiple: false, required: false }
+                  - { label: "Tiedoston otsikko", name: fileTitle, widget: "string", required: false }
     - label: "Yhteydenotto"
       name: "contact"
       file: "content/contact.json"
+      comment: "Aukioloajat sekä yhteystiedot voi muokata Sivuasetuksista."
+      hint: "Aukioloajat sekä yhteystiedot voi muokata Sivuasetuksista."
       preview_path: yhteydenotto
       fields:
         - label: "Herokuva"
@@ -172,11 +183,6 @@ collections:
             - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
-        - label: "Etusivun tekstisisältö"
-          name: "Markdown"
-          widget: object
-          fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
@@ -296,7 +302,7 @@ collections:
             - { label: "Kuvaus", name: "SectionDescription", widget: "text", required: false}
             - { label: "Kiitosviesti lomakkeen lähetyksestä", name: "SuccessMessage", widget: "string", required: false}
         - label: "Alapalkki"
-          name: "Footer"
+          name: "Information"
           widget: object
           fields:
            - { label: "Logo", name: "logoImage", widget: "image", required: false}
