@@ -6,7 +6,7 @@
     "HeroTitle": "Pyörähuolto"
   },
   "Services": {
-    "body": "## Pikahuolto\n\nPolkupyörän pikahuoltomme käsittää pyörän renkaiden vaihto pyörän jarrupalojen vaihto polkupyörän muut pienet korjaukset\n\nNopea toimitus!\n\n### Täyshuolto 110 €\n\n### (osat laskutetaan erikseen).\n\n#### Ensihuolto, 150-200 km ajettu pyörä 35 €\n\nPyörä pestään ja putsataan, etu ja takanavat putsataan, myös ohjaus rasvataan. Keskiövanteet rihlataan, vaihteet ja jarrut säädetään, mutterit ja ruuvit kiristetään, renkaat ja ilmanpaineet tarkistetaan.",
+    "body": "## Pikahuolto\n\nPolkupyörän pikahuoltomme käsittää pyörän renkaiden vaihto pyörän jarrupalojen vaihto polkupyörän muut pienet korjaukset\n\nNopea toimitus!\n\n### Täyshuolto 110 €\n\n### (osat laskutetaan erikseen).\n\n#### Ensihuolto, 150-200 km ajettu pyörä 35 €\n\nPyörä pestään ja putsataan, etu ja takanavat putsataan, myös ohjaus rasvataan. Keskiövanteet rihlataan, vaihteet ja jarrut säädetään, mutterit ja ruuvit kiristetään, renkaat ja ilmanpaineet tarkistetaan.\n\nTeemme kaikki pyörään liittyvät korjaukset vankalla ammattitaidolla.\n\nRenkaiden vaihdot\n\nVaijereiden vaihdot\n\nVaihteiden säädöt\n\nJarrujen säädöt\n\nNapojen huollot\n\nYm.\n\nTuo pyöräsi kauden huoltoon\n\nNiin vältyt kevään ruuhkilta!",
     "lists": [
       {
         "title": "Yksivaihteisen pyörän perushuolto",
@@ -29,9 +29,6 @@
         "price": "110"
       }
     ]
-  },
-  "nonPricedServices": {
-    "body": "Teemme kaikki pyörään liittyvät korjaukset vankalla ammattitaidolla.\n\nRenkaiden vaihdot\n\nVaijereiden vaihdot\n\nVaihteiden säädöt\n\nJarrujen säädöt\n\nNapojen huollot\n\nYm.\n\nTuo pyöräsi kauden huoltoon\n\nNiin vältyt kevään ruuhkilta!"
   },
   "meta": {
     "title": "Vuosaaren Pyörähuolto",

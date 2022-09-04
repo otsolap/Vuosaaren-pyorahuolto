@@ -4,7 +4,7 @@ import Hero from '@components/Hero'
 import MarkdownBlock from '@components/MarkdownBlock'
 import List from '@components/repairPage/List'
 
-const Pyorahuolto = ({ meta, hero, services, nonPricedServices }) => {
+const Pyorahuolto = ({ meta, hero, services }) => {
     return (
         <>
             <Meta meta={meta} />
@@ -12,7 +12,6 @@ const Pyorahuolto = ({ meta, hero, services, nonPricedServices }) => {
                 <Hero hero={hero} />
                 <List lists={services} />
                 <MarkdownBlock markdown={services} />
-                <MarkdownBlock markdown={nonPricedServices} />
             </section>
         </>
     )
@@ -34,9 +33,6 @@ export async function getStaticProps() {
             services: {
                 body: repair.Services.body,
                 lists: repair.Services.lists
-            },
-            nonPricedServices: {
-                body: repair.nonPricedServices.body,
             },
             meta: {
                 title: repair.meta.title,

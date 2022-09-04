@@ -110,17 +110,13 @@ collections:
           name: "Services"
           widget: object
           fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
             - label: "Palvelut, joissa kiinteä hinta."
               name: "lists"
               widget: list
+              hint: "Laita vain numeraalinen arvo hintaan. Valuutta tulee automaattisesti hinnan perään sivussa."
               fields:
                 - { label: "Otsikko", name: "title", widget: "text", required: false}
                 - { label: "hinta", name: "price", widget: "string", required: false}
-        - label: "Palvelut, joilla ei kiinteää hintaa."
-          name: "nonPricedServices"
-          widget: object
-          fields: 
             - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
