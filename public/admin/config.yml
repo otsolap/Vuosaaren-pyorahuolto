@@ -298,6 +298,12 @@ collections:
             - { label: "Otsikko", name: "title", widget: "string", required: false}
             - { label: "Kuvaus", name: "description", widget: "string", required: false}
             - { label: "Auki", name: "open", widget: "boolean", required: false}
+            - label: "Yhteystiedot"
+              name: "contactList"
+              widget: list
+              fields:
+                - { label: "Otsikko", name: "title", widget: "string", required: false}
+                - { label: "Yhteystieto", name: "url", widget: "string", required: false}
         - label: "Maksutavat"
           name: "Payment"
           widget: object
@@ -305,6 +311,12 @@ collections:
             - { label: "Otsikko", name: "title", widget: "string", required: false}
             - { label: "Kuvaus", name: "description", widget: "string", required: false}
             - { label: "Auki", name: "open", widget: "boolean", required: false}
+            - label: "Maksutapa"
+              name: "paymentList"
+              widget: list
+              fields:
+                - { label: "Otsikko", name: "title", widget: "string", required: false}
+                - { label: "Kuva", name: "icon", widget: "image", required: false}
         - label: "Liikkeentiedot"
           name: "Company"
           widget: object
