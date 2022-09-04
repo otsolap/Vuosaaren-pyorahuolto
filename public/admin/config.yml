@@ -167,8 +167,8 @@ collections:
                 max: 1
                 allow_add: false
                 fields:
-                  - { label: "Tiedosto", name: file, widget: "file", allow_multiple: false, required: false }
-                  - { label: "Tiedoston otsikko", name: fileTitle, widget: "string", required: false }
+                  - { label: "Tiedosto", name: "file", widget: "file", allow_multiple: false, required: false }
+                  - { label: "Tiedoston otsikko", name: "fileTitle", widget: "string", required: false }
     - label: "Yhteydenotto"
       name: "contact"
       file: "content/contact.json"
@@ -304,3 +304,29 @@ collections:
            - fields:
               - { label: "Otsikko", name: "title", widget: "string", required: false}
               - { label: "Yhtyestieto", name: "url", widget: "string", required: false}
+        - label: "Maksutavat"
+          name: "Payment"
+          widget: object
+          fields:
+           - { label: "Otsikko", name: "title", widget: "string", required: false}
+           - { label: "Kuvaus", name: "description", widget: "string", required: false}
+           - { label: "Auki", name: "open", widget: "boolean", required: false}
+           - label: "Yhteystiedot"
+           - name: "paymentList"
+           - widget: list
+           - fields:
+              - { label: "Otsikko", name: "title", widget: "string", required: false}
+              - { label: "Kuva", name: "icon", widget: "image", required: false}
+        - label: "Liikkeentiedot"
+          name: "Company"
+          widget: object
+          fields: 
+            - { label: "Auki", name: "open", widget: "boolean", required: false}
+            - { label: "Otsikko", name: "title", widget: "string", required: false}
+            - { label: "Osoite", name: "address", widget: "string", required: false}
+            - { label: "Postinumero", name: "postalCode", widget: "string", required: false}
+            - { label: "Kartta-linkki", name: "mapCTAtitle", widget: "string", required: false}
+            - { label: "Kartta-otsikko", name: "mapURL", widget: "string", required: false}
+            - { label: "", name: "address", widget: "openingHoursTitle", required: false}
+            - { label: "", name: "address", widget: "openingHoursWeekDays", required: false}
+            - { label: "", name: "address", widget: "openingHoursWeekend", required: false}
