@@ -13,8 +13,8 @@ const NewsItem = ({ news }) => {
                                 alt={newsItem.title}
                                 src={newsItem.image}
                                 quality={100}
-                                width={230}
-                                height={230}
+                                width={115}
+                                height={115}
                                 layout="responsive"
                                 objectFit='contain'
                                 objectPosition='center'

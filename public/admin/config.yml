@@ -65,7 +65,7 @@ collections:
           - { label: "Osion otsikko", name: "SectionTitle", widget: "string", required: false}  
           - label: "Hyödyt"
             name: "benefits"
-            hint: "Kuvan suositeltu koko on 230 x 230 pikseliä."
+            hint: "Kuvan suositeltu koko on 115x115 pikseliä."
             widget: list
             max: 3
             fields:
