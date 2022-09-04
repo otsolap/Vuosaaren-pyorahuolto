@@ -10,8 +10,8 @@ const Pyorahuolto = ({ meta, hero, services, nonPricedServices }) => {
             <Meta meta={meta} />
             <section id="pyorahuolto">
                 <Hero hero={hero} />
-                <MarkdownBlock markdown={services} />
                 <List lists={services} />
+                <MarkdownBlock markdown={services} />
                 <MarkdownBlock markdown={nonPricedServices} />
             </section>
         </>
