@@ -60,8 +60,8 @@ export async function getStaticProps() {
                 ImageAltText: home.Hero.ImageAltText,
             },
             information: {
-                contact: site.Information.Contact,
-                company: site.Information.Company
+                contact: site.Contact,
+                company: site.Company
             },
             meta: {
                 title: contact.meta.title,

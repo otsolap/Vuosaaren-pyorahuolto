@@ -1,21 +1,21 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Links from '@content/site.json'
+import Navigation from '@content/site.json'
 import styles from '../../styles/Header.module.scss'
 
 
 const Header = () => {
-    const { Header } = Links
+    const { Logo } = Navigation
     return (
         <>
             <header className={styles.header}>
                 <div className="container">
                     <div className={styles.logoContainer}>
-                        {Header.imageLogo && (
+                        {Logo.imageLogo && (
                             <div className={styles.logoImage}>
                                 <Image
-                                    src={Header.imageLogo}
-                                    alt={Header.imageAlt}
+                                    src={Logo.imageLogo}
+                                    alt={Logo.imageAlt}
                                     height={50}
                                     width={50}
                                     quality={100}
@@ -25,7 +25,7 @@ const Header = () => {
                             </div>
                         )}
                         <Link href="/"><a className={styles.noDecoration}>
-                            <h1 className={styles.logo}>{Header.titleLogo}</h1>
+                            <h1 className={styles.logo}>{Logo.titleLogo}</h1>
                         </a>
                         </Link>
                     </div>

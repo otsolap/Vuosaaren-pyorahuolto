@@ -279,60 +279,21 @@ collections:
     editor:
      preview: false
     files:
-    - label: "Ylä- ja alatunniste, yhteystiedot."
+    - label: "Ylä- ja alatunniste, yhteystiedot, maksutiedot."
       name: "site"
       file: "content/site.json"
       fields:
-        - label: "Navigaatio - Ylätunniste sekä Mobiilin navigaatio"
-          name: "Navigation"
-          hint: "Täällä voit ladata Logon joka näkyy sivun ylätunnisteessa sekä nimetä sivujen otsikot."
-          widget: object
-          fields:
-           - { label: "Logo", name: "logo", widget: "string", required: false}
-           - { label: "Mobiililogo", name: "mobileImageLogo", widget: "image", required: false}
-           - { label: "Mobiililogon täsmennys", name: "mobileImageAlt", widget: "string", required: false}
-           - { label: "Etusivu linkin otsikko", name: "homeTitle", widget: "string", required: false}
-           - { label: "Minusta-sivun linkin otsikko", name: "aboutMeTitle", widget: "string", required: false}
-           - { label: "Yhteydenotto linkin otsikko", name: "contactTitle", widget: "string", required: false}
-        - label: "Yhteydenotto"
-          name: "ContactSection"
+        - label: "Logo"
+          name: "Logo"
           widget: object
           fields: 
-            - { label: "Otsikko", name: "SectionTitle", widget: "string", required: false}
-            - { label: "Kuvaus", name: "SectionDescription", widget: "text", required: false}
-            - { label: "Kiitosviesti lomakkeen lähetyksestä", name: "SuccessMessage", widget: "string", required: false}
-        - label: "Alapalkki"
-          name: "Information"
+            - { label: "Otsikko", name: "titleLogo", widget: "string", required: false}
+            - { label: "Logo", name: "imageLogo", widget: "image", required: false}
+            - { label: "Logon täsmennys", name: "imageAlt", widget: "string", required: false}
+        - label: "Yhteystiedot"
+          name: "Contact"
           widget: object
           fields:
            - { label: "Logo", name: "logoImage", widget: "image", required: false}
            - { label: "Logon täsmennys", name: "logoAlt", widget: "string", required: false}
            - { label: "Arvolupaus", name: "valueProposition", widget: "string", required: false}
-        - label: "Yhteystiedot"
-          name: "Contact"
-          hint: "Somekanavat näkyvät yhteydenotto-osiossa sekä sivun alatunnisteessa"
-          widget: object
-          fields:
-            -   label: "Yhteystiedot"
-                name: "contactList"
-                widget: list
-                collapsed: true
-                hint: "Täällä voit lisätä somesi, Klikkaa 'Add social icons'"
-                fields:
-                  - label: "Icons"
-                    name: "icon"
-                    widget: "select"
-                    options:
-                      [
-                        "Twitter",
-                        "LinkedIn",
-                        "Instagram",
-                        "Email",
-                        "Phone",
-                      ]
-                    hint: "Valitse ikoni"
-                  - widget: string
-                    name: url
-                    label: url
-                    required: true
-                    hint: "Laita tähän URL:I SoMe kanavaasi"

@@ -66,8 +66,8 @@ export async function getStaticProps() {
         body: home.Markdown.body,
       },
       information: {
-        payment: site.Information.Payment,
-        company: site.Information.Company
+        payment: site.Payment,
+        company: site.Company
       }
     },
   }
