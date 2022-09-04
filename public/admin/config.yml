@@ -155,6 +155,7 @@ collections:
             add_to_top: true
             widget: list
             fields:
+              - { label: "Päiväys", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", required: false}
               - { label: "Otsikko", name: "title", widget: "string", required: false}
               - { label: "Kuvaus", name: "body", widget: "markdown", required: false}
               - { label: "Kuva", name: "image", widget: "image", required: false }
