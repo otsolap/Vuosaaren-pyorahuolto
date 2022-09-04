@@ -114,18 +114,21 @@ a {
 		@include flex-direction(row);
 		justify-content: center;
 		max-width: $container-desktop-xl;
-		margin: auto;
+		margin: $single auto;
 	}
 
 	html,
 	body,
 	#root {
 		background-image: url('/images/Tausta.jpg');
+		background-repeat: round;
 	}
 
 	main {
 		max-width: 80%;
 		overflow: hidden;
+		border-top-left-radius: 1.25rem;
+		border-bottom-left-radius: 1.25rem;
 	}
 
 	.mobile-only {

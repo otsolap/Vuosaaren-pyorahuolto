@@ -29,6 +29,20 @@ const Footer = () => {
                 <FooterColumnContact {...FooterContent.Contact} />
                 <FooterColumnPayment {...FooterContent.Payment} />
                 <FooterColumnCompany {...FooterContent.Company} />
+                <div className={styles.madeByKultakammen}>
+                    <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="https://www.kultakammen.fi">
+                        <Image
+                            src="/images/Kultakammen_white.png"
+                            height={30}
+                            width={30}
+                            alt="Toteutuksen tehnyt Kultakammen.fi"
+                            quality={100}
+                        />
+                    </a>
+                </div>
             </div>
         </footer>
     )

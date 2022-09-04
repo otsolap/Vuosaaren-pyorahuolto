@@ -3,7 +3,7 @@
 @import "partials/breakpoints";
 
 .header {
-	background-color: $primary;
+	background: $header;
 	@include display-flex;
 	min-height: 80px;
 	align-items: center;
@@ -11,6 +11,7 @@
 	position: sticky;
 	top: 0;
 	z-index: 200; 
+	
 }
 
 .logo {
@@ -48,9 +49,12 @@
 		text-align: start;
 	}
 
+	.logoImage {
+		margin-left: $single;
+	}
+
 	.logoContainer {
-		@include display-flex;
-		width: 100%;
+		justify-content: flex-start;
 	}
 }
 
@@ -60,3 +64,4 @@
 		text-align: center;
 	}
 }
+

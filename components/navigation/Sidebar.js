@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Links from '@content/site.json'
 import { faHouse, faWarehouse, faBicycle, faNewspaper, faPersonSkiingNordic, faSnowflake, faScrewdriverWrench, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
