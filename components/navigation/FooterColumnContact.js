@@ -24,16 +24,12 @@ const FooterColumnCompany = ({ title, description, contactList, open }) => {
                     <a className={styles.contactLink} href={`mailto:${contacts.url}`} target="_blank" rel="noopener noreferrer">
                         {contacts.title}: {contacts.url}
                     </a>
-                ) : (
-                    ""
-                )}
+                ) : null}
                 {contacts.title === 'Puhelin' ? (
                     <a className={styles.contactLink} href={`tel:${contacts.url}`} target="_blank" rel="noopener noreferrer">
                         {contacts.title}: {contacts.url}
                     </a>
-                ) : (
-                    ""
-                )}
+                ) : null}
             </p>
         )
     })

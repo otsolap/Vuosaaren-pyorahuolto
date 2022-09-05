@@ -24,9 +24,11 @@ const NewsItem = ({ news }) => {
                                 />
                             </div>
                         )}
-                        <Markdown options={{ forceBlock: true, wrapper: 'article' }}>
-                            {newsItem.body}
-                        </Markdown>
+                        {newsItem.body && (
+                            <Markdown options={{ forceBlock: true, wrapper: 'article' }}>
+                                {newsItem.body}
+                            </Markdown>
+                        )}
                         {newsItem.files && (
                             newsItem.files.map((filesItem, i) => (
                                 <div className="buttonWrapper" key={i}>

@@ -19,12 +19,10 @@ const FooterColumnCompany = ({ title, description, paymentList, open }) => {
     };
 
     const paymentInfo = paymentList.map((payments, i) => {
-        const paymentIcon = payments.icon
-
         return (
             <div className={styles.paymentIMGContainer} key={i}>
-                {paymentIcon ? (
-                    <Image src={paymentIcon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
+                {payments ? (
+                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
                 ) : null}
             </div>
         )
@@ -43,7 +41,7 @@ const FooterColumnCompany = ({ title, description, paymentList, open }) => {
                         </div>
                     </div>
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
-                        <p className={styles.colText}>{description}</p>
+                        {description && (<p className={styles.colText}>{description}</p>)}
                         <div className={styles.paymentWrapper}>
                             {paymentInfo}
                         </div>

@@ -33,11 +33,11 @@ const Contact = ({ meta, hero, information }) => {
             <section id="contact">
                 <Hero hero={hero} />
                 <div className="contact-info-wrapper">
-                    <h2>{contact.title}</h2>
-                    <p>{company.address}</p>
-                    <p>{company.postalCode}</p>
-                    <a href={company.mapURL} target="_blank" rel="noopener noreferrer">{company.mapCTATitle}</a>
-                    <p>{contact.description}</p>
+                    {contact.title && (<h2>{contact.title}</h2>)}
+                    {company.address && (<p>{company.address}</p>)}
+                    {company.postalCode && (<p>{company.postalCode}</p>)}
+                    {company.mapCTATitle && company.mapURL && (<a href={company.mapURL} target="_blank" rel="noopener noreferrer">{company.mapCTATitle}</a>)}
+                    {contact.description && (<p>{contact.description}</p>)}
                     {contactInfo}
                 </div>
             </section>

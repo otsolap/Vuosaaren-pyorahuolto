@@ -30,12 +30,14 @@ const Index = ({ meta, hero, markdown, information }) => {
         <Hero hero={hero} />
         <MarkdownBlock markdown={markdown} />
         <div className="contact-info-wrapper">
-          <p><strong>{company.openingHoursTitle}</strong></p>
-          <p>
-            <strong>{company.openingHoursWeekDays}</strong>
-            <strong className="ml-half">{company.openingHoursWeekend}</strong>
-          </p>
-          <p>{payment.description}</p>
+          {company.openingHoursTitle && (<p><strong>{company.openingHoursTitle}</strong></p>)}
+          {company.openingHoursWeekDay || company.openingHoursWeekend && (
+            <p>
+              <strong>{company.openingHoursWeekDays}</strong>
+              <strong className="ml-half">{company.openingHoursWeekend}</strong>
+            </p>
+          )}
+          {payment.description && (<p>{payment.description}</p>)}
         </div>
       </section>
     </>

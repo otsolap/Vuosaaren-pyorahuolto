@@ -8,10 +8,10 @@ const Header = () => {
     const { Logo } = Navigation
     return (
         <>
-            <header className={styles.header}>
-                <div className="container">
-                    <div className={styles.logoContainer}>
-                        {Logo.imageLogo && (
+            {Logo.imageLogo && (
+                <header className={styles.header}>
+                    <div className="container">
+                        <div className={styles.logoContainer}>
                             <div className={styles.logoImage}>
                                 <Image
                                     src={Logo.imageLogo}
@@ -23,14 +23,16 @@ const Header = () => {
                                     objectPosition='center'
                                 />
                             </div>
-                        )}
-                        <Link href="/"><a className={styles.noDecoration}>
-                            <h1 className={styles.logo}>{Logo.titleLogo}</h1>
-                        </a>
-                        </Link>
+                            {Logo.titleLogo && (
+                                <Link href="/"><a className={styles.noDecoration}>
+                                    <h1 className={styles.logo}>{Logo.titleLogo}</h1>
+                                </a>
+                                </Link>
+                            )}
+                        </div>
                     </div>
-                </div>
-            </header>
+                </header>
+            )}
         </>
     )
 }
