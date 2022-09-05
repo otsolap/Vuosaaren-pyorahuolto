@@ -22,7 +22,19 @@ const MobileModal = ({ show, closeModal }) => {
         closeModal()
     }
 
+    const icons = {
+        fixer: faScrewdriverWrench,
+        winter: faSnowflake,
+        skiis: faPersonSkiingNordic,
+        newspaper: faNewspaper,
+        contact: faEnvelope,
+    }
+
+
+
     const MobileModalLinks = Links.Navigation.pages.slice(AFTER_PRIMARY_PAGES).map((page, i) => {
+        const icon = icons[page.icon]
+
         return (
             <li
                 onClick={handleClick}
@@ -31,20 +43,8 @@ const MobileModal = ({ show, closeModal }) => {
             >
                 <Link href={page.path} >
                     <a className={styles.link}>
-                        {page.icon === 'fixer' ? (
-                            <FontAwesomeIcon className={styles.sidebarIcon} aria-label={page.title} icon={faScrewdriverWrench} />
-                        ) : null}
-                        {page.icon === 'winter' ? (
-                            <FontAwesomeIcon className={styles.sidebarIcon} aria-label={page.title} icon={faSnowflake} />
-                        ) : null}
-                        {page.icon === 'skiis' ? (
-                            <FontAwesomeIcon className={styles.sidebarIcon} aria-label={page.title} icon={faPersonSkiingNordic} />
-                        ) : null}
-                        {page.icon === 'newspaper' ? (
-                            <FontAwesomeIcon className={styles.sidebarIcon} aria-label={page.title} icon={faNewspaper} />
-                        ) : null}
-                        {page.icon === 'contact' ? (
-                            <FontAwesomeIcon className={styles.sidebarIcon} aria-label={page.title} icon={faEnvelope} />
+                        {icon ? (
+                            <FontAwesomeIcon className={styles.sidebarIcon} aria-label={page.title} icon={icon} />
                         ) : null}
                         <span className={styles.mobileLinkText}>{page.title}</span>
                     </a>

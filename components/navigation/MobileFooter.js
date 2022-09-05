@@ -13,18 +13,20 @@ const MobileFooter = () => {
     const MobileNavigation = Links.Navigation
     const PRIMARY_PAGES = 3
 
+    const icons = {
+        house: faHouse,
+        warehouse: faWarehouse,
+        bicycle: faBicycle,
+    }
+
     const MobileNav = MobileNavigation.pages.slice(0, PRIMARY_PAGES).map((page, i) => {
+        const icon = icons[page.icon]
+
         return (
             <Link href={page.path} key={i}>
                 <a className={router.pathname == page.path ? styles.active : ''}>
-                    {page.icon === 'house' ? (
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={page.title} icon={faHouse} />
-                    ) : null}
-                    {page.icon === 'warehouse' ? (
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={page.title} icon={faWarehouse} />
-                    ) : null}
-                    {page.icon === 'bicycle' ? (
-                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={page.title} icon={faBicycle} />
+                    {icon ? (
+                        <FontAwesomeIcon className={styles.mobileIcon} aria-label={page.title} icon={icon} />
                     ) : null}
                     <span className={styles.mobileLinkText}>{page.title}</span>
                 </a>
