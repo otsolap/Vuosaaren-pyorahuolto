@@ -51,7 +51,7 @@ const FooterColumnCompany = ({ title, description, contactList, open }) => {
                         </div>
                     </div>
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
-                        <p className={styles.colText}>{description}</p>
+                        {description && (<p className={styles.colText}>{description}</p>)}
                         {contactInfo}
                     </div>
                 </div>

@@ -31,12 +31,12 @@ const FooterColumnCompany = ({ title, address, postalCode, mapCTATitle, mapURL, 
                         </div>
                     </div>
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
-                        <p className={styles.colText}>{address}</p>
-                        <p className={styles.colText}>{postalCode}</p>
-                        <a href={mapURL} target="_blank" rel="noopener noreferrer">{mapCTATitle}</a>
-                        <p className={styles.colText}>{openingHoursTitle}</p>
-                        <p className={styles.colTextNOPadding}>{openingHoursWeekDays}</p>
-                        <p className={styles.colTextNOPadding}>{openingHoursWeekend}</p>
+                        {address && (<p className={styles.colText}>{address}</p>)}
+                        {postalCode && (<p className={styles.colText}>{postalCode}</p>)}
+                        {mapURL && (<a href={mapURL} target="_blank" rel="noopener noreferrer">{mapCTATitle}</a>)}
+                        {openingHoursTitle && (<p className={styles.colText}>{openingHoursTitle}</p>)}
+                        {openingHoursWeekDays && (<p className={styles.colTextNOPadding}>{openingHoursWeekDays}</p>)}
+                        {openingHoursWeekend && (<p className={styles.colTextNOPadding}>{openingHoursWeekend}</p>)}
                     </div>
                 </div>
             </button>

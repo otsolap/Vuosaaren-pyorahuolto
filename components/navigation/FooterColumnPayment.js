@@ -19,38 +19,13 @@ const FooterColumnCompany = ({ title, description, paymentList, open }) => {
     };
 
     const paymentInfo = paymentList.map((payments, i) => {
+        const paymentIcon = payments.icon
+
         return (
             <div className={styles.paymentIMGContainer} key={i}>
-                {payments.title === 'Ecster' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
-                ) : (
-                    ""
-                )}
-                {payments.title === 'Eurocard' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
-                ) : (
-                    ""
-                )}
-                {payments.title === 'Maestro' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
-                ) : (
-                    ""
-                )}
-                {payments.title === 'Mastercard' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
-                ) : (
-                    ""
-                )}
-                {payments.title === 'Visa' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
-                ) : (
-                    ""
-                )}
-                {payments.title === 'Visa-Electron' ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
-                ) : (
-                    ""
-                )}
+                {paymentIcon ? (
+                    <Image src={paymentIcon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
+                ) : null}
             </div>
         )
     })

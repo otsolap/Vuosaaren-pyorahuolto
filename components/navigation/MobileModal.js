@@ -30,8 +30,6 @@ const MobileModal = ({ show, closeModal }) => {
         contact: faEnvelope,
     }
 
-
-
     const MobileModalLinks = Links.Navigation.pages.slice(AFTER_PRIMARY_PAGES).map((page, i) => {
         const icon = icons[page.icon]
 
