@@ -1,31 +1,11 @@
 import React from 'react'
 import Meta from '@components/Meta'
 import Hero from '@components/Hero'
+import ContactDetails from '@partials/ContactDetails'
 
 const Contact = ({ meta, hero, information }) => {
     const contact = information.contact
     const company = information.company
-
-    const contactInfo = contact.contactList.map((contacts, i) => {
-        return (
-            <p key={i}>
-                {contacts.title === 'Email' ? (
-                    <a href={`mailto:${contacts.url}`} target="_blank" rel="noopener noreferrer">
-                        {contacts.title}: {contacts.url}
-                    </a>
-                ) : (
-                    ""
-                )}
-                {contacts.title === 'Puhelin' ? (
-                    <a href={`tel:${contacts.url}`} target="_blank" rel="noopener noreferrer">
-                        {contacts.title}: {contacts.url}
-                    </a>
-                ) : (
-                    ""
-                )}
-            </p>
-        )
-    })
 
     return (
         <>
@@ -38,7 +18,7 @@ const Contact = ({ meta, hero, information }) => {
                     {company.postalCode && (<p>{company.postalCode}</p>)}
                     {company.mapCTATitle && company.mapURL && (<a href={company.mapURL} target="_blank" rel="noopener noreferrer">{company.mapCTATitle}</a>)}
                     {contact.description && (<p>{contact.description}</p>)}
-                    {contactInfo}
+                    <ContactDetails contactList={contact.contactList} />
                 </div>
             </section>
         </>
