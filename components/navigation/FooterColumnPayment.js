@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import Image from 'next/image'
+import PaymentDetails from '@partials/PaymentDetails';
 import styles from '../../styles/Footer.module.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp, faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -18,16 +18,6 @@ const FooterColumnCompany = ({ title, description, paymentList, open }) => {
         setActive(!active);
     };
 
-    const paymentInfo = paymentList.map((payments, i) => {
-        return (
-            <div className={styles.paymentIMGContainer} key={i}>
-                {payments ? (
-                    <Image src={payments.icon} alt={payments.title} className={styles.paymentIMG} height={48} width={48} layout='responsive' quality={100} objectFit="contain" />
-                ) : null}
-            </div>
-        )
-    })
-
     return (
         <div className={styles.footerColumn}>
             <button className={styles.footerColButton} onClick={toggleAccordion}>
@@ -43,7 +33,7 @@ const FooterColumnCompany = ({ title, description, paymentList, open }) => {
                     <div ref={contentRef} className={active ? `${styles.colContent} ${styles.colContentDivider}` : `${styles.colContent}`} >
                         {description && (<p className={styles.colText}>{description}</p>)}
                         <div className={styles.paymentWrapper}>
-                            {paymentInfo}
+                            <PaymentDetails paymentList={paymentList} />
                         </div>
                     </div>
                 </div>

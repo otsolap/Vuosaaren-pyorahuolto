@@ -1,6 +1,6 @@
 import styles from '../styles/Footer.module.scss'
 
-const PaymentDetails = ({ contactList }) => {
+const ContactDetails = ({ contactList }) => {
     const contactInfo = contactList.map((contacts, i) => {
         return (
             <p className={styles.contactText} key={i}>
@@ -25,4 +25,4 @@ const PaymentDetails = ({ contactList }) => {
     )
 }
 
-export default PaymentDetails
+export default ContactDetails
