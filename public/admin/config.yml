@@ -3,7 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: "public/images"
 public_folder: "/images"
-# site_url: https://vuosaarenpyorahuolto.fi/
+site_url: https://vuosaarenpyorahuolto.fi/
 publish_mode: editorial_workflow
 # Uncomment local_backend when you need to develop in your local 
 # local_backend: true # run npx netlify-cms-proxy-server for local testing
@@ -298,6 +298,10 @@ collections:
         - label: "Yhteystiedot"
           name: "Contact"
           widget: object
+          max: 4
+          delete: false
+          allow_add: false
+          summary: "Laita tähän haluamasi sähköpostiosoitteet tai puhelinnumerot. Muista merkata puhelinnumerot otsikolle Phone ja sähköpostiosoitteet otsikolla Email"
           fields:
             - { label: "Otsikko", name: "title", widget: "string", required: false}
             - { label: "Kuvaus", name: "description", widget: "string", required: false}
