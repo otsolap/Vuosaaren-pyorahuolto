@@ -20,7 +20,7 @@ collections:
       preview_path: index
       fields:
         - label: "Herokuva"
-          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000."
           name: "Hero"
           widget: object
           fields:
@@ -102,7 +102,7 @@ collections:
       preview_path: pyorahuolto
       fields:
         - label: "Herokuva"
-          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000."
           name: "Hero"
           widget: object
           fields:
@@ -137,7 +137,7 @@ collections:
       preview_path: uutiset
       fields:  
         - label: "Herokuva"
-          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000."
           name: "Hero"
           widget: object
           fields:
@@ -177,7 +177,7 @@ collections:
       preview_path: yhteydenotto
       fields:
         - label: "Herokuva"
-          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000."
           name: "Hero"
           widget: object
           fields:
@@ -200,7 +200,7 @@ collections:
       preview_path: tyopaikat
       fields:
         - label: "Herokuva"
-          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000."
           name: "Hero"
           widget: object
           fields:
@@ -228,7 +228,7 @@ collections:
       preview_path: suksihuolto
       fields:
         - label: "Herokuva"
-          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000."
           name: "Hero"
           widget: object
           fields:
@@ -256,7 +256,7 @@ collections:
       preview_path: talvisailytys
       fields:
         - label: "Herokuva"
-          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000. Laita linkiksi pelkkä sana yhteydenotto jos haluat ohjata vieraan yhteydenotto lomakkeeseen. Ei #yhteydenotto tai /yhteydenotto. Pelkkä sana!"
+          hint: "Hero-osio koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000."
           name: "Hero"
           widget: object
           fields:
