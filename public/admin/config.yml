@@ -85,7 +85,7 @@ collections:
           fields:
             - { label: "Lainaus", name: "quote", widget: "text", required: false}
             - { label: "Siteeraja", name: "quotee", widget: "string", required: false}
-            - { label: "Kuva", name: "image", widget: "image", required: false }
+            - { label: "Kuva", name: "image", widget: "image", required: false, hint: "Kuvan suositeltu koko on 1280px. Yritä löytää jokin kuva, joka kohdistuu keskelle niin se näyttää hyvältä myös mobiilissa." }
         - label: "Sivuston metatiedot"
           name: "meta"
           collapsed: false
