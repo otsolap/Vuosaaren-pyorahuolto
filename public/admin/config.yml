@@ -4,9 +4,9 @@ backend:
 media_folder: "public/images"
 public_folder: "/images"
 # site_url: https://vuosaarenpyorahuolto.fi/
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 # Uncomment local_backend when you need to develop in your local 
-local_backend: true # run npx netlify-cms-proxy-server for local testing
+# local_backend: true # run npx netlify-cms-proxy-server for local testing
 collections:
   - name: "pages"
     description: "Sivujen asetukset."
@@ -68,6 +68,7 @@ collections:
             hint: "Kuvan suositeltu koko on 115x115 pikseliä."
             widget: list
             max: 3
+            allow_add: false
             fields:
               - { label: "Otsikko", name: "title", widget: "string", required: false}
               - { label: "Arvolupaus", name: "valueProposition", widget: "text", required: false}
