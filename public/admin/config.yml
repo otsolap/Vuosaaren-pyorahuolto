@@ -27,7 +27,7 @@ collections:
             - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
-        - label: "Etusivun tekstisisältö"
+        - label: "Tekstisisältö"
           name: "Markdown"
           widget: object
           fields: 
@@ -207,7 +207,7 @@ collections:
             - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
-        - label: "Etusivun tekstisisältö"
+        - label: "Tekstisisältö"
           name: "Markdown"
           widget: object
           fields: 
@@ -235,7 +235,7 @@ collections:
             - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
-        - label: "Etusivun tekstisisältö"
+        - label: "Tekstisisältö"
           name: "Markdown"
           widget: object
           fields: 
@@ -263,7 +263,7 @@ collections:
             - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
             - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
-        - label: "Etusivun tekstisisältö"
+        - label: "Tekstisisältö"
           name: "Markdown"
           widget: object
           fields: 
