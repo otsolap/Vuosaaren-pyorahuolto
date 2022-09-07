@@ -280,11 +280,11 @@ collections:
           - { label: "Sivun kuva", name: "image", widget: "image", required: false}
   - name: "general"
     description: "Sivun yleiset asetukset kuten Ylä- ja alatunniste, yhteystiedot, maksutavat"
-    label: "Sivun asetukset"
+    label: "Yleiset asetukset"
     editor:
      preview: false
     files:
-    - label: "Ylä- ja alatunniste, yhteystiedot, maksutiedot."
+    - label: "Sivun asetukset:Ylä- ja alatunniste, yhteystiedot, maksutiedot."
       name: "site"
       file: "content/site.json"
       fields:
