@@ -34,6 +34,7 @@ collections:
             - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
+          collapsed: false
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
           widget: object
           fields:
@@ -87,6 +88,7 @@ collections:
             - { label: "Kuva", name: "image", widget: "image", required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
+          collapsed: false
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
           widget: object
           fields:
@@ -121,6 +123,7 @@ collections:
             - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
+          collapsed: false
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
           widget: object
           fields:
@@ -183,6 +186,7 @@ collections:
             - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
         - label: "Sivuston metatiedot"
           name: "meta"
+          collapsed: false
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
           widget: object
           fields:
@@ -210,6 +214,7 @@ collections:
             - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
+          collapsed: false
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
           widget: object
           fields:
@@ -237,6 +242,7 @@ collections:
             - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
+          collapsed: false
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
           widget: object
           fields:
@@ -264,6 +270,7 @@ collections:
             - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
         - label: "Sivuston metatiedot"
           name: "meta"
+          collapsed: false
           hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
           widget: object
           fields:
