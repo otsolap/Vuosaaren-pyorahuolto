@@ -113,7 +113,7 @@ collections:
           name: "Services"
           widget: object
           fields: 
-            - label: "Palvelut, joissa kiinteä hinta."
+            - label: "Palvelu ja hinta"
               name: "lists"
               widget: list
               hint: "Laita vain numeraalinen arvo hintaan. Valuutta tulee automaattisesti hinnan perään sivussa."
