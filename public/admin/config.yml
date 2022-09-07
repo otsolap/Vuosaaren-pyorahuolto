@@ -303,10 +303,10 @@ collections:
           allow_add: false
           summary: "Laita tähän haluamasi sähköpostiosoitteet tai puhelinnumerot. Muista merkata puhelinnumerot otsikolle Phone ja sähköpostiosoitteet otsikolla Email"
           fields:
+            - { label: "Auki", name: "open", widget: "boolean", required: false,  hint: "Halutaanko alapalkin kenttä automaattisesti auki mobiiliruudussa vai suljettuna"}
             - { label: "Otsikko", name: "title", widget: "string", required: false}
             - { label: "Kuvaus", name: "description", widget: "string", required: false}
-            - { label: "Auki", name: "open", widget: "boolean", required: false}
-            - label: "Yhteystiedot"
+            - label: "Yhteystieto"
               name: "contactList"
               widget: list
               fields:
@@ -316,9 +316,9 @@ collections:
           name: "Payment"
           widget: object
           fields:
+            - { label: "Auki", name: "open", widget: "boolean", required: false, hint: "Halutaanko alapalkin kenttä automaattisesti auki mobiiliruudussa vai suljettuna"}
             - { label: "Otsikko", name: "title", widget: "string", required: false}
             - { label: "Kuvaus", name: "description", widget: "string", required: false}
-            - { label: "Auki", name: "open", widget: "boolean", required: false}
             - label: "Maksutapa"
               name: "paymentList"
               widget: list
@@ -329,7 +329,7 @@ collections:
           name: "Company"
           widget: object
           fields: 
-            - { label: "Auki", name: "open", widget: "boolean", required: false}
+            - { label: "Auki", name: "open", widget: "boolean", required: false, hint: "Halutaanko alapalkin kenttä automaattisesti auki mobiiliruudussa vai suljettuna"}
             - { label: "Otsikko", name: "title", widget: "string", required: false}
             - { label: "Osoite", name: "address", widget: "string", required: false}
             - { label: "Postinumero", name: "postalCode", widget: "string", required: false}
