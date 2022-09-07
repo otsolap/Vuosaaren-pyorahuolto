@@ -47,7 +47,7 @@ collections:
       file: "content/sales.json"
       preview_path: polkupyorat
       fields:
-        - label: 'Kuva- ja teksti-osio'
+        - label: 'Teksti- ja kuvaosio'
           name: "TextImageSection"
           hint: "Laita otsikko, kuvaus ja kuva. Kuvan suositeltu koko olisi 720px leveä ja 500px korkea."
           widget: object
@@ -59,7 +59,7 @@ collections:
               - { label: "Otsikko", name: "title", widget: "string", required: false}
               - { label: "Kuvaus", name: "description", widget: "text", required: false}
               - { label: "Kuva", name: "image", widget: "image", required: false }
-        - label: "Hyödyt-osio"
+        - label: "Hyödyt"
           name: "BenefitsSection"
           widget: object
           fields:
@@ -79,7 +79,7 @@ collections:
           widget: object
           fields: 
             - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
-        - label: "Nosto-osio"
+        - label: "Nosto"
           name: "highlightSection"
           widget: object
           fields:
