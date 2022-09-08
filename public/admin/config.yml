@@ -165,7 +165,6 @@ collections:
                 summary: "Lisää tiedosto ja anna sille toimintaa kehoittava otsikko"
                 widget: list
                 max: 1
-                allow_add: false
                 fields:
                   - { label: "Tiedosto", name: "file", widget: "file", allow_multiple: false, required: false }
                   - { label: "Tiedoston otsikko", name: "fileTitle", widget: "string", required: false }
