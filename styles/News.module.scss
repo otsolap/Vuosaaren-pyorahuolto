@@ -13,6 +13,10 @@
 .contentContainer {
     text-align: left;
     padding: $single;
+
+    article {
+        padding: 0;
+    }
 }
 
 .newsItem {
@@ -23,8 +27,10 @@
 }
 
 .imageContainer {
-    width: 160px;
-    height: 160px;
+    height: fit-content;
+    width: fit-content;
+    max-width: 350px;
+    max-height: 350px;
 }
 
 .date {
@@ -42,10 +48,5 @@
     .news {
         padding-top: $double;
         padding-bottom: $double;
-    }
-
-    .imageContainer {
-        width: 115px;
-        height: 115px;
     }
 }

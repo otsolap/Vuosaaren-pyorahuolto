@@ -25,9 +25,11 @@ const NewsItem = ({ news }) => {
                             </div>
                         )}
                         {newsItem.body && (
-                            <Markdown options={{ forceBlock: true, wrapper: 'article' }}>
-                                {newsItem.body}
-                            </Markdown>
+                            <div className="markdownBody">
+                                <Markdown options={{ forceBlock: true, wrapper: 'article' }}>
+                                    {newsItem.body}
+                                </Markdown>
+                            </div>
                         )}
                         {newsItem.files && (
                             newsItem.files.map((filesItem, i) => (

@@ -6,7 +6,7 @@ public_folder: "/images"
 site_url: https://vuosaarenpyorahuolto.fi/
 publish_mode: editorial_workflow
 # Uncomment local_backend when you need to develop in your local 
-# local_backend: true # run npx netlify-cms-proxy-server for local testing
+local_backend: true # run npx netlify-cms-proxy-server for local testing
 collections:
   - name: "pages"
     description: "Sivujen asetukset."
@@ -155,7 +155,7 @@ collections:
             add_to_top: true
             widget: list
             fields:
-              - { label: "Päiväys", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", required: false}
+              - { label: "Päiväys", name: "date", widget: "datetime",  date_format: "DD.MM.YYYY", required: false}
               - { label: "Otsikko", name: "title", widget: "string", required: false}
               - { label: "Kuvaus", name: "body", widget: "markdown", required: false}
               - { label: "Kuva", name: "image", widget: "image", required: false }

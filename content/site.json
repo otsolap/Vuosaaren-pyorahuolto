@@ -45,66 +45,66 @@
         "title": "Yhteydenotto",
         "path": "/yhteydenotto",
         "icon": "contact"
-      } 
-  ],
-  "openModal": "Lisää",
-  "closeModal": "Vähemmän"
+      }
+    ],
+    "openModal": "Lisää",
+    "closeModal": "Vähemmän"
   },
   "Contact": {
-        "open": false,
-        "title": "Ota Yhteyttä",
-        "description": "Sakari Pennanen",
-        "contactList": [
-          {
-            "title": "Email",
-            "url": "sakke@vuosaarenpyorahuolto.fi"
-          },
-          {
-            "title": "Puhelin",
-            "url": "09 - 321 5074"
-          }
-      ]
-    },
-  "Payment": {
-      "open": false,
-      "title": "Maksutavat",
-      "description": "Maksuvälineinä meillä käy: Käteinen, pankkikortti, Ecster, Eurocard, Mastercard, Visa-Electron ja Maestro.",
-      "paymentList": [
-        { 
-          "title": "Ecster",
-          "icon":  "/images/Ecster.png"
-        },
-        { 
-          "title": "Eurocard",
-          "icon":  "/images/Eurocard.svg"
-        },
-        { 
-          "title": "Maestro",
-          "icon":  "/images/Maestro.svg"
-        },
-        { 
-          "title": "Mastercard",
-          "icon":  "/images/MasterCard_Logo.svg"
-        },
-        { 
-          "title": "Visa",
-          "icon":  "/images/Visa.svg"
-        },
-        { 
-          "title": "VisaElectron",
-          "icon":  "/images/Visa_Electron.svg"
-        }
-      ]
-    },
-  "Company": {
     "open": false,
-    "title": "Vuosaaren Pyörähuolto",
-    "address": "Lokietie 1 A",
-    "postalCode": "00980 Helsinki",
-    "mapCTATitle": "Katso karttalinkki",
-    "mapURL": "https://www.google.com/maps/place/Vuosaaren+Py%C3%B6r%C3%A4huolto+Oy/@60.2096393,25.1353457,18.75z/data=!4m13!1m7!3m6!1s0x46920f349433f7c7:0xe0d2f6ec9858d5cf!2sLokitie+1A,+00980+Helsinki,+Suomi!3b1!8m2!3d60.2097344!4d25.1354532!3m4!1s0x46920f109bc937b3:0xccbab05c82e002c1!8m2!3d60.2097379!4d25.1353998",
+    "title": "Ota Yhteyttä",
+    "description": "Sakari Pennanen",
+    "contactList": [
+      {
+        "title": "Email",
+        "url": "sakke@vuosaarenpyorahuolto.fi"
+      },
+      {
+        "title": "Puhelin",
+        "url": "09 - 321 5074"
+      }
+    ]
+  },
+  "Payment": {
+    "open": false,
+    "title": "Maksutavat",
+    "description": "Maksuvälineinä meillä käy: Käteinen, pankkikortti, Ecster, Eurocard, Mastercard, Visa-Electron ja Maestro.",
+    "paymentList": [
+      {
+        "title": "Ecster",
+        "icon": "/images/Ecster.png"
+      },
+      {
+        "title": "Eurocard",
+        "icon": "/images/Eurocard.svg"
+      },
+      {
+        "title": "Maestro",
+        "icon": "/images/Maestro.svg"
+      },
+      {
+        "title": "Mastercard",
+        "icon": "/images/MasterCard_Logo.svg"
+      },
+      {
+        "title": "Visa",
+        "icon": "/images/Visa.svg"
+      },
+      {
+        "title": "VisaElectron",
+        "icon": "/images/Visa_Electron.svg"
+      }
+    ]
+  },
+  "Company": {
     "openingHoursTitle": "Olemme avoinna",
     "openingHoursWeekDays": "Ma - Pe klo 10.00 - 18.00",
-    "openingHoursWeekend": "La klo 10.00 - 14.00"
+    "mapCTATitle": "Katso karttalinkki",
+    "open": false,
+    "openingHoursWeekend": "La klo 10.00 - 14.00",
+    "mapURL": "https://www.google.com/maps/place/Vuosaaren+Py%C3%B6r%C3%A4huolto+Oy/@60.2096393,25.1353457,18.75z/data=!4m13!1m7!3m6!1s0x46920f349433f7c7:0xe0d2f6ec9858d5cf!2sLokitie+1A,+00980+Helsinki,+Suomi!3b1!8m2!3d60.2097344!4d25.1354532!3m4!1s0x46920f109bc937b3:0xccbab05c82e002c1!8m2!3d60.2097379!4d25.1353998",
+    "address": "Lokitie 1 A",
+    "postalCode": "00980 Helsinki",
+    "title": "Vuosaaren Pyörähuolto"
   }
 }

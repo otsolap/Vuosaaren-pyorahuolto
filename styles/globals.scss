@@ -86,6 +86,38 @@ a {
 	display: none;
 }
 
+/* markdown */
+
+// Markdown is wrapped in Article. 
+// These styles are for Markdown content.
+.markdownBody {
+    article {
+        padding: $single;
+    
+        h1, h2, h3, h4, h5, h6, p {
+            margin-bottom: $single;
+        }
+
+        ul {
+            padding-left: $single;
+        }
+    
+        ul li {
+            color: $blue;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+
+        img {
+            height: fit-content;
+            width: fit-content;
+            max-width: 350px;
+            max-height: 350px;
+        }
+    
+    }
+}
+
 /* Contact-Page */
 .contact-info-wrapper {
 	padding: 0 $single $single $single;
@@ -103,8 +135,6 @@ a {
 	}
 
 }
-
-
 
 /* DESKTOP STYLES */
 @media (min-width: $container-desktop) {
