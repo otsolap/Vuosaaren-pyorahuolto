@@ -31,7 +31,7 @@ collections:
           name: "Markdown"
           widget: object
           fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Tällä palstalla esitettävien kuvien leveys on suurimmillaan **335x**. Sisällön sekaan upotettavat suuret kuvat on suositeltavaa pienentää kyseiseen leveyteen."  }
         - label: "Sivuston metatiedot"
           name: "meta"
           collapsed: false
@@ -78,7 +78,7 @@ collections:
           name: "textSection"
           widget: object
           fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Tällä palstalla esitettävien kuvien leveys on suurimmillaan **335x**. Sisällön sekaan upotettavat suuret kuvat on suositeltavaa pienentää kyseiseen leveyteen."  }
         - label: "Nosto"
           name: "highlightSection"
           widget: object
@@ -120,7 +120,7 @@ collections:
               fields:
                 - { label: "Otsikko", name: "title", widget: "text", required: false}
                 - { label: "hinta", name: "price", widget: "string", required: false}
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Tällä palstalla esitettävien kuvien leveys on suurimmillaan **335x**. Sisällön sekaan upotettavat suuret kuvat on suositeltavaa pienentää kyseiseen leveyteen."  }
         - label: "Sivuston metatiedot"
           name: "meta"
           collapsed: false
@@ -155,9 +155,9 @@ collections:
             add_to_top: true
             widget: list
             fields:
-              - { label: "Päiväys", name: "date", widget: "datetime",  date_format: "DD.MM.YYYY", required: false}
+              - { label: "Päiväys", name: "date", widget: "datetime",  date_format: "DD.MM.YYYY", time_format: false, format: "DD.MM.YYYY", required: false}
               - { label: "Otsikko", name: "title", widget: "string", required: false}
-              - { label: "Kuvaus", name: "body", widget: "markdown", required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä" }
+              - { label: "Kuvaus", name: "body", widget: "markdown", required: false, hint: "Tällä palstalla esitettävien kuvien leveys on suurimmillaan **335x**. Sisällön sekaan upotettavat suuret kuvat on suositeltavaa pienentää kyseiseen leveyteen." }
               - { label: "Kuva", name: "image", widget: "image", required: false, hint: "Suositeltu kuvakoko on 350x350 pikseliä" }
               - label: "Tiedosto"
                 name: "files"
@@ -210,7 +210,7 @@ collections:
           name: "Markdown"
           widget: object
           fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Tällä palstalla esitettävien kuvien leveys on suurimmillaan **335x**. Sisällön sekaan upotettavat suuret kuvat on suositeltavaa pienentää kyseiseen leveyteen."  }
         - label: "Sivuston metatiedot"
           name: "meta"
           collapsed: false
@@ -266,7 +266,7 @@ collections:
           name: "Markdown"
           widget: object
           fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Tällä palstalla esitettävien kuvien leveys on suurimmillaan **335x**. Sisällön sekaan upotettavat suuret kuvat on suositeltavaa pienentää kyseiseen leveyteen."  }
         - label: "Sivuston metatiedot"
           name: "meta"
           collapsed: false
