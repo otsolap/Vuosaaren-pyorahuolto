@@ -31,7 +31,7 @@ collections:
           name: "Markdown"
           widget: object
           fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
         - label: "Sivuston metatiedot"
           name: "meta"
           collapsed: false
@@ -78,7 +78,7 @@ collections:
           name: "textSection"
           widget: object
           fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
         - label: "Nosto"
           name: "highlightSection"
           widget: object
@@ -120,7 +120,7 @@ collections:
               fields:
                 - { label: "Otsikko", name: "title", widget: "text", required: false}
                 - { label: "hinta", name: "price", widget: "string", required: false}
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
         - label: "Sivuston metatiedot"
           name: "meta"
           collapsed: false
@@ -157,8 +157,8 @@ collections:
             fields:
               - { label: "Päiväys", name: "date", widget: "datetime",  date_format: "DD.MM.YYYY", required: false}
               - { label: "Otsikko", name: "title", widget: "string", required: false}
-              - { label: "Kuvaus", name: "body", widget: "markdown", required: false}
-              - { label: "Kuva", name: "image", widget: "image", required: false }
+              - { label: "Kuvaus", name: "body", widget: "markdown", required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä" }
+              - { label: "Kuva", name: "image", widget: "image", required: false, hint: "Suositeltu kuvakoko on 350x350 pikseliä" }
               - label: "Tiedosto"
                 name: "files"
                 collapsed: false
@@ -211,7 +211,7 @@ collections:
           name: "Markdown"
           widget: object
           fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
         - label: "Sivuston metatiedot"
           name: "meta"
           collapsed: false
@@ -267,7 +267,7 @@ collections:
           name: "Markdown"
           widget: object
           fields: 
-            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false }
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Jos lisäät kuvan niin suositeltu kuvakoko on 350x350 pikseliä"  }
         - label: "Sivuston metatiedot"
           name: "meta"
           collapsed: false
