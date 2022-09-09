@@ -298,7 +298,6 @@ collections:
           name: "Contact"
           widget: object
           max: 4
-          delete: false
           allow_add: false
           summary: "Laita tähän haluamasi sähköpostiosoitteet tai puhelinnumerot. Muista merkata puhelinnumerot otsikolle Phone ja sähköpostiosoitteet otsikolla Email"
           fields:
@@ -311,6 +310,7 @@ collections:
               fields:
                 - { label: "Otsikko", name: "title", widget: "string", required: false}
                 - { label: "Yhteystieto", name: "url", widget: "string", required: false}
+                - { label: "Tyyppi", name: "type", widget: "select", options: ["Phone", "Email"]  ,required: true}
         - label: "Maksutavat"
           name: "Payment"
           widget: object
