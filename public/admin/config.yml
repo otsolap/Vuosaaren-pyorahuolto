@@ -310,7 +310,13 @@ collections:
               fields:
                 - { label: "Otsikko", name: "title", widget: "string", required: false}
                 - { label: "Yhteystieto", name: "url", widget: "string", required: false}
-                - { label: "Tyyppi", name: "type", widget: "select", options: ["Phone", "Email"]  ,required: true}
+                - label: "Tyyppi"
+                  name: "type"
+                  widget: "select"
+                  required: true
+                  options: 
+                    - { label: "Puhelin", value: "Phone" }
+                    - { label: "Sähköposti", value: "Email" }
         - label: "Maksutavat"
           name: "Payment"
           widget: object
