@@ -9,7 +9,7 @@ const ContactDetails = ({ contactList }) => {
                         {contacts.title}: {contacts.url}
                     </a>
                 ) : null}
-                {contacts.type === 'Puhelin' ? (
+                {contacts.type === 'Phone' ? (
                     <a className={styles.contactLink} href={`tel:${contacts.url}`} target="_blank" rel="noopener noreferrer">
                         {contacts.title}: {contacts.url}
                     </a>
