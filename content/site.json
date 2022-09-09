@@ -57,11 +57,13 @@
     "contactList": [
       {
         "title": "Email",
-        "url": "sakke@vuosaarenpyorahuolto.fi"
+        "url": "sakke@vuosaarenpyorahuolto.fi",
+        "type": "Email"
       },
       {
         "title": "Puhelin",
-        "url": "09 - 321 5074"
+        "url": "09 - 321 5074",
+        "type": "Email"
       }
     ]
   },
