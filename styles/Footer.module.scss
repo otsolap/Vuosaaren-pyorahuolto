@@ -44,7 +44,7 @@
     @include display-flex;
     @include flex-direction(row);
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .paymentIMGContainer {
