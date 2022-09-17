@@ -44,7 +44,7 @@
     @include display-flex;
     @include flex-direction(row);
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .paymentIMGContainer {
@@ -226,10 +226,6 @@
         display: none !important;
     }
 
-    .paymentWrapper {
-        gap: $single;
-    }
-    
     .footerHeader{
         @include display-flex;
         @include flex-direction(row);
