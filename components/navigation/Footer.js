@@ -30,7 +30,6 @@ const Footer = () => {
                 <FooterColumnCompany {...FooterContent.Company} />
                 <div className={styles.madeByKultakammen}>
                     <a
-                        rel="noreferrer"
                         target="_blank"
                         href="https://www.kultakammen.fi">
                         <Image
