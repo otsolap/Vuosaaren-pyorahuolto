@@ -31,6 +31,7 @@ const Footer = () => {
                 <div className={styles.madeByKultakammen}>
                     <a
                         target="_blank"
+                        rel="noopener"
                         href="https://www.kultakammen.fi">
                         <Image
                             src="/images/Kultakammen_white.png"
