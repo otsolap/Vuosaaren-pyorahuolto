@@ -28,17 +28,17 @@
     "benefits": [
       {
         "title": "Ammattiosaaminen",
-        "valueProposition": "Testitekstiä",
+        "valueProposition": "",
         "image": "/images/screwdriver-wrench.svg"
       },
       {
         "title": "Pikainen palvelu",
-        "valueProposition": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
+        "valueProposition": "",
         "image": "/images/cyclist.svg"
       },
       {
         "title": "Kustannustehokas",
-        "valueProposition": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
+        "valueProposition": "",
         "image": "/images/piggy.svg"
       }
     ]
