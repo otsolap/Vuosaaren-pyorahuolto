@@ -14,7 +14,7 @@
       {
         "title": "Crescent",
         "description": "Ruotsalainen, juurensa rapakon takaa kantava brändi kuuluu osaa Cycleeurope-konsernia. Crescentin pyörät ovat palvelleet vuosikymmenet niin tavellisia pyöräilijöitä kuin parhaimpia kilpapyöräilyjöitä.",
-        "image": "/images/Ammattilainen.jpg"
+        "image": "/images/crescent.jpg"
       },
       {
         "title": "Madison",
@@ -28,17 +28,17 @@
     "benefits": [
       {
         "title": "Ammattiosaaminen",
-        "valueProposition": "Testitekstiä",
+        "valueProposition": "",
         "image": "/images/screwdriver-wrench.svg"
       },
       {
         "title": "Pikainen palvelu",
-        "valueProposition": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
+        "valueProposition": "",
         "image": "/images/cyclist.svg"
       },
       {
         "title": "Kustannustehokas",
-        "valueProposition": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mauris augue, gravida et risus nec, consequat mollis enim. Integer.”",
+        "valueProposition": "",
         "image": "/images/piggy.svg"
       }
     ]
