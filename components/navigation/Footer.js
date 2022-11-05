@@ -30,9 +30,8 @@ const Footer = () => {
                 <FooterColumnCompany {...FooterContent.Company} />
                 <div className={styles.madeByKultakammen}>
                     <a
-                        target="_blank"
                         rel="noreferrer" 
-                        href="https://www.kultakammen.fi">
+                        href="/kultakammen">
                         <Image
                             src="/images/Kultakammen_white.png"
                             height={30}
@@ -40,6 +39,9 @@ const Footer = () => {
                             alt="Toteutuksen tehnyt Kultakammen.fi"
                             quality={100}
                         />
+                    <span class="sr-only">
+                        
+                    </span>
                     </a>
                 </div>
             </div>
