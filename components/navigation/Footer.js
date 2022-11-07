@@ -31,12 +31,12 @@ const Footer = () => {
                 <div className={styles.madeByKultakammen}>
                     <a
                         rel="noreferrer" 
-                        href="/kultakammen">
+                        href="/honeypaw">
                         <Image
                             src="/images/Kultakammen_white.png"
                             height={30}
                             width={30}
-                            alt="Toteutuksen tehnyt Kultakammen.fi"
+                            alt="Toteutuksen tehnyt honeypaw.io"
                             quality={100}
                         />
                     <span class="sr-only">

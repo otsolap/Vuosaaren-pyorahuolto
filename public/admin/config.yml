@@ -277,6 +277,35 @@ collections:
           - { label: "Sivun kuvaus", name: "description", widget: "string", required: false}
           - { label: "Sivun linkki", name: "url", widget: "string", required: false}
           - { label: "Sivun kuva", name: "image", widget: "image", required: false}
+    - label: "Krediitit"
+      hidden: true
+      name: "credits"
+      file: "content/credits.json"
+      preview_path: honeypaw
+      fields:
+        - label: "Herokuva"
+          hint: "Herokuva koostuu kuvasta, otsikosta, tekstistä ja toimintakehotteesta. Suosittelen erikseen laittamaan pöytäkoneelle ja mobiilille omat kuvat. Pöytäkoneen herokuvan speksit on suositeltavaa olla 720x1280 ja mobiilin 1000x1000."
+          name: "Hero"
+          widget: object
+          fields:
+            - { label: "Otsikko", name: "HeroTitle", widget: "string", required: false}
+            - { label: "Pöytäkoneen Herokuva", name: "DesktopHeroImage", widget: "image", required: false}
+            - { label: "Mobiilin Herokuva", name: "MobileHeroImage", widget: "image", required: false}
+        - label: "Tekstisisältö"
+          name: "Markdown"
+          widget: object
+          fields: 
+            - { label: 'Tekstikenttä', name: 'body', widget: 'markdown', required: false, hint: "Tällä palstalla esitettävien kuvien leveys on suurimmillaan **335x**. Sisällön sekaan upotettavat suuret kuvat on suositeltavaa pienentää kyseiseen leveyteen."  }
+        - label: "Sivuston metatiedot"
+          name: "meta"
+          collapsed: false
+          hint: "Metatiedot antavat lisää tietoa kyseisestä sivusta. Esimerkiksi Googlen hakutuloksissa tai SoMe jaoissa. Huom! Kuvaus saa olla maksimissaan 150-160 kirjainta pitkä!"
+          widget: object
+          fields:
+          - { label: "Sivun otsikko", name: "title", widget: "string", required: false}
+          - { label: "Sivun kuvaus", name: "description", widget: "string", required: false}
+          - { label: "Sivun linkki", name: "url", widget: "string", required: false}
+          - { label: "Sivun kuva", name: "image", widget: "image", required: false}
   - name: "general"
     description: "Sivun yleiset asetukset kuten Ylä- ja alatunniste, yhteystiedot, maksutavat"
     label: "Yleiset asetukset"

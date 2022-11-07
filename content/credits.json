@@ -1,0 +1,16 @@
+{
+  "Hero": {
+    "HeroTitle": "Honeypaw",
+    "DesktopHeroImage": "/images/honeypaw.png",
+    "MobileHeroImage": "/images/honeypaw.png"
+  },
+  "Markdown": {
+    "body": "Nettisivun on toteutettu yhdessä Otson [Honeypaw:in ](https://kultakammen.fi/)kanssa. \n\nTarvitsin uudet nettisivut, jotka toisivat selkeämmin esille pyörähuollon palvelut ja tarjoukset. Myös responsiivinen ulkoasu oli tärkeää.\n\n Jos siis tarvitset yrityksillesi verkkosivut, jotka ovat nopeita, moderneja sekä kustannustehokkaita niin ota yhteyttä Otsoon."
+  },
+  "meta": {
+    "title": "Vuosaaren Pyörähuolto tehnyt Honeypaw",
+    "description": "Olemme polkupyörien korjaukseen ja myyntiin erikoistunut liike Vuosaaressa jo vuodesta 1965. Meiltä saat pyörien lisäksi pyöräilyyn liittyvät tarvikkeet sekä varaosat.",
+    "url": "vuosaarenpyorahuolto.fi/honeypaw",
+    "image": "/images/Vuosaaren_liike.jpeg"
+  }
+}

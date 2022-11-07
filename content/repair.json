@@ -1,7 +1,6 @@
 {
   "Hero": {
     "DesktopHeroImage": "/images/pyorahuolto.jpeg",
-    "ImageAltText": "Vuosaaren Pyörähuollon liike",
     "MobileHeroImage": "/images/pyorahuolto.jpeg",
     "HeroTitle": "Pyörähuolto"
   },
